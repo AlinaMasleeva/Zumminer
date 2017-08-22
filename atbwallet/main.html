@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+    <link href="assets/css/scrolling-nav.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/slick-theme.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery.easing.min.js"></script>
+    <script src="assets/js/scrolling-nav.js"></script>
+    <script src="assets/js/common.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="assets/js/popup-hover.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/jquery.scrollify.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="assets/js/slick.min.js"></script>
+    <script>
+        $(function() {
+            
+        });
+    </script>
+    <script>
+        $(document).ready(function(){
+            $('.atb-slider').slick({
+              appendArrows: $('.slider-arrows'),
+              centerMode: true,
+              infinite: true,
+              slidesToShow: 3,
+              responsive: [
+                {
+                  breakpoint: 1200,
+                  settings: {
+                    arrows: true,
+                    centerMode: false,
+                    slidesToShow: 2
+                  }
+                },
+                {
+                  breakpoint: 992,
+                  settings: {
+                    arrows: true,
+                    centerMode: false,
+                    slidesToShow: 1
+                  }
+                },
+                {
+                  breakpoint: 768,
+                  settings: {
+                    arrows: true,
+                    centerMode: true,
+                    slidesToShow: 1
+                  }
+                },
+                {
+                  breakpoint: 480,
+                  settings: {
+                    arrows: true,
+                    centerMode: false,
+                    slidesToShow: 1
+                  }
+                }
+              ]
+            });
+        });
+    </script>
+</head>
+<body id="page-top" data-spy="scroll" data-target=".navbar-left" class="main-page-body">
+    <div class="header">
+        <nav class="navbar">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand"><img src="assets/img/logo-new.png"></a>
+                        <ul class="nav navbar-nav language-left">
+                            <li><a href="#" data-toggle="dropdown" class="dropdown-toggle">EN</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">ID</a></li>
+                                    <li><a href="#">TR</a></li>
+                                    <li><a href="#">DE</a></li>
+                                    <li><a href="#">AR</a></li>
+                                    <li><a href="#">JA</a></li>
+                                    <li><a href="#">CH</a></li>
+                                    <li><a href="#">KO</a></li>
+                                    <li><a href="#">VI</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="collapse navbar-collapse" id="myNavbar">
+                        <ul class="nav navbar-nav">
+                            <li><a href="#" class="tariff"><span>TARIFFS</span></a></li>
+                            <li><a href="#" class="service"><span>SERVICE</span></a></li>
+                            <li><a href="#" class="wallet"><span>WALLET</span></a></li>
+                            <li><a href="#" class="news"><span>NEWS</span></a></li>
+                            <li><a href="#" class="faq"><span>FAQ</span></a></li>
+                            <li class="login hidden-sm hidden-md"><a href="#" data-toggle="modal" data-target="#loginModal">LOGIN</a></li>
+                            <div class="vertical-divider hidden-xs hidden-sm hidden-md"></div>
+                            <li class="registration hidden-sm hidden-md"><a href="#" data-toggle="modal" data-target="#registerModal">REGISTRATION</a></li>
+                            <div class="tablet-login visible-sm visible-md">
+                                <li class="login"><a href="#" data-toggle="modal" data-target="#loginModal">LOGIN</a></li>
+                                <div class="vertical-divider"></div>
+                                <li class="registration"><a href="#" data-toggle="modal" data-target="#registerModal">REGISTRATION</a></li>
+                            </div>
+                            <li class="user-section hidden">
+                                <img src="assets/img/user-image.png">
+                                <div class="user-name">HELLO <span>MR. JOHN</span></div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="main-page">
+        <nav class="navbar navbar-left" role="navigation">
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="first-dot active">
+                        <a class="page-scroll" href="#main-tab-1"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#main-tab-2"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#main-tab-3"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#main-tab-4"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#main-tab-5"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#main-tab-6"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#main-tab-7"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#main-tab-8"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#main-tab-9"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#main-tab-10"></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>        
+
+        <section id="main-tab-1" class="main-tabs">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="main-title">Freedom of action <br>with <span>zumminer</span></div>
+                        <div class="small-title">Future is here. Just start now.</div>
+                        <a href="#" class="start-button">Start now</a>
+                    </div>
+                </div>
+                <div class="bottom-links main">
+                    <a href="faq.html" class="learn-more">Learn more about <span>wallet</span> →</a>
+                    <a href="#" class="follow-news" data-toggle="modal" data-target="#followModal">Follow project news →</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="main-tab-2" class="main-tabs">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-lg-6">
+                        <div class="main-title"><span>Roadmap</span> <br>for the ZUMMINER</div>
+                        <div class="small-title">Smart and easy way to invest your money<br> Also, you can download the Whitepaper</div>                        
+                        <a href="#" class="start-button">DOWNLOAD WHITEPAPER</a>
+                    </div>
+                    <div class="col-lg-6 visible-lg">
+                        <div class="tab-2-links">
+                            <a href="#" class="mining-investors">Mining for Investors →</a>
+                            <a href="#" class="cloud-mining">Cloud Mining →</a>
+                            <a href="#" class="stake-mining">Proof of Stake Mining →</a>
+                            <a href="#" class="tokens">Tokens and Smart <br>contracts →</a>
+                            <a href="#" class="crypto">Mining cryptocurrency <br>by using farms →</a>
+                            <a href="#" class="atb">ATB</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom-links main">
+                    <a href="#" class="follow-news" data-toggle="modal" data-target="#followModal">Follow project news →</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="main-tab-3" class="main-tabs">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-lg-6">
+                        <div class="main-title"><span>Purpose</span> <br>of the zumminer</div>
+                        <div class="small-title first">The whole world of blockade with our purse</div>
+                        <div class="small-title">The technology of blocking should be accessible to everyone, study, use, open a new one with ZUMMINER Make the technology blocking open and accessible for everyone, mining is easy.</div>
+                        <div class="small-title">Externally, the complex and capacious technology of blocking will become more accessible and understandable with our services!</div>
+                        <div class="small-title">Our services will make the technology of blocking and production of crypto currency more accessible and understandable!</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="main-tab-4" class="main-tabs">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-lg-8">
+                        <div class="main-title"><span>Web version</span> of your wallet</div>
+                        <div class="small-title">Start work with zumminer now</div>
+                        <a href="#" class="start-button">Open wallet</a>
+                    </div>
+                </div>
+                <div class="bottom-links main">
+                    <a href="#" class="follow-news" data-toggle="modal" data-target="#followModal">Follow project news →</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="main-tab-5" class="main-tabs">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="main-title"><span>Mission</span> of zumminer</div>
+                    </div>
+                    <div class="wallet-info">
+                        <div class="col-xs-12 col-sm-4">
+                            <img src="assets/img/wallet-image-1.png">
+                            <div class="wallet-title">
+                                Create a world-wide crypto currency with long-term prospects
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-4">
+                            <img src="assets/img/wallet-image-2.png">
+                            <div class="wallet-title">
+                                Create an open, secure and stable crypto currency
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-4">
+                            <img src="assets/img/wallet-image-3.png">
+                            <div class="wallet-title">
+                                Acquire a global scale and a high level of use around the world
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom-links main">
+                    <a href="#" class="follow-news" data-toggle="modal" data-target="#followModal">Follow project news →</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="main-tab-6" class="main-tabs">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-lg-6">
+                        <div class="main-title">What is <span>zumminer</span></div>
+                        <div class="small-title">ZUMMINER is an innovative decentralized online wallet for crypto currency that unites the best advanced technologies and maximally satisfies the needs of all market players - users, investors and business owners.</div>
+                        <div class="small-title second">This universal payment tool differs significantly from other crypto currency due to a number of innovations, but leaves such important qualities as decentralization and anonymity.</div>
+                    </div>
+                    <div class="col-xs-12 col-lg-6">
+                        <div class="wallet-list">
+                            <ul>
+                                <li>Multi-level security system</li>
+                                <li>High degree of account protection</li>
+                                <li>Full transparency</li>
+                                <li>Open blocking room</li>
+                                <li>Lightning Network</li>
+                                <li>Easy registration</li>
+                                <li>Online support</li>
+                                <li>Practically zero commissions thanks to Segregated Witness (SegWit) and Lightning Network</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="main-tab-7" class="main-tabs">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-lg-6">
+                        <div class="main-title"><span>Cloud</span> mining</div>
+                        <div class="small-title">Smart and easy way to invest your money</div>
+                        <a href="#" class="start-button">START</a>
+                    </div>
+                </div>
+                <div class="bottom-links">
+                    <a href="#" class="follow-news" data-toggle="modal" data-target="#followModal">Follow project news →</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="main-tab-8" class="main-tabs">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="main-title"><span>You can get</span> ZUMMINER</div>
+                    </div>
+                    <div class="wallet-info">
+                        <div class="col-xs-12 col-sm-4">
+                            <img src="assets/img/wallet-image-4.png">
+                            <div class="wallet-title">
+                                As payment for goods and services
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-4">
+                            <img src="assets/img/wallet-image-5.png">
+                            <div class="wallet-title">
+                                Transfer between currency pairs within a multi-currency wallet
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-4">
+                            <img src="assets/img/wallet-image-6.png">
+                            <div class="wallet-title">
+                                Buy or exchange ATB Coin directly with the exchanger or an exchange
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="main-tab-9" class="main-tabs">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="main-title"><span>ZUMMINER</span> team</div>
+                    </div>
+                    <div class="team-block">
+                        <div class="col-xs-12 col-sm-6 col-lg-3">
+                            <div class="member-block">
+                                <img src="assets/img/team-lucian.jpg">
+                                <div class="member-name">Horatiu Lucian Dan</div>
+                                <div class="member-position">Main investor,<br> PR & Communication</div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-lg-3">
+                            <div class="member-block">
+                                <img src="assets/img/team-nurian.png">
+                                <div class="member-name">Nurlan Abdrasilov</div>
+                                <div class="member-position">IT specialist & coach,<br> Blockchain evangelist</div>
+                            </div>
+                        </div>                        
+                        <div class="col-xs-12 col-sm-6 col-lg-3">
+                            <div class="member-block">
+                                <img src="assets/img/team-tim.png">
+                                <div class="member-name">Tim Evans</div>
+                                <div class="member-position">Technical partner,<br> Chief Architect</div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-lg-3">
+                            <div class="member-block">
+                                <img src="assets/img/team-artur.png">
+                                <div class="member-name">Artur Ganiev</div>
+                                <div class="member-position">Managing partner,<br> Fintech Advisor</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="main-tab-10" class="main-tabs">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-lg-2">
+                        <div class="main-title"><span>Rates</span></div>
+                        <div class="slider-arrows"></div>
+                    </div>
+                    <div class="col-xs-12 col-lg-10">                        
+                    </div>
+                </div>
+                <div class="bottom-links visible-lg">
+                    <div class="copyright">© ZUMMINER LTD</div>
+                    <a href="#" class="rates-link first">Legal documentation</a>
+                    <a href="#" class="rates-link">Contract offer</a>
+                    <a href="#" class="rates-link">Privacy policy</a>
+                </div>
+                <div class="bottom-info">
+                    <div class="instructions">Instructions: <span>support@zumminer.com</span></div>
+                    <div class="call-us">Call us: <span>+17024420963</span></div>
+                    <div class="press">Press: <span>marketing@zumminer.com</span></div>
+                </div>
+            </div>
+            <div class="atb-slider">
+                <div class="slider-item">
+                    <div class="slider-title">MINE</div>
+                    <div class="slider-info-title">Investment period</div>
+                    <div class="slider-info-amount">183 days</div>
+                    <div class="slider-info-title">The investment rate is</div>
+                    <div class="slider-info-amount">0.33% per day</div>
+                    <div class="slider-info-title">The forecast of investment profit for the accounting period is</div>
+                    <div class="slider-info-amount">60,39 %</div>
+                    <a href="#" class="try-button">TRY</a>
+                </div> 
+                <div class="slider-item">
+                    <div class="slider-title">MEDIAL</div>
+                    <div class="slider-info-title">Investment period</div>
+                    <div class="slider-info-amount">92 days</div>
+                    <div class="slider-info-title">The investment rate is</div>
+                    <div class="slider-info-amount">0.3% per day</div>
+                    <div class="slider-info-title">The forecast of investment profit for the accounting period is</div>
+                    <div class="slider-info-amount">27,6 %</div>
+                    <a href="#" class="try-button">TRY</a>
+                </div>
+                <div class="slider-item individual">
+                    <div class="slider-title">INDIVIDUAL</div>
+                    <div class="slider-info-block individual first">Individual conditions of cloud mining (service is in development)
+                        By investing, you gain the opportunity to participate in a closed alpha test, and will be the first to get the opportunity to mine on individual conditions:
+                    </div>
+                    <div class="slider-info-block individual">Minimum Hashrate: <span>1 MH/s</span></div>
+                    <div class="slider-info-block individual">Maintenance fee: <span>0.01 $ / 1 MH/s / 24h</span></div>
+                    <div class="slider-info-block individual">HArdware: <span>HashCoins SCRYPT</span></div>
+                    <div class="slider-info-block individual">Automatic accruals in BTC</div>
+                    <div class="slider-info-block individual">Term of the contract: <span>1 month, 3 months, 6 months, 1 year</span>
+                    </div>
+                    <div class="slider-info-block individual">Soon</div>
+                    <a href="#" class="try-button individual">Try</a>
+                </div>
+                <div class="slider-item">
+                    <div class="slider-title">BEGINNER</div>
+                    <div class="slider-info-title">Investment period</div>
+                    <div class="slider-info-amount">31 days</div>
+                    <div class="slider-info-title">The investment rate is</div>
+                    <div class="slider-info-amount">0.25% per day</div>
+                    <div class="slider-info-title">The forecast of investment profit for the accounting period is</div>
+                    <div class="slider-info-amount">7,75 %</div>
+                    <a href="#" class="try-button">TRY</a>
+                </div>
+                <div class="slider-item">
+                    <div class="slider-title">ETHEREUM</div>
+                    <div class="slider-info-title">Minimum Hashrate:</div>
+                    <div class="slider-info-amount">100 KH/s</div>
+                    <div class="slider-info-block individual valutes">Service charge: <span>NO</span></div>
+                    <div class="slider-info-block individual valutes">Equipment: <span>GPU Rigs</span></div>
+                    <div class="slider-info-block individual valutes">Automatic accruals in <span>ETH</span></div>
+                    <div class="slider-info-block individual valutes">Term of the contract: <span>1 month, 3 months, 6 months, 1 year</span></div>
+                    <div class="slider-info-block individual valutes">Rental price: <span>will be announced at the time of launch</span></div>
+                    <a href="#" class="try-button">TRY</a>
+                </div>
+                <div class="slider-item">
+                    <div class="slider-title">ZCASH</div>
+                    <div class="slider-info-title">Minimum Hashrate:</div>
+                    <div class="slider-info-amount">0,1 H/s</div>
+                    <div class="slider-info-block individual valutes">Service charge: <span>NO</span></div>
+                    <div class="slider-info-block individual valutes">Equipment: <span>GPU Rigs</span></div>
+                    <div class="slider-info-block individual valutes">Automatic accruals in <span>ZEC</span></div>
+                    <div class="slider-info-block individual valutes">Term of the contract: <span>1 month, 3 months, 6 months, 1 year</span></div>
+                    <div class="slider-info-block individual valutes">Rental price: <span>will be announced at the time of launch</span></div>
+                    <a href="#" class="try-button">TRY</a>
+                </div>
+                <div class="slider-item">
+                    <div class="slider-title">DASH</div>
+                    <div class="slider-info-title">Minimum Hashrate:</div>
+                    <div class="slider-info-amount">1 MH/s</div>
+                    <div class="slider-info-block individual valutes">Service charge: <span>NO</span></div>
+                    <div class="slider-info-block individual valutes">Equipment: <span>GPU Rigs</span></div>
+                    <div class="slider-info-block individual valutes">Automatic accruals in <span>DASH</span></div>
+                    <div class="slider-info-block individual valutes">Term of the contract: <span>1 month, 3 months, 6 months, 1 year</span></div>
+                    <div class="slider-info-block individual valutes">Rental price: <span>will be announced at the time of launch</span></div>
+                    <a href="#" class="try-button">TRY</a>
+                </div>
+            </div>
+            <div class="bottom-links hidden-lg main">
+                <div class="copyright">© ZUMMINER LTD</div>
+                <a href="#" class="rates-link first">Legal documentation</a>
+                <a href="#" class="rates-link">Contract offer</a>
+                <a href="#" class="rates-link">Privacy policy</a>
+            </div>
+        </section>
+
+    <div id="followModal" class="modal fade" role="dialog">
+      <button type="button" class="close" data-dismiss="modal"></button>
+      <div class="modal-dialog">         
+        <div class="modal-content">
+            <div class="modal-title">FOLLOW NEWS</div>
+            <div class="modal-body">
+                <form>
+                    <input type="text" placeholder="Name">
+                    <input type="text" placeholder="E-mail">
+                </form>
+                <button type="submit" class="registration-button">FOLLOW</button>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="loginModal" class="modal fade" role="dialog">
+      <button type="button" class="close" data-dismiss="modal"></button>
+      <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-title">LOGIN</div>
+            <div class="modal-body">
+                <form>
+                    <input type="text" placeholder="E-mail">
+                    <input type="password" placeholder="Password">
+                </form>
+                <a href="#" class="forgot-link">I forgot my password</a>
+                <button type="submit" class="registration-button">LOGIN</button>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="registerModal" class="modal fade" role="dialog">
+      <button type="button" class="close" data-dismiss="modal"></button>
+      <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-title">REGISTRATION</div>
+            <div class="modal-body">
+                <form>
+                    <input type="text" placeholder="Name">
+                    <input type="text" placeholder="E-mail" class="email">
+                    <input type="text" placeholder="Phone number">
+                    <input type="password" placeholder="Password">
+                    <input type="password" placeholder="Confirm password" class="confirm-password">
+                    <input type="checkbox" id="agree-check">
+                    <label for="agree-check">I accept the terms in the license Agreement</label>
+                </form>
+                <button type="submit" class="registration-button">REGISTRATION</button>
+                <a href="#" class="register-link">Offer contract and privacy policy</a>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    </div>
+
+    <div class="social-share hidden-xs">
+        <a href="https://www.facebook.com/Zumminer-1893181624264533/" target="_blank" class="facebook"><img src="assets/img/facebook-logo.png"></a>
+        <a href="https://twitter.com/zumminer
+" target="_blank" class="twitter"><img src="assets/img/twitter-logo.png"></a>
+    </div>
+</body>
+</html>

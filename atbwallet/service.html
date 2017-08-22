@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+    <link href="assets/css/scrolling-nav.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/slick-theme.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery.easing.min.js"></script>
+    <script src="assets/js/scrolling-nav.js"></script>
+    <script src="assets/js/common.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="assets/js/popup-hover.js"></script>
+    <script src="assets/js/jquery.scrollify.min.js"></script>
+    <script>
+        $(function() {
+            if ( $(window).width() > 1200 ) {
+            $.scrollify({
+                section : ".main-tabs",
+                scrollSpeed: 500,
+            });
+        }
+        });
+    </script>
+</head>
+<body id="page-top" data-spy="scroll" data-target=".navbar-left" class="main-page-body">
+    <div class="header">
+        <nav class="navbar">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand"><img src="assets/img/logo-new.png"></a>
+                        <ul class="nav navbar-nav language-left">
+                            <li><a href="#" data-toggle="dropdown" class="dropdown-toggle">EN</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">ID</a></li>
+                                    <li><a href="#">TR</a></li>
+                                    <li><a href="#">DE</a></li>
+                                    <li><a href="#">AR</a></li>
+                                    <li><a href="#">JA</a></li>
+                                    <li><a href="#">CH</a></li>
+                                    <li><a href="#">KO</a></li>
+                                    <li><a href="#">VI</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="collapse navbar-collapse" id="myNavbar">
+                        <ul class="nav navbar-nav">
+                            <li><a href="#" class="tariff"><span>TARIFFS</span></a></li>
+                            <li><a href="#" class="service"><span>SERVICE</span></a></li>
+                            <li><a href="#" class="wallet"><span>WALLET</span></a></li>
+                            <li><a href="#" class="news"><span>NEWS</span></a></li>
+                            <li><a href="#" class="faq"><span>FAQ</span></a></li>
+                            <li class="login hidden-sm hidden-md"><a href="#" data-toggle="modal" data-target="#loginModal">LOGIN</a></li>
+                            <div class="vertical-divider hidden-xs hidden-sm hidden-md"></div>
+                            <li class="registration hidden-sm hidden-md"><a href="#" data-toggle="modal" data-target="#registerModal">REGISTRATION</a></li>
+                            <div class="tablet-login visible-sm visible-md">
+                                <li class="login"><a href="#" data-toggle="modal" data-target="#loginModal">LOGIN</a></li>
+                                <div class="vertical-divider"></div>
+                                <li class="registration"><a href="#" data-toggle="modal" data-target="#registerModal">REGISTRATION</a></li>
+                            </div>
+                            <li class="user-section hidden">
+                                <img src="assets/img/user-image.png">
+                                <div class="user-name">HELLO <span>MR. JOHN</span></div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="main-page service-page">
+        <nav class="navbar navbar-left" role="navigation">
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="first-dot active">
+                        <a class="page-scroll" href="#main-tab-service-1"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#main-tab-service-2"></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>        
+
+        <section id="main-tab-service-1" class="main-tabs">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-lg-5">
+                        <div class="main-title"><span>Service</span> wallet</div>
+                        <div class="small-title">Smart and easy way to invest your money</div>
+                        <a href="#" class="start-button">START</a>
+                    </div>
+                    <div class="col-xs-12 col-lg-7">
+                        <div class="service-block">
+                            <div class="service-top">
+                                <ul class="nav nav-tabs">
+                                    <li class="active"><a  href="#1" data-toggle="tab" class="exchange">Instant Exchange</a></li>
+                                    <li><a href="#2" data-toggle="tab" class="storage">Storage</a></li>
+                                    <li><a href="#3" data-toggle="tab" class="scalling">Scalling</a></li>
+                                </ul>
+                            </div>
+                            <div class="tab-content">
+                                <div class="tab-pane active" id="1">
+                                    <div class="service-info">
+                                        The main advantage of a multi-currency purse is the automatic exchange of Crypto-currency. There is no need to use exchanges or exchange kriptovaljut with mandatory commissions for service and translation, wait and monitor the execution of their warrants to buy or sell. Now you can instantly exchange the crypto currency directly in your personal wallet, without commission, at the optimal rate, which is updated in real time.
+                                    </div>
+                                </div>
+                                <div class="tab-pane" id="2">
+                                    <div class="service-info">
+                                        One of the most popular functions in a crypto-medium environment is a multicurrency hot wallet. In it, you can not only store several types of crypto currency simultaneously, and interact with them without any switching between applications. Intuitive interface, facilitates fast and comfortable work, closing the execution of most demanded requests in one place.
+                                    </div>
+                                </div>
+                                <div class="tab-pane" id="3">
+                                    <div class="service-info">
+                                        Currently, the ZUMMINER multi-currency purse includes the top-end crypto currency of Bitcoin, Eterium, Zetkesh, etc. But we do not stop there, the multi-currency purse has great potential and unlimited possibilities. Already now, our developers are introducing crypto-currencies such as Dashkoin and ATBkoin Our ambitions and our quality work prophesy ZUMMINER stable demand and a good future. Plans to expand the portfolio to the top 30
+                                    </div>
+                                </div>
+                            </div>                            
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom-links">
+                    <a href="#" class="follow-news" data-toggle="modal" data-target="#followModal">Follow project news →</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="main-tab-service-2" class="main-tabs">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="main-title"><span>Cloud</span> mining</div>
+                    </div>
+                    <div class="col-xs-12 col-lg-6">
+                        <div class="small-title left">In a rapidly developing segment of the market, crypto-currency, cloud mining occupies a special place.</div>
+                        <div class="small-title left">The various mining pools that are gaining popularity are similar in terms of conditions and differ only in some details, such as: the size of the withdrawal commission and the method of making a profit.</div>
+                        <div class="small-title left">ATB Cloud will change the rules of the game!</div>
+                        <div class="small-title left">Work on the service began in late 2016. And to date, it is not only an alternative to real mining, but also allows you to forget about a number of difficulties associated with it: expensive electricity, constant connectivity difficulties, the need for proper cooling, high noise level, timely updating of hardware and software.</div>
+                    </div>
+                    <div class="col-xs-12 col-lg-6">
+                        <div class="small-title right">The quality equipment involved in the ATB Cloud service makes the mining process as efficient as possible, and the opportunities at the start are more accessible. Forecasts compiled on the current market analysis show an increased interest in the production of crypto currency in the next few years, which in turn indicates an increase in demand for mining services, as well as the equipment itself for production.</div>
+                        <div class="small-title right">ATB Cloud already now provides the opportunity to mine without worries, using high-quality equipment. Like all services, ATB Cloud will have a number of its features, including: the ability to select pools, and the user will be able to dynamically change the power distribution between pools in an arbitrary percentage.<br>
+                        In addition, 24/7 support and a functional personal cabinet are provided. In the control panel there will be statistics of payments, indicators of profitability, and its forecasts. The function of reinvestment will enable you to use the balance of your balance to automatically purchase an additional hashtrait.
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom-links">
+                    <a href="#" class="follow-news" data-toggle="modal" data-target="#followModal">Follow project news →</a>
+                </div>
+            </div>
+        </section>
+
+    <div id="followModal" class="modal fade" role="dialog">
+      <button type="button" class="close" data-dismiss="modal"></button>
+      <div class="modal-dialog">         
+        <div class="modal-content">
+            <div class="modal-title">FOLLOW NEWS</div>
+            <div class="modal-body">
+                <form>
+                    <input type="text" placeholder="Name">
+                    <input type="text" placeholder="E-mail">
+                </form>
+                <button type="submit" class="registration-button">FOLLOW</button>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="loginModal" class="modal fade" role="dialog">
+      <button type="button" class="close" data-dismiss="modal"></button>
+      <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-title">LOGIN</div>
+            <div class="modal-body">
+                <form>
+                    <input type="text" placeholder="E-mail">
+                    <input type="password" placeholder="Password">
+                </form>
+                <a href="#" class="forgot-link">I forgot my password</a>
+                <button type="submit" class="registration-button">LOGIN</button>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="registerModal" class="modal fade" role="dialog">
+      <button type="button" class="close" data-dismiss="modal"></button>
+      <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-title">REGISTRATION</div>
+            <div class="modal-body">
+                <form>
+                    <input type="text" placeholder="Name">
+                    <input type="text" placeholder="E-mail" class="email">
+                    <input type="text" placeholder="Phone number">
+                    <input type="password" placeholder="Password">
+                    <input type="password" placeholder="Confirm password" class="confirm-password">
+                    <input type="checkbox" id="agree-check">
+                    <label for="agree-check">I accept the terms in the license Agreement</label>
+                </form>
+                <button type="submit" class="registration-button">REGISTRATION</button>
+                <a href="#" class="register-link">Offer contract and privacy policy</a>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    </div>
+
+    <div class="social-share hidden-xs">
+        <a href="#" class="facebook"><img src="assets/img/facebook-logo.png"></a>
+        <a href="#" class="twitter"><img src="assets/img/twitter-logo.png"></a>
+    </div>
+</body>
+</html>
