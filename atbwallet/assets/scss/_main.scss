@@ -2845,6 +2845,8 @@
 }
 
 .investments {
+    font-family: $main-font;
+    font-weight: 100;
     &__table {
         display: flex;
         flex-wrap: wrap;
@@ -2875,32 +2877,33 @@
             text-align: center;
         }
         &--column {
-            padding: 3em 1em;
+            padding: 2em 1em;
             border-bottom: 1px solid rgba(255, 255, 255, 0.2);
             border-right: 1px solid rgba(255, 255, 255, 0.2);
             color: #b4afdb;
             @media (min-width: $screen-lg-min) {
-                padding: 3em 1.5em;
+                padding: 2em 1.5em;
             }
             @media (min-width: 1400px) {
-                padding: 3em 2em;
+                padding: 2em 2em;
             }
             &:last-child {
                 border: none;
             }
             .sub-title {
+                font-family: $montserrat-font;
                 color: #fff;
-                font-size: 20.9px;
+                font-size: 27px;
                 letter-spacing: 2px;
                 line-height: 20.9px;
                 margin: 16px 0;
                 font-weight: 100;
                 @media (min-width: $screen-lg-min) {
-                    font-size: 16.9px;
+                    font-size: 27px;
                     line-height: 16.9px;
                 }
                 @media (min-width: 1400px) {
-                    font-size: 20.9px;
+                    font-size: 27px;
                     line-height: 20.9px;
                 }
             }

@@ -34,6 +34,12 @@
   font-weight: normal;
   font-style: normal; }
 
+@font-face {
+  font-family: 'Montserrat UltraLight';
+  src: url("../fonts/Montserrat-UltraLight.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal; }
+
 body {
   font-family: "Montserrat", sans-serif; }
   @media (min-width: 1200px) {
@@ -2817,6 +2823,8 @@ body.main-page-body .header {
   width: 14.2%; }
 
 .investments {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 100;
   /* Rounded sliders */ }
   .investments__table {
     display: -webkit-box;
@@ -2851,32 +2859,33 @@ body.main-page-body .header {
       padding: 15px 10px;
       text-align: center; }
     .investments__table--column {
-      padding: 3em 1em;
+      padding: 2em 1em;
       border-bottom: 1px solid rgba(255, 255, 255, 0.2);
       border-right: 1px solid rgba(255, 255, 255, 0.2);
       color: #b4afdb; }
       @media (min-width: 1200px) {
         .investments__table--column {
-          padding: 3em 1.5em; } }
+          padding: 2em 1.5em; } }
       @media (min-width: 1400px) {
         .investments__table--column {
-          padding: 3em 2em; } }
+          padding: 2em 2em; } }
       .investments__table--column:last-child {
         border: none; }
       .investments__table--column .sub-title {
+        font-family: "Montserrat UltraLight";
         color: #fff;
-        font-size: 20.9px;
+        font-size: 27px;
         letter-spacing: 2px;
         line-height: 20.9px;
         margin: 16px 0;
         font-weight: 100; }
         @media (min-width: 1200px) {
           .investments__table--column .sub-title {
-            font-size: 16.9px;
+            font-size: 27px;
             line-height: 16.9px; } }
         @media (min-width: 1400px) {
           .investments__table--column .sub-title {
-            font-size: 20.9px;
+            font-size: 27px;
             line-height: 20.9px; } }
       .investments__table--column .sub-info {
         font-size: 11.2px;
