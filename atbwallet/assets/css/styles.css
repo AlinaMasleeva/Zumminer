@@ -34,12 +34,6 @@
   font-weight: normal;
   font-style: normal; }
 
-@font-face {
-  font-family: 'Montserrat UltraLight';
-  src: url("../fonts/Montserrat-UltraLight.otf") format("opentype");
-  font-weight: normal;
-  font-style: normal; }
-
 body {
   font-family: "Montserrat", sans-serif; }
   @media (min-width: 1200px) {
@@ -251,6 +245,96 @@ body {
         background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #4d95ef), color-stop(1, #58c2c6));
         background-image: gradient(linear, left top, right top, color-stop(0, #4d95ef), color-stop(1, #58c2c6));
         color: transparent; }
+  .header.dashboard {
+    margin-top: 15px; }
+    @media (min-width: 768px) {
+      .header.dashboard {
+        margin-top: 5vh; } }
+    .header.dashboard .navbar .navbar-header {
+      text-align: left; }
+      @media (min-width: 768px) {
+        .header.dashboard .navbar .navbar-header {
+          text-align: center; } }
+      .header.dashboard .navbar .navbar-header .navbar-toggle {
+        margin-top: 14px; }
+        .header.dashboard .navbar .navbar-header .navbar-toggle span {
+          background-image: -ms-linear-gradient(-165deg, #4691ee 0%, #4ca9d9 25%, #51c0c4 100%);
+          border-radius: 12px;
+          height: 3px;
+          width: 19px; }
+    .header.dashboard .navbar .navbar-collapse .navbar-nav.mobile-menu li {
+      text-align: left; }
+      .header.dashboard .navbar .navbar-collapse .navbar-nav.mobile-menu li:not(:last-child) {
+        border-bottom: 1px solid rgba(229, 237, 242, 0.251); }
+      .header.dashboard .navbar .navbar-collapse .navbar-nav.mobile-menu li a {
+        font-size: 12.7px;
+        font-weight: 500;
+        line-height: 12.7px; }
+        .header.dashboard .navbar .navbar-collapse .navbar-nav.mobile-menu li a.mobile-left {
+          background-image: -ms-linear-gradient(-165deg, #4691ee 0%, #4ca9d9 25%, #51c0c4 100%);
+          height: 80px;
+          padding: 0;
+          text-align: center;
+          width: 80px;
+          -webkit-background-clip: inherit; }
+          .header.dashboard .navbar .navbar-collapse .navbar-nav.mobile-menu li a.mobile-left:before {
+            content: '';
+            display: inline-block;
+            height: 100%;
+            margin: 0;
+            vertical-align: middle; }
+          .header.dashboard .navbar .navbar-collapse .navbar-nav.mobile-menu li a.mobile-left.btc img {
+            width: 15px; }
+          .header.dashboard .navbar .navbar-collapse .navbar-nav.mobile-menu li a.mobile-left.atb img {
+            width: 17px; }
+          .header.dashboard .navbar .navbar-collapse .navbar-nav.mobile-menu li a.mobile-left.eth img {
+            width: 15px; }
+          .header.dashboard .navbar .navbar-collapse .navbar-nav.mobile-menu li a.mobile-left.ltc img {
+            width: 15px; }
+          .header.dashboard .navbar .navbar-collapse .navbar-nav.mobile-menu li a.mobile-left.zec img {
+            width: 15px; }
+          .header.dashboard .navbar .navbar-collapse .navbar-nav.mobile-menu li a.mobile-left.usd img {
+            width: 12px; }
+        .header.dashboard .navbar .navbar-collapse .navbar-nav.mobile-menu li a.dropdown-toggle, .header.dashboard .navbar .navbar-collapse .navbar-nav.mobile-menu li a.invest, .header.dashboard .navbar .navbar-collapse .navbar-nav.mobile-menu li a.cloud, .header.dashboard .navbar .navbar-collapse .navbar-nav.mobile-menu li a.refer, .header.dashboard .navbar .navbar-collapse .navbar-nav.mobile-menu li a.tariff, .header.dashboard .navbar .navbar-collapse .navbar-nav.mobile-menu li a.logout {
+          margin-left: 45px; }
+          .header.dashboard .navbar .navbar-collapse .navbar-nav.mobile-menu li a.dropdown-toggle:before, .header.dashboard .navbar .navbar-collapse .navbar-nav.mobile-menu li a.invest:before, .header.dashboard .navbar .navbar-collapse .navbar-nav.mobile-menu li a.cloud:before, .header.dashboard .navbar .navbar-collapse .navbar-nav.mobile-menu li a.refer:before, .header.dashboard .navbar .navbar-collapse .navbar-nav.mobile-menu li a.tariff:before, .header.dashboard .navbar .navbar-collapse .navbar-nav.mobile-menu li a.logout:before {
+            background-size: 100%;
+            margin-right: 20px; }
+        .header.dashboard .navbar .navbar-collapse .navbar-nav.mobile-menu li a.dropdown-toggle:before {
+          background: url("../img/icon-user-mobile.png") no-repeat;
+          background-size: 100%;
+          height: 12px;
+          width: 13px; }
+        .header.dashboard .navbar .navbar-collapse .navbar-nav.mobile-menu li a.invest:before {
+          background: url("../img/icon-invest-active-mobile.png") no-repeat;
+          background-size: 100%;
+          height: 10px;
+          width: 13px; }
+        .header.dashboard .navbar .navbar-collapse .navbar-nav.mobile-menu li a.cloud:before {
+          background: url("../img/icon-cloud-mobile.png") no-repeat;
+          background-size: 100%;
+          height: 10px;
+          width: 17px;
+          margin-right: 16px; }
+        .header.dashboard .navbar .navbar-collapse .navbar-nav.mobile-menu li a.refer:before {
+          background: url("../img/icon-refer-mobile.png") no-repeat;
+          background-size: 100%;
+          height: 16px;
+          width: 10px;
+          margin-right: 23px; }
+        .header.dashboard .navbar .navbar-collapse .navbar-nav.mobile-menu li a.tariff:before {
+          background: url("../img/icon-tariff-mobile.png") no-repeat;
+          background-size: 100%;
+          height: 13px;
+          width: 13px; }
+        .header.dashboard .navbar .navbar-collapse .navbar-nav.mobile-menu li a.logout {
+          color: #d2d2d3; }
+          .header.dashboard .navbar .navbar-collapse .navbar-nav.mobile-menu li a.logout:before {
+            background: url("../img/logout-icon.png") no-repeat;
+            background-size: 100%;
+            height: 13px;
+            width: 16px;
+            margin-right: 17px; }
 
 body.main-page-body .header {
   background-color: #fff;
@@ -441,6 +525,17 @@ body.main-page-body .header {
       margin: 16px 15px 0;
       width: 3px; }
 
+body.modal-open.dashboard-body .main-block {
+  -webkit-filter: blur(4px);
+  -moz-filter: blur(4px);
+  -o-filter: blur(4px);
+  -ms-filter: blur(4px);
+  filter: blur(4px);
+  filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius='4'); }
+
+body.modal-open.dashboard-body .modal-backdrop.in {
+  opacity: 0; }
+
 .left-menu {
   background-color: rgba(255, 255, 255, 0.9);
   bottom: 0;
@@ -530,6 +625,190 @@ body.main-page-body .header {
           height: 40px !important;
           width: 40px !important; }
 
+.modal-dashboard .modal-dialog {
+  margin: 10vh 15px 0; }
+  .modal-dashboard .modal-dialog .modal-content {
+    border: 0;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    -webkit-box-shadow: 2.121px 2.121px 54px 0px rgba(0, 0, 0, 0.08);
+    box-shadow: 2.121px 2.121px 54px 0px rgba(0, 0, 0, 0.08); }
+    .modal-dashboard .modal-dialog .modal-content .modal-header {
+      background: url("../img/mobile-balance-back.png") no-repeat;
+      background-size: cover;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      padding: 35px 35px 30px;
+      position: relative; }
+      .modal-dashboard .modal-dialog .modal-content .modal-header .close {
+        opacity: 1;
+        position: absolute;
+        right: 20px;
+        top: 20px; }
+        @media (min-width: 600px) {
+          .modal-dashboard .modal-dialog .modal-content .modal-header .close {
+            right: 40px;
+            top: 40px; } }
+        .modal-dashboard .modal-dialog .modal-content .modal-header .close img {
+          height: 11px; }
+      .modal-dashboard .modal-dialog .modal-content .modal-header .get-title {
+        color: #fff;
+        font-size: 12.5px;
+        font-weight: 500;
+        letter-spacing: 2px;
+        line-height: 12.5px;
+        margin-bottom: 14px; }
+      .modal-dashboard .modal-dialog .modal-content .modal-header .get-date {
+        color: #fff;
+        font-size: 11px;
+        font-weight: 700;
+        letter-spacing: .5px;
+        line-height: 11px; }
+    .modal-dashboard .modal-dialog .modal-content .modal-body {
+      padding: 35px;
+      word-break: break-all; }
+      .modal-dashboard .modal-dialog .modal-content .modal-body .tran-item {
+        font-size: 10.5px;
+        font-weight: 300;
+        letter-spacing: .5px;
+        line-height: 16.5px; }
+        .modal-dashboard .modal-dialog .modal-content .modal-body .tran-item:not(:last-child) {
+          margin-bottom: 24px; }
+        .modal-dashboard .modal-dialog .modal-content .modal-body .tran-item span {
+          color: #60baea;
+          font-weight: 700;
+          letter-spacing: 2px; }
+
+.modal-bitcoins .modal-dialog {
+  height: 100%;
+  margin: 0; }
+  .modal-bitcoins .modal-dialog .modal-content {
+    background: url("../img/get-bitcoins-mobile.png") no-repeat;
+    background-size: 100% 100%;
+    border: 0;
+    border-radius: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    height: 100%; }
+    .modal-bitcoins .modal-dialog .modal-content .modal-header {
+      border: 0;
+      padding: 45px;
+      position: relative; }
+      .modal-bitcoins .modal-dialog .modal-content .modal-header .bitcoin-title {
+        color: #fff;
+        font-size: 12.5px;
+        font-weight: 600;
+        letter-spacing: .5px;
+        line-height: 18.5px;
+        margin-bottom: 30px; }
+      .modal-bitcoins .modal-dialog .modal-content .modal-header .close {
+        opacity: 1;
+        position: absolute;
+        right: 30px;
+        top: 45px; }
+        .modal-bitcoins .modal-dialog .modal-content .modal-header .close img {
+          height: 15px;
+          width: 15px; }
+      .modal-bitcoins .modal-dialog .modal-content .modal-header .bitcoin-amount {
+        color: #fff;
+        font-size: 56px;
+        font-weight: 300;
+        line-height: 56px;
+        margin-bottom: 24px; }
+      .modal-bitcoins .modal-dialog .modal-content .modal-header .small-amounts {
+        color: #fff;
+        font-size: 12.5px;
+        font-weight: 600;
+        letter-spacing: .5px;
+        line-height: 12.5px; }
+        .modal-bitcoins .modal-dialog .modal-content .modal-header .small-amounts span {
+          display: inline-block; }
+          .modal-bitcoins .modal-dialog .modal-content .modal-header .small-amounts span.amount {
+            margin-left: 10px; }
+            @media (min-width: 600px) {
+              .modal-bitcoins .modal-dialog .modal-content .modal-header .small-amounts span.amount {
+                margin-left: 35px; } }
+          .modal-bitcoins .modal-dialog .modal-content .modal-header .small-amounts span b {
+            color: #76fff4;
+            font-weight: 600; }
+    .modal-bitcoins .modal-dialog .modal-content .modal-body {
+      padding: 0 18px 25px; }
+      .modal-bitcoins .modal-dialog .modal-content .modal-body form .input-wrapper {
+        background-color: rgba(255, 255, 255, 0.29);
+        border-radius: 10px;
+        margin-bottom: 15px;
+        position: relative; }
+        @media (min-width: 600px) {
+          .modal-bitcoins .modal-dialog .modal-content .modal-body form .input-wrapper {
+            margin-bottom: 35px; } }
+        .modal-bitcoins .modal-dialog .modal-content .modal-body form .input-wrapper input {
+          -webkit-appearance: none;
+          -moz-appearance: none;
+          appearance: none;
+          background-color: transparent;
+          border: 0;
+          -webkit-box-shadow: none;
+          box-shadow: none;
+          color: rgba(255, 255, 255, 0.7);
+          font-size: 13.5px;
+          font-weight: 300;
+          line-height: 13.5px;
+          outline: 0;
+          padding: 20px 50px 20px 20px;
+          width: 100%; }
+          .modal-bitcoins .modal-dialog .modal-content .modal-body form .input-wrapper input::-webkit-input-placeholder {
+            /* Chrome/Opera/Safari */
+            color: rgba(255, 255, 255, 0.7); }
+          .modal-bitcoins .modal-dialog .modal-content .modal-body form .input-wrapper input::-moz-placeholder {
+            /* Firefox 19+ */
+            color: rgba(255, 255, 255, 0.7); }
+          .modal-bitcoins .modal-dialog .modal-content .modal-body form .input-wrapper input:-ms-input-placeholder {
+            /* IE 10+ */
+            color: rgba(255, 255, 255, 0.7); }
+          .modal-bitcoins .modal-dialog .modal-content .modal-body form .input-wrapper input:-moz-placeholder {
+            /* Firefox 18- */
+            color: rgba(255, 255, 255, 0.7); }
+        .modal-bitcoins .modal-dialog .modal-content .modal-body form .input-wrapper.qr:after {
+          background: url("../img/qr-code-mobile.png") no-repeat;
+          background-size: 100% 100%;
+          content: '';
+          display: inline-block;
+          height: 30px;
+          position: absolute;
+          right: 13px;
+          top: 13px;
+          width: 30px; }
+        .modal-bitcoins .modal-dialog .modal-content .modal-body form .input-wrapper.amount {
+          display: inline-block;
+          width: 70%; }
+          @media (min-width: 375px) {
+            .modal-bitcoins .modal-dialog .modal-content .modal-body form .input-wrapper.amount {
+              width: 76%; } }
+          @media (min-width: 600px) {
+            .modal-bitcoins .modal-dialog .modal-content .modal-body form .input-wrapper.amount {
+              width: 70%; } }
+      .modal-bitcoins .modal-dialog .modal-content .modal-body form .send-button {
+        float: right; }
+        .modal-bitcoins .modal-dialog .modal-content .modal-body form .send-button img {
+          height: 56px; }
+
+.modal-bitcoins#bitcoin-2 .modal-dialog .modal-content {
+  background: url("../img/send-bitcoins-mobile.png") no-repeat;
+  background-size: 100% 100%; }
+  .modal-bitcoins#bitcoin-2 .modal-dialog .modal-content .modal-header .bitcoin-title {
+    color: #cbd0fe; }
+  .modal-bitcoins#bitcoin-2 .modal-dialog .modal-content .modal-header .bitcoin-amount {
+    color: #cbd0fe; }
+  .modal-bitcoins#bitcoin-2 .modal-dialog .modal-content .modal-header .small-amounts {
+    color: #cbd0fe; }
+
+.referral-page .left-menu .nav-tabs li a {
+  background-color: transparent; }
+  .referral-page .left-menu .nav-tabs li a:hover {
+    background-color: transparent; }
+
 .main-menu {
   left: 35px;
   position: absolute; }
@@ -611,6 +890,10 @@ body.main-page-body .header {
         background: url("../img/more-icon-active.png") no-repeat; }
       .main-menu .nav-tabs li:not(:last-child) {
         margin-bottom: 6.5vh; }
+
+@media (min-width: 1600px) {
+  .referral-page .main-menu {
+    top: 266px; } }
 
 .main-block::-webkit-scrollbar-track {
   background-color: #f4f4f4;
@@ -736,507 +1019,1057 @@ body.main-page-body .header {
   .main-block .tab-content {
     padding-left: 100px; } }
 
-.main-block .tab-content .tab-pane .bitcoin-block {
-  margin-bottom: 30px; }
-  @media (min-width: 1200px) {
-    .main-block .tab-content .tab-pane .bitcoin-block {
-      margin-bottom: 0; } }
-  .main-block .tab-content .tab-pane .bitcoin-block .col-xs-9, .main-block .tab-content .tab-pane .bitcoin-block .col-xs-3 {
-    padding: 0 5px; }
-  .main-block .tab-content .tab-pane .bitcoin-block .col-lg-9 {
-    padding-right: 10px; }
-  .main-block .tab-content .tab-pane .bitcoin-block .col-lg-3 {
-    padding-left: 10px; }
-  .main-block .tab-content .tab-pane .bitcoin-block .carousel .carousel-inner {
+.main-block .tab-content .tab-pane .bitcoin-block .col-xs-9, .main-block .tab-content .tab-pane .bitcoin-block .col-xs-3 {
+  padding: 0 5px; }
+
+.main-block .tab-content .tab-pane .bitcoin-block .col-lg-9 {
+  padding: 0; }
+  @media (min-width: 768px) {
+    .main-block .tab-content .tab-pane .bitcoin-block .col-lg-9 {
+      padding: 0 10px 0 15px; } }
+
+.main-block .tab-content .tab-pane .bitcoin-block .col-lg-3 {
+  padding-left: 10px; }
+
+.main-block .tab-content .tab-pane .bitcoin-block .carousel .carousel-inner {
+  background: #fff !important; }
+  .main-block .tab-content .tab-pane .bitcoin-block .carousel .carousel-inner .item {
     background: #fff !important; }
-    .main-block .tab-content .tab-pane .bitcoin-block .carousel .carousel-inner .item {
-      background: #fff !important; }
-      .main-block .tab-content .tab-pane .bitcoin-block .carousel .carousel-inner .item img {
-        border-radius: 20px;
-        width: 100%; }
-  .main-block .tab-content .tab-pane .bitcoin-block .carousel .carousel-control {
-    background: no-repeat;
+    .main-block .tab-content .tab-pane .bitcoin-block .carousel .carousel-inner .item img {
+      width: 100%; }
+      @media (min-width: 768px) {
+        .main-block .tab-content .tab-pane .bitcoin-block .carousel .carousel-inner .item img {
+          border-radius: 20px; } }
+
+.main-block .tab-content .tab-pane .bitcoin-block .carousel .carousel-control {
+  background: no-repeat;
+  bottom: 60px;
+  display: none;
+  left: auto;
+  opacity: 1;
+  right: 85px;
+  top: auto;
+  width: 75px;
+  z-index: 2; }
+  @media (min-width: 768px) {
+    .main-block .tab-content .tab-pane .bitcoin-block .carousel .carousel-control {
+      display: block; } }
+  @media (min-width: 992px) {
+    .main-block .tab-content .tab-pane .bitcoin-block .carousel .carousel-control {
+      right: 63px; } }
+  .main-block .tab-content .tab-pane .bitcoin-block .carousel .carousel-control .glyphicon {
+    height: 75px;
+    margin: 0;
+    position: static;
+    width: 75px; }
+    .main-block .tab-content .tab-pane .bitcoin-block .carousel .carousel-control .glyphicon:before {
+      background: url("../img/arrow-left.png") no-repeat;
+      display: inline-block;
+      content: '';
+      height: 75px;
+      width: 75px; }
+  .main-block .tab-content .tab-pane .bitcoin-block .carousel .carousel-control.right {
     bottom: 60px;
     left: auto;
-    opacity: 1;
-    right: 85px;
-    top: auto;
-    width: 75px;
-    z-index: 2; }
+    right: 0;
+    top: auto; }
     @media (min-width: 992px) {
-      .main-block .tab-content .tab-pane .bitcoin-block .carousel .carousel-control {
-        right: 63px; } }
-    .main-block .tab-content .tab-pane .bitcoin-block .carousel .carousel-control .glyphicon {
-      height: 75px;
-      margin: 0;
-      position: static;
-      width: 75px; }
-      .main-block .tab-content .tab-pane .bitcoin-block .carousel .carousel-control .glyphicon:before {
-        background: url("../img/arrow-left.png") no-repeat;
-        display: inline-block;
-        content: '';
-        height: 75px;
-        width: 75px; }
-    .main-block .tab-content .tab-pane .bitcoin-block .carousel .carousel-control.right {
-      bottom: 60px;
-      left: auto;
-      right: 0;
-      top: auto; }
-      @media (min-width: 992px) {
-        .main-block .tab-content .tab-pane .bitcoin-block .carousel .carousel-control.right {
-          right: -35px; } }
-      .main-block .tab-content .tab-pane .bitcoin-block .carousel .carousel-control.right .glyphicon:before {
-        background: url("../img/arrow-right.png") no-repeat;
-        content: ''; }
-  .main-block .tab-content .tab-pane .bitcoin-block .send-btc-block {
-    background-image: -ms-linear-gradient(-45deg, rgba(155, 74, 191, 0.6) 0%, rgba(117, 66, 205, 0.6) 25%, rgba(78, 57, 218, 0.6) 52%, rgba(40, 84, 228, 0.6) 84%, rgba(2, 111, 238, 0.6) 100%);
-    border-radius: 20px;
-    -webkit-box-shadow: 2.121px 2.121px 54px 0px rgba(0, 0, 0, 0.25);
-    box-shadow: 2.121px 2.121px 54px 0px rgba(0, 0, 0, 0.25);
+      .main-block .tab-content .tab-pane .bitcoin-block .carousel .carousel-control.right {
+        right: -35px; } }
+    .main-block .tab-content .tab-pane .bitcoin-block .carousel .carousel-control.right .glyphicon:before {
+      background: url("../img/arrow-right.png") no-repeat;
+      content: ''; }
+
+.main-block .tab-content .tab-pane .bitcoin-block .mobile-graph-info {
+  margin: 25px 0; }
+  .main-block .tab-content .tab-pane .bitcoin-block .mobile-graph-info .left-info, .main-block .tab-content .tab-pane .bitcoin-block .mobile-graph-info .right-info {
     display: inline-block;
-    margin: -60px 0 0 0;
-    padding: 40px 35px;
-    position: relative;
-    width: 100%; }
-    @media (min-width: 768px) {
-      .main-block .tab-content .tab-pane .bitcoin-block .send-btc-block {
-        width: 330px; } }
-    @media (min-width: 992px) {
-      .main-block .tab-content .tab-pane .bitcoin-block .send-btc-block {
-        margin: -85px 0 0 55px; } }
-    @media (min-width: 1200px) {
-      .main-block .tab-content .tab-pane .bitcoin-block .send-btc-block {
-        margin: -85px 0 0 35px;
-        width: 390px; } }
-    @media (min-width: 1500px) {
-      .main-block .tab-content .tab-pane .bitcoin-block .send-btc-block {
-        margin: -85px 0 0 45px;
-        width: 440px; } }
-    @media (min-width: 1700px) {
-      .main-block .tab-content .tab-pane .bitcoin-block .send-btc-block {
-        margin: -85px 0 0 55px; } }
-    .main-block .tab-content .tab-pane .bitcoin-block .send-btc-block .send-title {
-      color: #fff;
-      font-size: 17.9px;
-      letter-spacing: 2px;
-      line-height: 17.9px;
-      margin-bottom: 25px;
-      padding-left: 16px; }
-    .main-block .tab-content .tab-pane .bitcoin-block .send-btc-block .input-wrapper {
-      background-color: rgba(255, 255, 255, 0.29);
-      border-radius: 10px;
-      margin-bottom: 25px;
-      position: relative; }
-      .main-block .tab-content .tab-pane .bitcoin-block .send-btc-block .input-wrapper:after {
-        background: url("../img/qr-code.png") no-repeat;
-        background-size: 100% 100%;
-        content: '';
-        display: inline-block;
-        height: 40px;
-        position: absolute;
-        right: 9px;
-        top: 9px;
-        width: 40px; }
-      .main-block .tab-content .tab-pane .bitcoin-block .send-btc-block .input-wrapper input {
-        -webkit-appearance: none;
-        -moz-appearance: none;
-        appearance: none;
-        background-color: transparent;
-        border: 0;
-        -webkit-box-shadow: none;
-        box-shadow: none;
-        color: rgba(255, 255, 255, 0.7);
-        font-size: 17.9px;
-        line-height: 17.9px;
-        outline: 0;
-        padding: 18px 60px 18px 18px;
-        width: 100%; }
-        .main-block .tab-content .tab-pane .bitcoin-block .send-btc-block .input-wrapper input::-webkit-input-placeholder {
-          /* Chrome/Opera/Safari */
-          color: rgba(255, 255, 255, 0.7); }
-        .main-block .tab-content .tab-pane .bitcoin-block .send-btc-block .input-wrapper input::-moz-placeholder {
-          /* Firefox 19+ */
-          color: rgba(255, 255, 255, 0.7); }
-        .main-block .tab-content .tab-pane .bitcoin-block .send-btc-block .input-wrapper input:-ms-input-placeholder {
-          /* IE 10+ */
-          color: rgba(255, 255, 255, 0.7); }
-        .main-block .tab-content .tab-pane .bitcoin-block .send-btc-block .input-wrapper input:-moz-placeholder {
-          /* Firefox 18- */
-          color: rgba(255, 255, 255, 0.7); }
-    .main-block .tab-content .tab-pane .bitcoin-block .send-btc-block span.btc-amount, .main-block .tab-content .tab-pane .bitcoin-block .send-btc-block span.usd-amount {
-      color: #fff;
-      display: inline-block;
-      font-size: 19.6px;
-      font-weight: 600;
-      letter-spacing: 2px;
-      line-height: 19.6px;
-      vertical-align: middle; }
-    .main-block .tab-content .tab-pane .bitcoin-block .send-btc-block .arrows {
-      margin: 0 9px;
-      vertical-align: middle; }
-    .main-block .tab-content .tab-pane .bitcoin-block .send-btc-block .input-message-wrapper {
-      background-color: rgba(255, 255, 255, 0.29);
-      border-radius: 10px;
-      display: inline-block;
-      margin-top: 25px;
-      width: 77%; }
-      .main-block .tab-content .tab-pane .bitcoin-block .send-btc-block .input-message-wrapper input {
-        -webkit-appearance: none;
-        -moz-appearance: none;
-        appearance: none;
-        background-color: transparent;
-        border: 0;
-        -webkit-box-shadow: none;
-        box-shadow: none;
-        color: rgba(255, 255, 255, 0.7);
-        font-size: 17.9px;
-        line-height: 17.9px;
-        outline: 0;
-        padding: 18px;
-        width: 100%; }
-        .main-block .tab-content .tab-pane .bitcoin-block .send-btc-block .input-message-wrapper input::-webkit-input-placeholder {
-          /* Chrome/Opera/Safari */
-          color: rgba(255, 255, 255, 0.7); }
-        .main-block .tab-content .tab-pane .bitcoin-block .send-btc-block .input-message-wrapper input::-moz-placeholder {
-          /* Firefox 19+ */
-          color: rgba(255, 255, 255, 0.7); }
-        .main-block .tab-content .tab-pane .bitcoin-block .send-btc-block .input-message-wrapper input:-ms-input-placeholder {
-          /* IE 10+ */
-          color: rgba(255, 255, 255, 0.7); }
-        .main-block .tab-content .tab-pane .bitcoin-block .send-btc-block .input-message-wrapper input:-moz-placeholder {
-          /* Firefox 18- */
-          color: rgba(255, 255, 255, 0.7); }
-    .main-block .tab-content .tab-pane .bitcoin-block .send-btc-block .send-button {
-      background: url("../img/send-button.png") no-repeat;
-      background-size: 100% 100%;
-      display: inline-block;
-      float: right;
-      height: 57px;
-      margin-top: 25px;
-      width: 20%; }
-  .main-block .tab-content .tab-pane .bitcoin-block .cloud-mining-block {
-    background: url("../img/cloud-mining-background.png") no-repeat;
-    background-size: 100% 100%;
-    border-radius: 20px;
-    display: inline-block;
-    float: right;
-    margin-top: 20px;
-    width: 100%; }
-    @media (min-width: 768px) {
-      .main-block .tab-content .tab-pane .bitcoin-block .cloud-mining-block {
-        width: calc(100% - 350px); } }
-    @media (min-width: 992px) {
-      .main-block .tab-content .tab-pane .bitcoin-block .cloud-mining-block {
-        width: calc(100% - 405px); } }
-    @media (min-width: 1200px) {
-      .main-block .tab-content .tab-pane .bitcoin-block .cloud-mining-block {
-        width: calc(100% - 447px); } }
-    @media (min-width: 1500px) {
-      .main-block .tab-content .tab-pane .bitcoin-block .cloud-mining-block {
-        width: calc(100% - 508px); } }
-    @media (min-width: 1700px) {
-      .main-block .tab-content .tab-pane .bitcoin-block .cloud-mining-block {
-        width: calc(100% - 518px); } }
-    .main-block .tab-content .tab-pane .bitcoin-block .cloud-mining-block .cloud-title {
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding: 12px 0;
+    text-align: center; }
+    .main-block .tab-content .tab-pane .bitcoin-block .mobile-graph-info .left-info img, .main-block .tab-content .tab-pane .bitcoin-block .mobile-graph-info .right-info img {
+      height: 14px;
+      margin-right: 8.7%;
+      vertical-align: baseline; }
+    .main-block .tab-content .tab-pane .bitcoin-block .mobile-graph-info .left-info span, .main-block .tab-content .tab-pane .bitcoin-block .mobile-graph-info .right-info span {
+      background-image: -ms-linear-gradient(-165deg, #4691ee 0%, #4ca9d9 25%, #51c0c4 100%);
+      -webkit-background-clip: text;
+      color: transparent; }
+      .main-block .tab-content .tab-pane .bitcoin-block .mobile-graph-info .left-info span.title, .main-block .tab-content .tab-pane .bitcoin-block .mobile-graph-info .right-info span.title {
+        display: block;
+        font-size: 11.5px;
+        font-weight: 400;
+        line-height: 11.5px;
+        margin-top: 11px; }
+      .main-block .tab-content .tab-pane .bitcoin-block .mobile-graph-info .left-info span.amount, .main-block .tab-content .tab-pane .bitcoin-block .mobile-graph-info .right-info span.amount {
+        font-size: 21px;
+        line-height: 21px; }
+  .main-block .tab-content .tab-pane .bitcoin-block .mobile-graph-info .left-info {
+    border-right: 1px solid #e5edf2;
+    width: 52%; }
+  .main-block .tab-content .tab-pane .bitcoin-block .mobile-graph-info .right-info {
+    width: 46%; }
+    .main-block .tab-content .tab-pane .bitcoin-block .mobile-graph-info .right-info span {
       background-clip: text;
       -webkit-background-clip: text;
       background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #aa6bca), color-stop(1, #3088f0));
       background-image: gradient(linear, left top, right top, color-stop(0, #aa6bca), color-stop(1, #3088f0));
-      border-bottom: 1px solid #fff;
-      color: transparent;
-      font-size: 19.6px;
-      font-weight: 600;
-      letter-spacing: 3px;
-      line-height: 19.6px;
-      padding: 32px 0 28px;
-      text-align: center; }
-      .main-block .tab-content .tab-pane .bitcoin-block .cloud-mining-block .cloud-title:after {
-        background: url("../img/cloud-arrow.png") no-repeat;
-        content: '';
-        display: inline-block;
-        height: 10px;
-        margin: 4px 0 0 10px;
-        vertical-align: top;
-        width: 12px; }
-    .main-block .tab-content .tab-pane .bitcoin-block .cloud-mining-block .cloud {
-      display: inline-block;
-      padding: 36px 0;
-      text-align: center;
-      width: 100%; }
-      @media (min-width: 768px) {
-        .main-block .tab-content .tab-pane .bitcoin-block .cloud-mining-block .cloud {
-          width: 32.5%; } }
-      @media (min-width: 1800px) {
-        .main-block .tab-content .tab-pane .bitcoin-block .cloud-mining-block .cloud {
-          width: 32.9%; } }
-      .main-block .tab-content .tab-pane .bitcoin-block .cloud-mining-block .cloud .sub-title {
-        background-clip: text;
-        -webkit-background-clip: text;
-        background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #58c2c6), color-stop(1, #4d95ef));
-        background-image: gradient(linear, left top, right top, color-stop(0, #58c2c6), color-stop(1, #4d95ef));
-        color: transparent;
-        font-size: 20.9px;
+      color: transparent; }
+
+.main-block .tab-content .tab-pane .bitcoin-block .mobile-balance {
+  background: url("../img/mobile-balance-back.png") no-repeat;
+  background-size: cover;
+  color: #fff;
+  padding: 40px 45px; }
+  .main-block .tab-content .tab-pane .bitcoin-block .mobile-balance .balance-title {
+    font-size: 14.5px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    line-height: 14.5px;
+    margin-bottom: 16px; }
+  .main-block .tab-content .tab-pane .bitcoin-block .mobile-balance .balance-amount {
+    font-size: 17.5px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    line-height: 17.5px; }
+
+.main-block .tab-content .tab-pane .bitcoin-block .mobile-transactions {
+  padding: 0 0 55px 50px; }
+  .main-block .tab-content .tab-pane .bitcoin-block .mobile-transactions .vertical-line {
+    background-color: #e7e6e7;
+    height: 52px;
+    width: 1px; }
+    .main-block .tab-content .tab-pane .bitcoin-block .mobile-transactions .vertical-line.not-first {
+      margin-top: -9px; }
+  .main-block .tab-content .tab-pane .bitcoin-block .mobile-transactions .transaction {
+    position: relative; }
+    .main-block .tab-content .tab-pane .bitcoin-block .mobile-transactions .transaction span {
+      display: block;
+      padding-left: 6%; }
+      @media (min-width: 500px) {
+        .main-block .tab-content .tab-pane .bitcoin-block .mobile-transactions .transaction span {
+          padding-left: 9.9%; } }
+      .main-block .tab-content .tab-pane .bitcoin-block .mobile-transactions .transaction span.tran-amount {
+        color: #4f4f4f;
+        font-size: 14.8px;
+        font-weight: 400;
         letter-spacing: 2px;
-        line-height: 20.9px;
-        margin-bottom: 16px; }
-        @media (min-width: 1200px) {
-          .main-block .tab-content .tab-pane .bitcoin-block .cloud-mining-block .cloud .sub-title {
-            font-size: 16.9px;
-            line-height: 16.9px; } }
-        @media (min-width: 1400px) {
-          .main-block .tab-content .tab-pane .bitcoin-block .cloud-mining-block .cloud .sub-title {
-            font-size: 20.9px;
-            line-height: 20.9px; } }
-      .main-block .tab-content .tab-pane .bitcoin-block .cloud-mining-block .cloud .sub-info {
-        color: #5699ef;
-        font-size: 11.2px;
-        font-weight: 700;
-        letter-spacing: 1px;
-        line-height: 11.2px; }
-      @media (min-width: 768px) {
-        .main-block .tab-content .tab-pane .bitcoin-block .cloud-mining-block .cloud.middle {
-          border-left: 1px solid #fff;
-          border-right: 1px solid #fff; } }
-  .main-block .tab-content .tab-pane .bitcoin-block .balance-block {
-    border-radius: 20px;
-    -webkit-box-shadow: 2px 2px 54px 0px rgba(0, 0, 0, 0.08);
-    box-shadow: 2px 2px 54px 0px rgba(0, 0, 0, 0.08);
-    margin-top: 30px; }
-    @media (min-width: 1200px) {
-      .main-block .tab-content .tab-pane .bitcoin-block .balance-block {
-        margin-top: 0; } }
-    .main-block .tab-content .tab-pane .bitcoin-block .balance-block .balance-header {
-      background-image: -ms-linear-gradient(-165deg, #4691ee 0%, #4ca9d9 25%, #51c0c4 100%);
-      border-top-left-radius: 20px;
-      border-top-right-radius: 20px;
-      color: #fff;
-      font-size: 15.9px;
-      line-height: 17.4px;
-      opacity: 0.929;
-      padding: 20px 25px; }
-      @media (min-width: 768px) {
-        .main-block .tab-content .tab-pane .bitcoin-block .balance-block .balance-header {
-          font-size: 17.9px;
-          line-height: 19.4px;
-          padding: 35px 40px; } }
-      @media (min-width: 1200px) {
-        .main-block .tab-content .tab-pane .bitcoin-block .balance-block .balance-header {
-          font-size: 15.9px;
-          line-height: 17.4px;
-          padding: 20px 25px; } }
-      @media (min-width: 1500px) {
-        .main-block .tab-content .tab-pane .bitcoin-block .balance-block .balance-header {
-          font-size: 17.9px;
-          line-height: 19.4px;
-          padding: 35px 40px; } }
-      .main-block .tab-content .tab-pane .bitcoin-block .balance-block .balance-header span {
-        letter-spacing: 2px; }
-        .main-block .tab-content .tab-pane .bitcoin-block .balance-block .balance-header span.amount {
-          float: right;
-          font-size: 19.4px;
-          font-weight: 600;
-          letter-spacing: 0;
-          line-height: 19.4px; }
-          @media (min-width: 1200px) {
-            .main-block .tab-content .tab-pane .bitcoin-block .balance-block .balance-header span.amount {
-              font-size: 17.4px;
-              line-height: 17.4px; } }
-          @media (min-width: 1500px) {
-            .main-block .tab-content .tab-pane .bitcoin-block .balance-block .balance-header span.amount {
-              font-size: 19.4px;
-              line-height: 19.4px; } }
-      .main-block .tab-content .tab-pane .bitcoin-block .balance-block .balance-header.bitcoins {
-        margin-top: 20px;
-        position: relative;
-        text-align: center; }
-        .main-block .tab-content .tab-pane .bitcoin-block .balance-block .balance-header.bitcoins span {
-          text-align: center; }
-        .main-block .tab-content .tab-pane .bitcoin-block .balance-block .balance-header.bitcoins .bitcoin-arrow {
-          border-left: 10px solid transparent;
-          border-right: 10px solid transparent;
-          border-top: 10px solid #5ab8d2;
-          bottom: -9px;
-          height: 0;
-          left: calc(50% - 10px);
+        line-height: 14.8px;
+        margin-bottom: 8px; }
+        .main-block .tab-content .tab-pane .bitcoin-block .mobile-transactions .transaction span.tran-amount:before {
+          background-image: -ms-linear-gradient(-165deg, #4691ee 0%, #4ca9d9 25%, #51c0c4 100%);
+          border-radius: 50%;
+          content: '';
+          display: inline-block;
+          height: 9px;
+          left: -4px;
           position: absolute;
-          width: 0; }
-    .main-block .tab-content .tab-pane .bitcoin-block .balance-block .bitcoin-links a {
+          top: 6px;
+          width: 9px; }
+      .main-block .tab-content .tab-pane .bitcoin-block .mobile-transactions .transaction span.tran-date {
+        color: #c2c2c2;
+        font-size: 11px;
+        font-weight: 700;
+        letter-spacing: .5px;
+        line-height: 11px; }
+    .main-block .tab-content .tab-pane .bitcoin-block .mobile-transactions .transaction a.tran-info {
+      -webkit-box-shadow: none;
+      box-shadow: none;
+      outline: 0;
+      position: absolute;
+      right: 35px;
+      top: 5px; }
+      .main-block .tab-content .tab-pane .bitcoin-block .mobile-transactions .transaction a.tran-info img {
+        height: 22px;
+        width: 22px; }
+    .main-block .tab-content .tab-pane .bitcoin-block .mobile-transactions .transaction:last-child span.tran-amount:before {
+      background-image: -ms-linear-gradient(-18deg, #9b4abf 0%, #7542cd 39%, #4e39da 81%); }
+
+.main-block .tab-content .tab-pane .bitcoin-block .mobile-bitcoin-link {
+  background-image: -ms-linear-gradient(-7deg, rgba(118, 83, 197, 0.94) 0%, rgba(97, 98, 205, 0.94) 25%, rgba(76, 112, 213, 0.94) 52%, rgba(130, 97, 197, 0.94) 84%, rgba(184, 82, 180, 0.94) 99%);
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  display: inline-block;
+  outline: 0;
+  padding: 25px 40px;
+  text-decoration: none;
+  width: 100%; }
+  .main-block .tab-content .tab-pane .bitcoin-block .mobile-bitcoin-link span {
+    color: #fff;
+    font-size: 12.5px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    line-height: 12.5px; }
+  .main-block .tab-content .tab-pane .bitcoin-block .mobile-bitcoin-link img.left {
+    height: 12px;
+    width: 12px;
+    margin-right: 22px; }
+  .main-block .tab-content .tab-pane .bitcoin-block .mobile-bitcoin-link img.right {
+    height: 9px;
+    float: right;
+    margin-top: 5px;
+    vertical-align: inherit; }
+  .main-block .tab-content .tab-pane .bitcoin-block .mobile-bitcoin-link.get {
+    background-image: -ms-linear-gradient(-165deg, rgba(70, 145, 238, 0.93) 0%, rgba(76, 169, 217, 0.93) 25%, rgba(81, 192, 196, 0.93) 100%); }
+  .main-block .tab-content .tab-pane .bitcoin-block .mobile-bitcoin-link.cloud {
+    background: #fdfcfd; }
+    .main-block .tab-content .tab-pane .bitcoin-block .mobile-bitcoin-link.cloud span {
+      color: #a3a3a3; }
+    .main-block .tab-content .tab-pane .bitcoin-block .mobile-bitcoin-link.cloud img.left {
+      height: auto;
+      margin-right: 19px;
+      width: 15px; }
+
+.main-block .tab-content .tab-pane .bitcoin-block .send-btc-block {
+  background-image: -ms-linear-gradient(-45deg, rgba(155, 74, 191, 0.6) 0%, rgba(117, 66, 205, 0.6) 25%, rgba(78, 57, 218, 0.6) 52%, rgba(40, 84, 228, 0.6) 84%, rgba(2, 111, 238, 0.6) 100%);
+  border-radius: 20px;
+  -webkit-box-shadow: 2.121px 2.121px 54px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 2.121px 2.121px 54px 0px rgba(0, 0, 0, 0.25);
+  display: inline-block;
+  padding: 40px 35px;
+  position: relative;
+  width: 100%; }
+  @media (min-width: 768px) {
+    .main-block .tab-content .tab-pane .bitcoin-block .send-btc-block {
+      margin: -60px 0 0 0;
+      width: 330px; } }
+  @media (min-width: 992px) {
+    .main-block .tab-content .tab-pane .bitcoin-block .send-btc-block {
+      margin: -85px 0 0 55px; } }
+  @media (min-width: 1200px) {
+    .main-block .tab-content .tab-pane .bitcoin-block .send-btc-block {
+      margin: -85px 0 0 35px;
+      width: 390px; } }
+  @media (min-width: 1500px) {
+    .main-block .tab-content .tab-pane .bitcoin-block .send-btc-block {
+      margin: -85px 0 0 45px;
+      width: 440px; } }
+  @media (min-width: 1700px) {
+    .main-block .tab-content .tab-pane .bitcoin-block .send-btc-block {
+      margin: -85px 0 0 55px; } }
+  .main-block .tab-content .tab-pane .bitcoin-block .send-btc-block .send-title {
+    color: #fff;
+    font-size: 17.9px;
+    letter-spacing: 2px;
+    line-height: 17.9px;
+    margin-bottom: 25px;
+    padding-left: 16px; }
+  .main-block .tab-content .tab-pane .bitcoin-block .send-btc-block .input-wrapper {
+    background-color: rgba(255, 255, 255, 0.29);
+    border-radius: 10px;
+    margin-bottom: 25px;
+    position: relative; }
+    .main-block .tab-content .tab-pane .bitcoin-block .send-btc-block .input-wrapper:after {
+      background: url("../img/qr-code.png") no-repeat;
+      background-size: 100% 100%;
+      content: '';
+      display: inline-block;
+      height: 40px;
+      position: absolute;
+      right: 9px;
+      top: 9px;
+      width: 40px; }
+    .main-block .tab-content .tab-pane .bitcoin-block .send-btc-block .input-wrapper input {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      background-color: transparent;
+      border: 0;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+      color: rgba(255, 255, 255, 0.7);
+      font-size: 17.9px;
+      line-height: 17.9px;
+      outline: 0;
+      padding: 18px 60px 18px 18px;
+      width: 100%; }
+      .main-block .tab-content .tab-pane .bitcoin-block .send-btc-block .input-wrapper input::-webkit-input-placeholder {
+        /* Chrome/Opera/Safari */
+        color: rgba(255, 255, 255, 0.7); }
+      .main-block .tab-content .tab-pane .bitcoin-block .send-btc-block .input-wrapper input::-moz-placeholder {
+        /* Firefox 19+ */
+        color: rgba(255, 255, 255, 0.7); }
+      .main-block .tab-content .tab-pane .bitcoin-block .send-btc-block .input-wrapper input:-ms-input-placeholder {
+        /* IE 10+ */
+        color: rgba(255, 255, 255, 0.7); }
+      .main-block .tab-content .tab-pane .bitcoin-block .send-btc-block .input-wrapper input:-moz-placeholder {
+        /* Firefox 18- */
+        color: rgba(255, 255, 255, 0.7); }
+  .main-block .tab-content .tab-pane .bitcoin-block .send-btc-block span.btc-amount, .main-block .tab-content .tab-pane .bitcoin-block .send-btc-block span.usd-amount {
+    color: #fff;
+    display: inline-block;
+    font-size: 19.6px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    line-height: 19.6px;
+    vertical-align: middle; }
+  .main-block .tab-content .tab-pane .bitcoin-block .send-btc-block .arrows {
+    margin: 0 9px;
+    vertical-align: middle; }
+  .main-block .tab-content .tab-pane .bitcoin-block .send-btc-block .input-message-wrapper {
+    background-color: rgba(255, 255, 255, 0.29);
+    border-radius: 10px;
+    display: inline-block;
+    margin-top: 25px;
+    width: 77%; }
+    .main-block .tab-content .tab-pane .bitcoin-block .send-btc-block .input-message-wrapper input {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      background-color: transparent;
+      border: 0;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+      color: rgba(255, 255, 255, 0.7);
+      font-size: 17.9px;
+      line-height: 17.9px;
+      outline: 0;
+      padding: 18px;
+      width: 100%; }
+      .main-block .tab-content .tab-pane .bitcoin-block .send-btc-block .input-message-wrapper input::-webkit-input-placeholder {
+        /* Chrome/Opera/Safari */
+        color: rgba(255, 255, 255, 0.7); }
+      .main-block .tab-content .tab-pane .bitcoin-block .send-btc-block .input-message-wrapper input::-moz-placeholder {
+        /* Firefox 19+ */
+        color: rgba(255, 255, 255, 0.7); }
+      .main-block .tab-content .tab-pane .bitcoin-block .send-btc-block .input-message-wrapper input:-ms-input-placeholder {
+        /* IE 10+ */
+        color: rgba(255, 255, 255, 0.7); }
+      .main-block .tab-content .tab-pane .bitcoin-block .send-btc-block .input-message-wrapper input:-moz-placeholder {
+        /* Firefox 18- */
+        color: rgba(255, 255, 255, 0.7); }
+  .main-block .tab-content .tab-pane .bitcoin-block .send-btc-block .send-button {
+    background: url("../img/send-button.png") no-repeat;
+    background-size: 100% 100%;
+    display: inline-block;
+    float: right;
+    height: 57px;
+    margin-top: 25px;
+    width: 20%; }
+
+.main-block .tab-content .tab-pane .bitcoin-block .cloud-mining-block {
+  background: url("../img/cloud-mining-background.png") no-repeat;
+  background-size: 100% 100%;
+  border-radius: 20px;
+  display: inline-block;
+  float: right;
+  margin-top: 20px;
+  width: 100%; }
+  @media (min-width: 768px) {
+    .main-block .tab-content .tab-pane .bitcoin-block .cloud-mining-block {
+      width: calc(100% - 350px); } }
+  @media (min-width: 992px) {
+    .main-block .tab-content .tab-pane .bitcoin-block .cloud-mining-block {
+      width: calc(100% - 405px); } }
+  @media (min-width: 1200px) {
+    .main-block .tab-content .tab-pane .bitcoin-block .cloud-mining-block {
+      width: calc(100% - 447px); } }
+  @media (min-width: 1500px) {
+    .main-block .tab-content .tab-pane .bitcoin-block .cloud-mining-block {
+      width: calc(100% - 508px); } }
+  @media (min-width: 1700px) {
+    .main-block .tab-content .tab-pane .bitcoin-block .cloud-mining-block {
+      width: calc(100% - 518px); } }
+  .main-block .tab-content .tab-pane .bitcoin-block .cloud-mining-block .cloud-title {
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #aa6bca), color-stop(1, #3088f0));
+    background-image: gradient(linear, left top, right top, color-stop(0, #aa6bca), color-stop(1, #3088f0));
+    border-bottom: 1px solid #fff;
+    color: transparent;
+    font-size: 19.6px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    line-height: 19.6px;
+    padding: 32px 0 28px;
+    text-align: center; }
+    .main-block .tab-content .tab-pane .bitcoin-block .cloud-mining-block .cloud-title:after {
+      background: url("../img/cloud-arrow.png") no-repeat;
+      content: '';
+      display: inline-block;
+      height: 10px;
+      margin: 4px 0 0 10px;
+      vertical-align: top;
+      width: 12px; }
+  .main-block .tab-content .tab-pane .bitcoin-block .cloud-mining-block .cloud {
+    display: inline-block;
+    padding: 36px 0;
+    text-align: center;
+    width: 100%; }
+    @media (min-width: 768px) {
+      .main-block .tab-content .tab-pane .bitcoin-block .cloud-mining-block .cloud {
+        width: 32.5%; } }
+    @media (min-width: 1800px) {
+      .main-block .tab-content .tab-pane .bitcoin-block .cloud-mining-block .cloud {
+        width: 32.9%; } }
+    .main-block .tab-content .tab-pane .bitcoin-block .cloud-mining-block .cloud .sub-title {
       background-clip: text;
       -webkit-background-clip: text;
       background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #58c2c6), color-stop(1, #4d95ef));
       background-image: gradient(linear, left top, right top, color-stop(0, #58c2c6), color-stop(1, #4d95ef));
       color: transparent;
-      display: block;
-      font-size: 14px;
-      font-weight: 700;
+      font-size: 20.9px;
       letter-spacing: 2px;
-      line-height: 14px;
-      padding: 30px 0;
-      text-align: center; }
+      line-height: 20.9px;
+      margin-bottom: 16px; }
       @media (min-width: 1200px) {
-        .main-block .tab-content .tab-pane .bitcoin-block .balance-block .bitcoin-links a {
-          padding: 25px 0; } }
-      @media (min-width: 1500px) {
-        .main-block .tab-content .tab-pane .bitcoin-block .balance-block .bitcoin-links a {
-          padding: 30px 0; } }
-      .main-block .tab-content .tab-pane .bitcoin-block .balance-block .bitcoin-links a:not(:last-child) {
-        border-bottom: 1px solid #e7e7e7; }
-      .main-block .tab-content .tab-pane .bitcoin-block .balance-block .bitcoin-links a.send {
-        color: #a3a3a3; }
-    .main-block .tab-content .tab-pane .bitcoin-block .balance-block .panel-group {
-      margin: 0;
-      padding: 24px 0 0;
-      -webkit-transition: all 1s linear;
-      transition: all 1s linear; }
-      .main-block .tab-content .tab-pane .bitcoin-block .balance-block .panel-group .panel {
-        border: 0;
-        margin: 0; }
-        .main-block .tab-content .tab-pane .bitcoin-block .balance-block .panel-group .panel .panel-heading {
-          background-color: transparent;
-          padding: 12px 15px; }
-          @media (min-width: 768px) {
-            .main-block .tab-content .tab-pane .bitcoin-block .balance-block .panel-group .panel .panel-heading {
-              padding: 24px 40px; } }
-          @media (min-width: 1200px) {
-            .main-block .tab-content .tab-pane .bitcoin-block .balance-block .panel-group .panel .panel-heading {
-              padding: 12px 15px; } }
-          @media (min-width: 1300px) {
-            .main-block .tab-content .tab-pane .bitcoin-block .balance-block .panel-group .panel .panel-heading {
-              padding: 12px 20px; } }
-          @media (min-width: 1700px) {
-            .main-block .tab-content .tab-pane .bitcoin-block .balance-block .panel-group .panel .panel-heading {
-              padding: 16px 30px; } }
-          @media (min-width: 1800px) {
-            .main-block .tab-content .tab-pane .bitcoin-block .balance-block .panel-group .panel .panel-heading {
-              padding: 24px 40px; } }
-          .main-block .tab-content .tab-pane .bitcoin-block .balance-block .panel-group .panel .panel-heading.last {
-            padding-bottom: 24px; }
-            @media (min-width: 768px) {
-              .main-block .tab-content .tab-pane .bitcoin-block .balance-block .panel-group .panel .panel-heading.last {
-                padding-bottom: 48px; } }
-            @media (min-width: 1200px) {
-              .main-block .tab-content .tab-pane .bitcoin-block .balance-block .panel-group .panel .panel-heading.last {
-                padding-bottom: 24px; } }
-            @media (min-width: 1700px) {
-              .main-block .tab-content .tab-pane .bitcoin-block .balance-block .panel-group .panel .panel-heading.last {
-                padding-bottom: 32px; } }
-            @media (min-width: 1800px) {
-              .main-block .tab-content .tab-pane .bitcoin-block .balance-block .panel-group .panel .panel-heading.last {
-                padding-bottom: 48px; } }
-          .main-block .tab-content .tab-pane .bitcoin-block .balance-block .panel-group .panel .panel-heading .panel-title {
-            line-height: inherit; }
-            .main-block .tab-content .tab-pane .bitcoin-block .balance-block .panel-group .panel .panel-heading .panel-title a {
-              color: #4f4f4f;
-              display: inline-block;
-              font-size: 15.4px;
-              font-weight: 600;
-              height: 44px;
-              letter-spacing: 2px;
-              line-height: 15.4px;
-              outline: 0;
-              position: relative;
-              text-decoration: none; }
-              @media (min-width: 768px) {
-                .main-block .tab-content .tab-pane .bitcoin-block .balance-block .panel-group .panel .panel-heading .panel-title a {
-                  font-size: 19.4px;
-                  line-height: 19.4px; } }
-              @media (min-width: 1200px) {
-                .main-block .tab-content .tab-pane .bitcoin-block .balance-block .panel-group .panel .panel-heading .panel-title a {
-                  font-size: 15.4px;
-                  line-height: 15.4px; } }
-              @media (min-width: 1400px) {
-                .main-block .tab-content .tab-pane .bitcoin-block .balance-block .panel-group .panel .panel-heading .panel-title a {
-                  font-size: 19.4px;
-                  line-height: 19.4px; } }
-              .main-block .tab-content .tab-pane .bitcoin-block .balance-block .panel-group .panel .panel-heading .panel-title a:before {
-                background: url("../img/balance-down.png") no-repeat;
-                background-size: 100% 100%;
-                content: '';
-                display: inline-block;
-                height: 44px;
-                position: absolute;
-                width: 44px; }
-              .main-block .tab-content .tab-pane .bitcoin-block .balance-block .panel-group .panel .panel-heading .panel-title a .balance-amount {
-                margin-bottom: 9px;
-                padding-left: 60px; }
-                @media (min-width: 768px) {
-                  .main-block .tab-content .tab-pane .bitcoin-block .balance-block .panel-group .panel .panel-heading .panel-title a .balance-amount {
-                    margin-bottom: 12px;
-                    padding-left: 70px; } }
-                @media (min-width: 1200px) {
-                  .main-block .tab-content .tab-pane .bitcoin-block .balance-block .panel-group .panel .panel-heading .panel-title a .balance-amount {
-                    margin-bottom: 9px;
-                    padding-left: 60px; } }
-                @media (min-width: 1600) {
-                  .main-block .tab-content .tab-pane .bitcoin-block .balance-block .panel-group .panel .panel-heading .panel-title a .balance-amount {
-                    margin-bottom: 12px;
-                    padding-left: 70px; } }
-              .main-block .tab-content .tab-pane .bitcoin-block .balance-block .panel-group .panel .panel-heading .panel-title a .balance-date {
-                color: #c2c2c2;
-                font-size: 12.6px;
-                font-weight: 700;
-                letter-spacing: .5px;
-                line-height: 12.6px;
-                padding-left: 60px; }
-                @media (min-width: 768px) {
-                  .main-block .tab-content .tab-pane .bitcoin-block .balance-block .panel-group .panel .panel-heading .panel-title a .balance-date {
-                    padding-left: 70px; } }
-                @media (min-width: 1200px) {
-                  .main-block .tab-content .tab-pane .bitcoin-block .balance-block .panel-group .panel .panel-heading .panel-title a .balance-date {
-                    padding-left: 60px; } }
-                @media (min-width: 1600) {
-                  .main-block .tab-content .tab-pane .bitcoin-block .balance-block .panel-group .panel .panel-heading .panel-title a .balance-date {
-                    padding-left: 70px; } }
-        .main-block .tab-content .tab-pane .bitcoin-block .balance-block .panel-group .panel .panel-collapse .panel-body {
-          border: 0;
-          padding: 11px 42px 16px; }
-          .main-block .tab-content .tab-pane .bitcoin-block .balance-block .panel-group .panel .panel-collapse .panel-body .balance-item {
-            color: #4f4f4f;
-            font-size: 13.4px;
-            letter-spacing: .5px;
-            line-height: 21px;
-            margin-bottom: 30px;
-            overflow: hidden; }
-            .main-block .tab-content .tab-pane .bitcoin-block .balance-block .panel-group .panel .panel-collapse .panel-body .balance-item span {
-              font-weight: 700;
-              letter-spacing: 2px; }
-          .main-block .tab-content .tab-pane .bitcoin-block .balance-block .panel-group .panel .panel-collapse .panel-body .close-accordion {
-            display: block;
-            margin: -10px auto 0;
-            width: 21px; }
-    .main-block .tab-content .tab-pane .bitcoin-block .balance-block .all-transactions {
-      padding: 17px 0;
-      text-align: center; }
-      @media (min-width: 1200px) {
-        .main-block .tab-content .tab-pane .bitcoin-block .balance-block .all-transactions {
-          padding: 12px 0; } }
-      @media (min-width: 1500px) {
-        .main-block .tab-content .tab-pane .bitcoin-block .balance-block .all-transactions {
-          padding: 17px 0; } }
-      .main-block .tab-content .tab-pane .bitcoin-block .balance-block .all-transactions a {
-        color: #3c3c3c;
-        font-size: 11.2px;
-        letter-spacing: 2px;
-        line-height: 11.2px;
-        outline: 0;
-        text-decoration: none; }
+        .main-block .tab-content .tab-pane .bitcoin-block .cloud-mining-block .cloud .sub-title {
+          font-size: 16.9px;
+          line-height: 16.9px; } }
+      @media (min-width: 1400px) {
+        .main-block .tab-content .tab-pane .bitcoin-block .cloud-mining-block .cloud .sub-title {
+          font-size: 20.9px;
+          line-height: 20.9px; } }
+    .main-block .tab-content .tab-pane .bitcoin-block .cloud-mining-block .cloud .sub-info {
+      color: #5699ef;
+      font-size: 11.2px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      line-height: 11.2px; }
+    @media (min-width: 768px) {
+      .main-block .tab-content .tab-pane .bitcoin-block .cloud-mining-block .cloud.middle {
+        border-left: 1px solid #fff;
+        border-right: 1px solid #fff; } }
 
-.main-block .tab-content .tab-pane .referral-block .referral-table table {
-  background: url("../img/table-background.png") no-repeat;
-  background-size: 100% 100%;
-  width: 100%; }
-  .main-block .tab-content .tab-pane .referral-block .referral-table table tbody tr th {
+.main-block .tab-content .tab-pane .bitcoin-block .balance-block {
+  border-radius: 20px;
+  -webkit-box-shadow: 2px 2px 54px 0px rgba(0, 0, 0, 0.08);
+  box-shadow: 2px 2px 54px 0px rgba(0, 0, 0, 0.08);
+  margin-top: 30px; }
+  @media (min-width: 1200px) {
+    .main-block .tab-content .tab-pane .bitcoin-block .balance-block {
+      margin-top: 0; } }
+  .main-block .tab-content .tab-pane .bitcoin-block .balance-block .balance-header {
+    background-image: -ms-linear-gradient(-165deg, #4691ee 0%, #4ca9d9 25%, #51c0c4 100%);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
     color: #fff;
-    font-size: 12.5px;
+    font-size: 15.9px;
+    line-height: 17.4px;
+    opacity: 0.929;
+    padding: 20px 25px; }
+    @media (min-width: 768px) {
+      .main-block .tab-content .tab-pane .bitcoin-block .balance-block .balance-header {
+        font-size: 17.9px;
+        line-height: 19.4px;
+        padding: 35px 40px; } }
+    @media (min-width: 1200px) {
+      .main-block .tab-content .tab-pane .bitcoin-block .balance-block .balance-header {
+        font-size: 15.9px;
+        line-height: 17.4px;
+        padding: 20px 25px; } }
+    @media (min-width: 1500px) {
+      .main-block .tab-content .tab-pane .bitcoin-block .balance-block .balance-header {
+        font-size: 17.9px;
+        line-height: 19.4px;
+        padding: 35px 40px; } }
+    .main-block .tab-content .tab-pane .bitcoin-block .balance-block .balance-header span {
+      letter-spacing: 2px; }
+      .main-block .tab-content .tab-pane .bitcoin-block .balance-block .balance-header span.amount {
+        float: right;
+        font-size: 19.4px;
+        font-weight: 600;
+        letter-spacing: 0;
+        line-height: 19.4px; }
+        @media (min-width: 1200px) {
+          .main-block .tab-content .tab-pane .bitcoin-block .balance-block .balance-header span.amount {
+            font-size: 17.4px;
+            line-height: 17.4px; } }
+        @media (min-width: 1500px) {
+          .main-block .tab-content .tab-pane .bitcoin-block .balance-block .balance-header span.amount {
+            font-size: 19.4px;
+            line-height: 19.4px; } }
+    .main-block .tab-content .tab-pane .bitcoin-block .balance-block .balance-header.bitcoins {
+      margin-top: 20px;
+      position: relative;
+      text-align: center; }
+      .main-block .tab-content .tab-pane .bitcoin-block .balance-block .balance-header.bitcoins span {
+        text-align: center; }
+      .main-block .tab-content .tab-pane .bitcoin-block .balance-block .balance-header.bitcoins .bitcoin-arrow {
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-top: 10px solid #5ab8d2;
+        bottom: -9px;
+        height: 0;
+        left: calc(50% - 10px);
+        position: absolute;
+        width: 0; }
+  .main-block .tab-content .tab-pane .bitcoin-block .balance-block .bitcoin-links a {
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #58c2c6), color-stop(1, #4d95ef));
+    background-image: gradient(linear, left top, right top, color-stop(0, #58c2c6), color-stop(1, #4d95ef));
+    color: transparent;
+    display: block;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    line-height: 14px;
+    padding: 30px 0;
+    text-align: center; }
+    @media (min-width: 1200px) {
+      .main-block .tab-content .tab-pane .bitcoin-block .balance-block .bitcoin-links a {
+        padding: 25px 0; } }
+    @media (min-width: 1500px) {
+      .main-block .tab-content .tab-pane .bitcoin-block .balance-block .bitcoin-links a {
+        padding: 30px 0; } }
+    .main-block .tab-content .tab-pane .bitcoin-block .balance-block .bitcoin-links a:not(:last-child) {
+      border-bottom: 1px solid #e7e7e7; }
+    .main-block .tab-content .tab-pane .bitcoin-block .balance-block .bitcoin-links a.send {
+      color: #a3a3a3; }
+  .main-block .tab-content .tab-pane .bitcoin-block .balance-block .panel-group {
+    margin: 0;
+    padding: 24px 0 0;
+    -webkit-transition: all 1s linear;
+    transition: all 1s linear; }
+    .main-block .tab-content .tab-pane .bitcoin-block .balance-block .panel-group .panel {
+      border: 0;
+      margin: 0; }
+      .main-block .tab-content .tab-pane .bitcoin-block .balance-block .panel-group .panel .panel-heading {
+        background-color: transparent;
+        padding: 12px 15px; }
+        @media (min-width: 768px) {
+          .main-block .tab-content .tab-pane .bitcoin-block .balance-block .panel-group .panel .panel-heading {
+            padding: 24px 40px; } }
+        @media (min-width: 1200px) {
+          .main-block .tab-content .tab-pane .bitcoin-block .balance-block .panel-group .panel .panel-heading {
+            padding: 12px 15px; } }
+        @media (min-width: 1300px) {
+          .main-block .tab-content .tab-pane .bitcoin-block .balance-block .panel-group .panel .panel-heading {
+            padding: 12px 20px; } }
+        @media (min-width: 1700px) {
+          .main-block .tab-content .tab-pane .bitcoin-block .balance-block .panel-group .panel .panel-heading {
+            padding: 16px 30px; } }
+        @media (min-width: 1800px) {
+          .main-block .tab-content .tab-pane .bitcoin-block .balance-block .panel-group .panel .panel-heading {
+            padding: 24px 40px; } }
+        .main-block .tab-content .tab-pane .bitcoin-block .balance-block .panel-group .panel .panel-heading.last {
+          padding-bottom: 24px; }
+          @media (min-width: 768px) {
+            .main-block .tab-content .tab-pane .bitcoin-block .balance-block .panel-group .panel .panel-heading.last {
+              padding-bottom: 48px; } }
+          @media (min-width: 1200px) {
+            .main-block .tab-content .tab-pane .bitcoin-block .balance-block .panel-group .panel .panel-heading.last {
+              padding-bottom: 24px; } }
+          @media (min-width: 1700px) {
+            .main-block .tab-content .tab-pane .bitcoin-block .balance-block .panel-group .panel .panel-heading.last {
+              padding-bottom: 32px; } }
+          @media (min-width: 1800px) {
+            .main-block .tab-content .tab-pane .bitcoin-block .balance-block .panel-group .panel .panel-heading.last {
+              padding-bottom: 48px; } }
+        .main-block .tab-content .tab-pane .bitcoin-block .balance-block .panel-group .panel .panel-heading .panel-title {
+          line-height: inherit; }
+          .main-block .tab-content .tab-pane .bitcoin-block .balance-block .panel-group .panel .panel-heading .panel-title a {
+            color: #4f4f4f;
+            display: inline-block;
+            font-size: 15.4px;
+            font-weight: 600;
+            height: 44px;
+            letter-spacing: 2px;
+            line-height: 15.4px;
+            outline: 0;
+            position: relative;
+            text-decoration: none; }
+            @media (min-width: 768px) {
+              .main-block .tab-content .tab-pane .bitcoin-block .balance-block .panel-group .panel .panel-heading .panel-title a {
+                font-size: 19.4px;
+                line-height: 19.4px; } }
+            @media (min-width: 1200px) {
+              .main-block .tab-content .tab-pane .bitcoin-block .balance-block .panel-group .panel .panel-heading .panel-title a {
+                font-size: 15.4px;
+                line-height: 15.4px; } }
+            @media (min-width: 1400px) {
+              .main-block .tab-content .tab-pane .bitcoin-block .balance-block .panel-group .panel .panel-heading .panel-title a {
+                font-size: 19.4px;
+                line-height: 19.4px; } }
+            .main-block .tab-content .tab-pane .bitcoin-block .balance-block .panel-group .panel .panel-heading .panel-title a:before {
+              background: url("../img/balance-down.png") no-repeat;
+              background-size: 100% 100%;
+              content: '';
+              display: inline-block;
+              height: 44px;
+              position: absolute;
+              width: 44px; }
+            .main-block .tab-content .tab-pane .bitcoin-block .balance-block .panel-group .panel .panel-heading .panel-title a .balance-amount {
+              margin-bottom: 9px;
+              padding-left: 60px; }
+              @media (min-width: 768px) {
+                .main-block .tab-content .tab-pane .bitcoin-block .balance-block .panel-group .panel .panel-heading .panel-title a .balance-amount {
+                  margin-bottom: 12px;
+                  padding-left: 70px; } }
+              @media (min-width: 1200px) {
+                .main-block .tab-content .tab-pane .bitcoin-block .balance-block .panel-group .panel .panel-heading .panel-title a .balance-amount {
+                  margin-bottom: 9px;
+                  padding-left: 60px; } }
+              @media (min-width: 1600) {
+                .main-block .tab-content .tab-pane .bitcoin-block .balance-block .panel-group .panel .panel-heading .panel-title a .balance-amount {
+                  margin-bottom: 12px;
+                  padding-left: 70px; } }
+            .main-block .tab-content .tab-pane .bitcoin-block .balance-block .panel-group .panel .panel-heading .panel-title a .balance-date {
+              color: #c2c2c2;
+              font-size: 12.6px;
+              font-weight: 700;
+              letter-spacing: .5px;
+              line-height: 12.6px;
+              padding-left: 60px; }
+              @media (min-width: 768px) {
+                .main-block .tab-content .tab-pane .bitcoin-block .balance-block .panel-group .panel .panel-heading .panel-title a .balance-date {
+                  padding-left: 70px; } }
+              @media (min-width: 1200px) {
+                .main-block .tab-content .tab-pane .bitcoin-block .balance-block .panel-group .panel .panel-heading .panel-title a .balance-date {
+                  padding-left: 60px; } }
+              @media (min-width: 1600) {
+                .main-block .tab-content .tab-pane .bitcoin-block .balance-block .panel-group .panel .panel-heading .panel-title a .balance-date {
+                  padding-left: 70px; } }
+      .main-block .tab-content .tab-pane .bitcoin-block .balance-block .panel-group .panel .panel-collapse .panel-body {
+        border: 0;
+        padding: 11px 42px 16px; }
+        .main-block .tab-content .tab-pane .bitcoin-block .balance-block .panel-group .panel .panel-collapse .panel-body .balance-item {
+          color: #4f4f4f;
+          font-size: 13.4px;
+          letter-spacing: .5px;
+          line-height: 21px;
+          margin-bottom: 30px;
+          overflow: hidden; }
+          .main-block .tab-content .tab-pane .bitcoin-block .balance-block .panel-group .panel .panel-collapse .panel-body .balance-item span {
+            font-weight: 700;
+            letter-spacing: 2px; }
+        .main-block .tab-content .tab-pane .bitcoin-block .balance-block .panel-group .panel .panel-collapse .panel-body .close-accordion {
+          display: block;
+          margin: -10px auto 0;
+          width: 21px; }
+  .main-block .tab-content .tab-pane .bitcoin-block .balance-block .all-transactions {
+    padding: 17px 0;
+    text-align: center; }
+    @media (min-width: 1200px) {
+      .main-block .tab-content .tab-pane .bitcoin-block .balance-block .all-transactions {
+        padding: 12px 0; } }
+    @media (min-width: 1500px) {
+      .main-block .tab-content .tab-pane .bitcoin-block .balance-block .all-transactions {
+        padding: 17px 0; } }
+    .main-block .tab-content .tab-pane .bitcoin-block .balance-block .all-transactions a {
+      color: #3c3c3c;
+      font-size: 11.2px;
+      letter-spacing: 2px;
+      line-height: 11.2px;
+      outline: 0;
+      text-decoration: none; }
+
+.main-block .tab-content .tab-pane .referral-block .referral-table {
+  overflow-x: scroll; }
+  @media (min-width: 1200px) {
+    .main-block .tab-content .tab-pane .referral-block .referral-table {
+      overflow: hidden; } }
+  .main-block .tab-content .tab-pane .referral-block .referral-table table {
+    background: url("../img/table-background.png") no-repeat;
+    background-size: 100% 100%;
+    border-radius: 20px;
     font-weight: 300;
-    line-height: 12.5px;
-    padding: 30px 0; }
-    .main-block .tab-content .tab-pane .referral-block .referral-table table tbody tr th:first-child {
-      width: 12.5%; }
-    .main-block .tab-content .tab-pane .referral-block .referral-table table tbody tr th:nth-child(2), .main-block .tab-content .tab-pane .referral-block .referral-table table tbody tr th:nth-child(3), .main-block .tab-content .tab-pane .referral-block .referral-table table tbody tr th:nth-child(4), .main-block .tab-content .tab-pane .referral-block .referral-table table tbody tr th:nth-child(5) {
-      width: 18.5%; }
-    .main-block .tab-content .tab-pane .referral-block .referral-table table tbody tr th:last-child {
-      width: 13%; }
+    text-align: center;
+    width: 100%; }
+    .main-block .tab-content .tab-pane .referral-block .referral-table table tbody tr th {
+      color: #fff;
+      font-size: 12.5px;
+      font-weight: 300;
+      letter-spacing: 1px;
+      line-height: 12.5px;
+      padding: 2.78vh 0;
+      text-align: center; }
+      .main-block .tab-content .tab-pane .referral-block .referral-table table tbody tr th:first-child {
+        background-image: -ms-linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, transparent 100%);
+        border-top-left-radius: 20px;
+        width: 12.5%; }
+      .main-block .tab-content .tab-pane .referral-block .referral-table table tbody tr th:nth-child(2), .main-block .tab-content .tab-pane .referral-block .referral-table table tbody tr th:nth-child(3), .main-block .tab-content .tab-pane .referral-block .referral-table table tbody tr th:nth-child(4), .main-block .tab-content .tab-pane .referral-block .referral-table table tbody tr th:nth-child(5) {
+        width: 18.5%; }
+      .main-block .tab-content .tab-pane .referral-block .referral-table table tbody tr th:last-child {
+        background-image: -ms-linear-gradient(0deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 100%);
+        border-top-right-radius: 20px;
+        width: 13%; }
+      .main-block .tab-content .tab-pane .referral-block .referral-table table tbody tr th:not(:last-child) {
+        border-right: 1px solid #6c7dcd; }
+      .main-block .tab-content .tab-pane .referral-block .referral-table table tbody tr th:nth-child(2).active {
+        background: url("../img/ref-column-1.png") no-repeat;
+        background-size: cover;
+        border-color: #44a0cd; }
+      .main-block .tab-content .tab-pane .referral-block .referral-table table tbody tr th:nth-child(3).active {
+        background: url("../img/ref-column-2.png") no-repeat;
+        background-size: cover;
+        border-color: #44a0cd; }
+      .main-block .tab-content .tab-pane .referral-block .referral-table table tbody tr th:nth-child(4).active {
+        background: url("../img/ref-column-3.png") no-repeat;
+        background-size: cover;
+        border-color: #44a0cd; }
+      .main-block .tab-content .tab-pane .referral-block .referral-table table tbody tr th:nth-child(5).active, .main-block .tab-content .tab-pane .referral-block .referral-table table tbody tr th:nth-child(6).active {
+        background: url("../img/ref-column-4-big.png") no-repeat;
+        background-size: cover;
+        border-color: #44a0cd; }
+    .main-block .tab-content .tab-pane .referral-block .referral-table table tbody tr td {
+      border: 1px solid #6c7dcd;
+      border-left: 0;
+      letter-spacing: 1px; }
+      .main-block .tab-content .tab-pane .referral-block .referral-table table tbody tr td:last-child {
+        border-right: 0; }
+      .main-block .tab-content .tab-pane .referral-block .referral-table table tbody tr td .amount {
+        color: #fff;
+        font-size: 37.7px;
+        font-weight: 100;
+        line-height: 37.7px;
+        padding-left: 17.2%;
+        position: relative;
+        text-align: left; }
+        .main-block .tab-content .tab-pane .referral-block .referral-table table tbody tr td .amount span {
+          display: inline-block;
+          position: relative; }
+          .main-block .tab-content .tab-pane .referral-block .referral-table table tbody tr td .amount span:not(.number) {
+            font-size: 21.8px;
+            font-weight: 100; }
+      .main-block .tab-content .tab-pane .referral-block .referral-table table tbody tr td .title {
+        color: #9eaee0;
+        font-size: 12.5px;
+        letter-spacing: 1.3px;
+        line-height: 12.5px;
+        margin-top: 15px;
+        padding-left: 31%;
+        text-align: left; }
+      .main-block .tab-content .tab-pane .referral-block .referral-table table tbody tr td.ref-type {
+        color: #fff;
+        font-size: 12.72px;
+        letter-spacing: 1px;
+        line-height: 12.72px;
+        padding: 5.56vh 0 5.1vh; }
+        .main-block .tab-content .tab-pane .referral-block .referral-table table tbody tr td.ref-type img {
+          margin-bottom: 2.32vh; }
+        .main-block .tab-content .tab-pane .referral-block .referral-table table tbody tr td.ref-type span {
+          display: block; }
+      .main-block .tab-content .tab-pane .referral-block .referral-table table tbody tr td img {
+        margin-top: 25px; }
+        .main-block .tab-content .tab-pane .referral-block .referral-table table tbody tr td img.active-line {
+          display: none; }
+      .main-block .tab-content .tab-pane .referral-block .referral-table table tbody tr td:last-child .amount {
+        padding-left: 0;
+        text-align: center; }
+        .main-block .tab-content .tab-pane .referral-block .referral-table table tbody tr td:last-child .amount:before, .main-block .tab-content .tab-pane .referral-block .referral-table table tbody tr td:last-child .amount:after {
+          display: none; }
+      .main-block .tab-content .tab-pane .referral-block .referral-table table tbody tr td:last-child .title {
+        padding-left: 0;
+        text-align: center; }
+      .main-block .tab-content .tab-pane .referral-block .referral-table table tbody tr td:nth-child(2).active {
+        background: url("../img/ref-column-1.png") no-repeat;
+        background-size: 100% 100%;
+        border-color: #44a0cd; }
+      .main-block .tab-content .tab-pane .referral-block .referral-table table tbody tr td:nth-child(3).active {
+        background: url("../img/ref-column-2.png") no-repeat;
+        background-size: 100% 100%;
+        border-color: #44a0cd; }
+      .main-block .tab-content .tab-pane .referral-block .referral-table table tbody tr td:nth-child(4).active {
+        background: url("../img/ref-column-3-big.png") no-repeat;
+        background-size: 100% 100%;
+        border-color: #44a0cd; }
+      .main-block .tab-content .tab-pane .referral-block .referral-table table tbody tr td:nth-child(5).active, .main-block .tab-content .tab-pane .referral-block .referral-table table tbody tr td:nth-child(6).active {
+        background: url("../img/ref-column-4-big.png") no-repeat;
+        background-size: 100% 100%;
+        border-color: #44a0cd; }
+      .main-block .tab-content .tab-pane .referral-block .referral-table table tbody tr td.active .title {
+        color: #fff; }
+      .main-block .tab-content .tab-pane .referral-block .referral-table table tbody tr td.active img.noactive-line {
+        display: none; }
+      .main-block .tab-content .tab-pane .referral-block .referral-table table tbody tr td.active img.active-line {
+        display: inline; }
+    .main-block .tab-content .tab-pane .referral-block .referral-table table tbody tr.first-row td .amount span.number:after, .main-block .tab-content .tab-pane .referral-block .referral-table table tbody tr.second-row td .amount span.number:after, .main-block .tab-content .tab-pane .referral-block .referral-table table tbody tr.third-row td .amount span.number:after {
+      background: url("../img/circle-arrow-down.png") no-repeat;
+      content: '';
+      display: inline-block;
+      height: 13px;
+      margin-left: 1.72%;
+      position: absolute;
+      top: -0.56vh;
+      width: 13px; }
+    .main-block .tab-content .tab-pane .referral-block .referral-table table tbody tr.first-row td:last-child .amount:before, .main-block .tab-content .tab-pane .referral-block .referral-table table tbody tr.first-row td:last-child .amount:after, .main-block .tab-content .tab-pane .referral-block .referral-table table tbody tr.second-row td:last-child .amount:before, .main-block .tab-content .tab-pane .referral-block .referral-table table tbody tr.second-row td:last-child .amount:after, .main-block .tab-content .tab-pane .referral-block .referral-table table tbody tr.third-row td:last-child .amount:before, .main-block .tab-content .tab-pane .referral-block .referral-table table tbody tr.third-row td:last-child .amount:after {
+      display: none; }
+    .main-block .tab-content .tab-pane .referral-block .referral-table table tbody tr.first-row td:last-child .title, .main-block .tab-content .tab-pane .referral-block .referral-table table tbody tr.second-row td:last-child .title, .main-block .tab-content .tab-pane .referral-block .referral-table table tbody tr.third-row td:last-child .title {
+      padding-left: 0;
+      text-align: center; }
+    .main-block .tab-content .tab-pane .referral-block .referral-table table tbody tr.first-row td .amount:before {
+      background: url("../img/ref-user-no-active.png") no-repeat;
+      content: '';
+      display: inline-block;
+      height: 16px;
+      margin-right: 8.57%;
+      vertical-align: middle;
+      width: 16px; }
+    .main-block .tab-content .tab-pane .referral-block .referral-table table tbody tr.first-row td:last-child .amount:before, .main-block .tab-content .tab-pane .referral-block .referral-table table tbody tr.first-row td:last-child .amount:after {
+      display: none; }
+    .main-block .tab-content .tab-pane .referral-block .referral-table table tbody tr.first-row td:last-child .title {
+      padding-left: 0;
+      text-align: center; }
+    .main-block .tab-content .tab-pane .referral-block .referral-table table tbody tr.first-row td:nth-child(3) .amount:before {
+      background: url("../img/ref-user-1dot.png") no-repeat;
+      height: 18px;
+      width: 19px; }
+    .main-block .tab-content .tab-pane .referral-block .referral-table table tbody tr.first-row td:nth-child(4) .amount:before {
+      background: url("../img/ref-user-2dot.png") no-repeat;
+      height: 18px;
+      width: 25px; }
+    .main-block .tab-content .tab-pane .referral-block .referral-table table tbody tr.first-row td:nth-child(5) .amount:before {
+      background: url("../img/ref-partners-icon.png") no-repeat;
+      height: 17px;
+      width: 13px; }
+    .main-block .tab-content .tab-pane .referral-block .referral-table table tbody tr.first-row td.active .amount:before {
+      background: url("../img/ref-user-active.png") no-repeat; }
+    .main-block .tab-content .tab-pane .referral-block .referral-table table tbody tr.first-row td.active:nth-child(3) .amount:before {
+      background: url("../img/ref-user-1dot-active.png") no-repeat;
+      height: 18px;
+      width: 19px; }
+    .main-block .tab-content .tab-pane .referral-block .referral-table table tbody tr.first-row td.active:nth-child(4) .amount:before {
+      background: url("../img/ref-user-2dot-active.png") no-repeat;
+      height: 18px;
+      width: 25px; }
+    .main-block .tab-content .tab-pane .referral-block .referral-table table tbody tr.first-row td.active:nth-child(5) .amount:before {
+      background: url("../img/ref-partners-icon-active.png") no-repeat;
+      height: 17px;
+      width: 13px; }
+    .main-block .tab-content .tab-pane .referral-block .referral-table table tbody tr.second-row td .amount:before {
+      background: url("../img/ref-earnings-no-active.png") no-repeat;
+      content: '';
+      display: inline-block;
+      height: 17px;
+      margin-right: 8.57%;
+      vertical-align: middle;
+      width: 9px; }
+    .main-block .tab-content .tab-pane .referral-block .referral-table table tbody tr.second-row td .title {
+      padding-left: 29%; }
+    .main-block .tab-content .tab-pane .referral-block .referral-table table tbody tr.second-row td:nth-child(3) .amount:before {
+      background: url("../img/ref-earnings-1dot.png") no-repeat;
+      height: 20px;
+      width: 16px; }
+    .main-block .tab-content .tab-pane .referral-block .referral-table table tbody tr.second-row td:nth-child(4) .amount:before {
+      background: url("../img/ref-earnings-2dot.png") no-repeat;
+      height: 20px;
+      width: 20px; }
+    .main-block .tab-content .tab-pane .referral-block .referral-table table tbody tr.second-row td:nth-child(5) .amount:before {
+      background: url("../img/ref-earnings-3dot.png") no-repeat;
+      height: 25px;
+      width: 21px; }
+    .main-block .tab-content .tab-pane .referral-block .referral-table table tbody tr.second-row td:last-child .amount:before, .main-block .tab-content .tab-pane .referral-block .referral-table table tbody tr.second-row td:last-child .amount:after {
+      display: none; }
+    .main-block .tab-content .tab-pane .referral-block .referral-table table tbody tr.second-row td:last-child .title {
+      padding-left: 0;
+      text-align: center; }
+    .main-block .tab-content .tab-pane .referral-block .referral-table table tbody tr.second-row td.active .amount:before {
+      background: url("../img/ref-earnings-active.png") no-repeat; }
+    .main-block .tab-content .tab-pane .referral-block .referral-table table tbody tr.second-row td.active:nth-child(3) .amount:before {
+      background: url("../img/ref-earnings-1dot-active.png") no-repeat;
+      height: 20px;
+      width: 16px; }
+    .main-block .tab-content .tab-pane .referral-block .referral-table table tbody tr.second-row td.active:nth-child(4) .amount:before {
+      background: url("../img/ref-earnings-2dot-active.png") no-repeat;
+      height: 20px;
+      width: 20px; }
+    .main-block .tab-content .tab-pane .referral-block .referral-table table tbody tr.second-row td.active:nth-child(5) .amount:before {
+      background: url("../img/ref-earnings-3dot-active.png") no-repeat;
+      height: 25px;
+      width: 21px; }
+    .main-block .tab-content .tab-pane .referral-block .referral-table table tbody tr.third-row td .amount:before {
+      background: url("../img/ref-bonus-no-active.png") no-repeat;
+      content: '';
+      display: inline-block;
+      height: 17px;
+      margin-right: 8.57%;
+      vertical-align: middle;
+      width: 9px; }
+    .main-block .tab-content .tab-pane .referral-block .referral-table table tbody tr.third-row td .title {
+      padding-left: 29%; }
+    .main-block .tab-content .tab-pane .referral-block .referral-table table tbody tr.third-row td:nth-child(3) .amount:before {
+      background: url("../img/ref-bonus-1dot.png") no-repeat;
+      height: 20px;
+      width: 16px; }
+    .main-block .tab-content .tab-pane .referral-block .referral-table table tbody tr.third-row td:nth-child(4) .amount:before {
+      background: url("../img/ref-bonus-2dot.png") no-repeat;
+      height: 20px;
+      width: 20px; }
+    .main-block .tab-content .tab-pane .referral-block .referral-table table tbody tr.third-row td:nth-child(5) .amount:before {
+      background: url("../img/ref-bonus-3dot.png") no-repeat;
+      height: 25px;
+      width: 21px; }
+    .main-block .tab-content .tab-pane .referral-block .referral-table table tbody tr.third-row td:last-child .amount:before, .main-block .tab-content .tab-pane .referral-block .referral-table table tbody tr.third-row td:last-child .amount:after {
+      display: none; }
+    .main-block .tab-content .tab-pane .referral-block .referral-table table tbody tr.third-row td:last-child .title {
+      padding-left: 0;
+      text-align: center; }
+    .main-block .tab-content .tab-pane .referral-block .referral-table table tbody tr.third-row td.active .amount:before {
+      background: url("../img/ref-earnings-active.png") no-repeat; }
+    .main-block .tab-content .tab-pane .referral-block .referral-table table tbody tr.third-row td.active:nth-child(3) .amount:before {
+      background: url("../img/ref-earnings-1dot-active.png") no-repeat;
+      height: 20px;
+      width: 16px; }
+    .main-block .tab-content .tab-pane .referral-block .referral-table table tbody tr.third-row td.active:nth-child(4) .amount:before {
+      background: url("../img/ref-earnings-2dot-active.png") no-repeat;
+      height: 20px;
+      width: 20px; }
+    .main-block .tab-content .tab-pane .referral-block .referral-table table tbody tr.third-row td.active:nth-child(5) .amount:before {
+      background: url("../img/ref-earnings-3dot-active.png") no-repeat;
+      height: 25px;
+      width: 21px; }
+    .main-block .tab-content .tab-pane .referral-block .referral-table table tbody tr.fourth-row td .amount:before {
+      background: url("../img/ref-24-no-active.png") no-repeat;
+      content: '';
+      display: inline-block;
+      height: 17px;
+      margin-right: 8.57%;
+      vertical-align: middle;
+      width: 17px; }
+    .main-block .tab-content .tab-pane .referral-block .referral-table table tbody tr.fourth-row td .title {
+      padding-left: 31%; }
+    .main-block .tab-content .tab-pane .referral-block .referral-table table tbody tr.fourth-row td:last-child .amount:before, .main-block .tab-content .tab-pane .referral-block .referral-table table tbody tr.fourth-row td:last-child .amount:after {
+      display: none; }
+    .main-block .tab-content .tab-pane .referral-block .referral-table table tbody tr.fourth-row td:last-child .title {
+      padding-left: 0;
+      text-align: center; }
+    .main-block .tab-content .tab-pane .referral-block .referral-table table tbody tr.fourth-row td.active .amount:before {
+      background: url("../img/ref-24-active.png") no-repeat; }
+    .main-block .tab-content .tab-pane .referral-block .referral-table table tbody tr.fifth-row td .amount:before {
+      background: url("../img/ref-7-no-active.png") no-repeat;
+      content: '';
+      display: inline-block;
+      height: 17px;
+      margin-right: 8.57%;
+      vertical-align: middle;
+      width: 17px; }
+    .main-block .tab-content .tab-pane .referral-block .referral-table table tbody tr.fifth-row td .title {
+      padding-left: 31%; }
+    .main-block .tab-content .tab-pane .referral-block .referral-table table tbody tr.fifth-row td:first-child {
+      border-bottom-left-radius: 20px; }
+    .main-block .tab-content .tab-pane .referral-block .referral-table table tbody tr.fifth-row td:last-child {
+      border-bottom-right-radius: 20px; }
+      .main-block .tab-content .tab-pane .referral-block .referral-table table tbody tr.fifth-row td:last-child .amount:before, .main-block .tab-content .tab-pane .referral-block .referral-table table tbody tr.fifth-row td:last-child .amount:after {
+        display: none; }
+      .main-block .tab-content .tab-pane .referral-block .referral-table table tbody tr.fifth-row td:last-child .title {
+        padding-left: 0;
+        text-align: center; }
+    .main-block .tab-content .tab-pane .referral-block .referral-table table tbody tr.fifth-row td.active .amount:before {
+      background: url("../img/ref-7-active.png") no-repeat; }
+    .main-block .tab-content .tab-pane .referral-block .referral-table table tbody tr:last-child td {
+      border-bottom: 0; }
+
+.main-block .tab-content .tab-pane .referral-tabs {
+  margin-top: 25px; }
+  .main-block .tab-content .tab-pane .referral-tabs .tab-content {
+    padding: 0; }
+    .main-block .tab-content .tab-pane .referral-tabs .tab-content .tab-pane {
+      background-color: #fff;
+      border-radius: 20px;
+      -webkit-box-shadow: 2.121px 2.121px 54px 0px rgba(0, 0, 0, 0.08);
+      box-shadow: 2.121px 2.121px 54px 0px rgba(0, 0, 0, 0.08);
+      margin-bottom: 25px;
+      padding: 80px 60px 65px; }
+      @media (min-width: 768px) {
+        .main-block .tab-content .tab-pane .referral-tabs .tab-content .tab-pane {
+          margin-bottom: 0; } }
+      .main-block .tab-content .tab-pane .referral-tabs .tab-content .tab-pane img {
+        width: 100%; }
+        @media (min-width: 1200px) {
+          .main-block .tab-content .tab-pane .referral-tabs .tab-content .tab-pane img {
+            height: 100%; } }
+  @media (min-width: 1200px) {
+    .main-block .tab-content .tab-pane .referral-tabs .referral-nav-column {
+      padding-left: 10px; } }
+  .main-block .tab-content .tab-pane .referral-tabs .nav-tabs {
+    -webkit-box-shadow: 2.121px 2.121px 54px 0px rgba(0, 0, 0, 0.08);
+    box-shadow: 2.121px 2.121px 54px 0px rgba(0, 0, 0, 0.08);
+    border-radius: 20px;
+    position: static; }
+    .main-block .tab-content .tab-pane .referral-tabs .nav-tabs li {
+      margin-bottom: 0; }
+      .main-block .tab-content .tab-pane .referral-tabs .nav-tabs li a {
+        border-radius: 0;
+        display: inline-block;
+        padding: 4.63vh 0;
+        text-align: center;
+        width: 100%; }
+        .main-block .tab-content .tab-pane .referral-tabs .nav-tabs li a img {
+          display: none; }
+          .main-block .tab-content .tab-pane .referral-tabs .nav-tabs li a img.active {
+            display: inline; }
+      .main-block .tab-content .tab-pane .referral-tabs .nav-tabs li.active a {
+        background-image: -ms-linear-gradient(-165deg, #4691ee 0%, #4ca9d9 25%, #51c0c4 100%); }
+      .main-block .tab-content .tab-pane .referral-tabs .nav-tabs li.active img {
+        display: inline; }
+        .main-block .tab-content .tab-pane .referral-tabs .nav-tabs li.active img.active {
+          display: none; }
+      .main-block .tab-content .tab-pane .referral-tabs .nav-tabs li:first-child a {
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px; }
+      .main-block .tab-content .tab-pane .referral-tabs .nav-tabs li:last-child a {
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px; }
+      .main-block .tab-content .tab-pane .referral-tabs .nav-tabs li:not(:last-child) {
+        border-bottom: 1px solid #f6f6f6; }
+
+.main-block .tab-content .tab-pane .referral-bottom-table {
+  border-radius: 20px;
+  -webkit-box-shadow: 2.121px 2.121px 54px 0px rgba(0, 0, 0, 0.08);
+  box-shadow: 2.121px 2.121px 54px 0px rgba(0, 0, 0, 0.08);
+  margin-bottom: 30px;
+  overflow-x: scroll; }
+  .main-block .tab-content .tab-pane .referral-bottom-table table {
+    border-radius: 20px;
+    min-width: 1050px;
+    width: 100%; }
+    .main-block .tab-content .tab-pane .referral-bottom-table table tr {
+      display: block;
+      width: 100%; }
+      .main-block .tab-content .tab-pane .referral-bottom-table table tr:nth-child(odd) {
+        background: #fbfbfb; }
+      .main-block .tab-content .tab-pane .referral-bottom-table table tr:first-child {
+        background-image: -ms-linear-gradient(-165deg, rgba(70, 145, 238, 0.9) 0%, rgba(76, 169, 217, 0.9) 25%, rgba(81, 192, 196, 0.9) 100%);
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px; }
+      .main-block .tab-content .tab-pane .referral-bottom-table table tr th, .main-block .tab-content .tab-pane .referral-bottom-table table tr td {
+        color: #fff;
+        display: inline-block;
+        font-size: 16.6px;
+        font-weight: 300;
+        letter-spacing: 1.3px;
+        line-height: 16.6px;
+        padding: 4.17vh 0; }
+        .main-block .tab-content .tab-pane .referral-bottom-table table tr th.email, .main-block .tab-content .tab-pane .referral-bottom-table table tr td.email {
+          padding-left: 3.17%;
+          width: 23%; }
+        .main-block .tab-content .tab-pane .referral-bottom-table table tr th.line, .main-block .tab-content .tab-pane .referral-bottom-table table tr td.line {
+          width: 12.5%; }
+        .main-block .tab-content .tab-pane .referral-bottom-table table tr th.balance, .main-block .tab-content .tab-pane .referral-bottom-table table tr td.balance {
+          width: 15.5%; }
+        .main-block .tab-content .tab-pane .referral-bottom-table table tr th.structure, .main-block .tab-content .tab-pane .referral-bottom-table table tr td.structure {
+          width: 16%; }
+        .main-block .tab-content .tab-pane .referral-bottom-table table tr th.bonus, .main-block .tab-content .tab-pane .referral-bottom-table table tr td.bonus {
+          width: 14%; }
+        .main-block .tab-content .tab-pane .referral-bottom-table table tr th.tree, .main-block .tab-content .tab-pane .referral-bottom-table table tr td.tree {
+          width: 17%; }
+      .main-block .tab-content .tab-pane .referral-bottom-table table tr td {
+        color: #b2babf;
+        font-size: 15px;
+        font-weight: 400;
+        letter-spacing: .5px;
+        line-height: 15px;
+        padding: 3.25vh 0; }
+        .main-block .tab-content .tab-pane .referral-bottom-table table tr td.tree a {
+          color: #79bce4;
+          display: inline-block;
+          outline: 0;
+          position: relative;
+          text-decoration: none;
+          width: 100%; }
+          .main-block .tab-content .tab-pane .referral-bottom-table table tr td.tree a:after {
+            background: url("../img/referral-down-button.png") no-repeat;
+            content: '';
+            display: inline-block;
+            height: 9px;
+            position: absolute;
+            right: 15px;
+            top: 4px;
+            vertical-align: middle;
+            width: 14px; }
 
 .main-page {
   height: 100%; }
@@ -1391,16 +2224,14 @@ body.main-page-body .header {
             display: inline; } }
         .main-page .main-tabs .tab-2-links a:hover, .main-page .main-tabs .tab-2-links a:focus {
           color: #61aada; }
-        .main-page .main-tabs .tab-2-links a.atb {
-          color: #d1b5a1; }
-          @media (min-width: 1200px) {
-            .main-page .main-tabs .tab-2-links a.atb {
-              left: 16px;
-              top: 278px; } }
-          @media (min-width: 1700px) {
-            .main-page .main-tabs .tab-2-links a.atb {
-              left: 19px;
-              top: 295px; } }
+        @media (min-width: 1200px) {
+          .main-page .main-tabs .tab-2-links a.atb {
+            left: 13px;
+            top: 274px; } }
+        @media (min-width: 1700px) {
+          .main-page .main-tabs .tab-2-links a.atb {
+            left: 16px;
+            top: 291px; } }
         @media (min-width: 1200px) {
           .main-page .main-tabs .tab-2-links a.mining-investors {
             left: 255px;
@@ -1543,11 +2374,11 @@ body.main-page-body .header {
               .main-page .main-tabs .bottom-links a.rates-link.first {
                 margin-left: 55px; } }
       .main-page .main-tabs .bottom-links.main {
-        bottom: 20px;
-        position: absolute;
         width: 100%; }
         @media (min-width: 768px) {
           .main-page .main-tabs .bottom-links.main {
+            bottom: 20px;
+            position: absolute;
             width: auto; } }
       .main-page .main-tabs .bottom-links .copyright {
         color: #808080;
@@ -1972,196 +2803,199 @@ body.main-page-body .header {
         line-height: 26px; }
       .main-page .main-tabs#main-tab-9 .team-block .member-block .member-position {
         font-weight: 500; }
-  @media (min-width: 1200px) {
-    .main-page.service-page .main-tabs#main-tab-service-1 {
-      background: url("../img/service-tab-1.png") no-repeat;
-      background-position: right bottom;
-      background-size: 80% auto; } }
-  @media (min-width: 1500px) {
-    .main-page.service-page .main-tabs#main-tab-service-1 {
-      background-size: 100% auto; } }
-  .main-page.service-page .main-tabs#main-tab-service-1 .main-title {
-    font-size: 36px;
-    line-height: 39px; }
-    @media (min-width: 768px) {
-      .main-page.service-page .main-tabs#main-tab-service-1 .main-title {
-        font-size: 50px;
-        line-height: 53px;
-        margin-top: 250px; } }
+  .main-page.service-page .main-tabs {
+    height: 100%;
+    position: relative; }
     @media (min-width: 1200px) {
-      .main-page.service-page .main-tabs#main-tab-service-1 .main-title {
-        margin-top: 44.39vh; } }
-    .main-page.service-page .main-tabs#main-tab-service-1 .main-title span {
-      color: #4aa3de; }
-  .main-page.service-page .main-tabs#main-tab-service-1 .small-title {
-    margin-top: 3.25vh; }
-  .main-page.service-page .main-tabs#main-tab-service-1 .bottom-links {
-    margin-top: 100px;
-    position: static; }
-    @media (min-width: 1200px) {
-      .main-page.service-page .main-tabs#main-tab-service-1 .bottom-links {
-        margin-top: 0;
-        position: absolute; } }
-  .main-page.service-page .main-tabs#main-tab-service-1 .start-button {
-    background-image: -ms-linear-gradient(177deg, #79b8e1 0%, #4aa3de 100%);
-    margin-top: 60px;
-    padding: 18px 80px; }
-  .main-page.service-page .main-tabs#main-tab-service-1 .service-block {
-    background-color: #fff;
-    border-radius: 4px;
-    -webkit-box-shadow: 0px 32px 70px 0px rgba(101, 110, 117, 0.14);
-    box-shadow: 0px 32px 70px 0px rgba(101, 110, 117, 0.14);
-    margin-top: 50px; }
-    @media (min-width: 1200px) {
-      .main-page.service-page .main-tabs#main-tab-service-1 .service-block {
-        margin-top: 29.33vh; } }
+      .main-page.service-page .main-tabs#main-tab-service-1 {
+        background: url("../img/service-tab-1.png") no-repeat;
+        background-position: right bottom;
+        background-size: 80% auto; } }
     @media (min-width: 1500px) {
-      .main-page.service-page .main-tabs#main-tab-service-1 .service-block {
-        margin-left: 150px;
-        width: 100%; } }
-    .main-page.service-page .main-tabs#main-tab-service-1 .service-block .service-top {
-      border-bottom: 1px solid #e4e4e4;
-      padding: 5.1vh 75px 4.17vh; }
-      .main-page.service-page .main-tabs#main-tab-service-1 .service-block .service-top ul.nav-tabs {
-        border: 0; }
-        .main-page.service-page .main-tabs#main-tab-service-1 .service-block .service-top ul.nav-tabs li {
-          display: block;
-          float: none;
-          margin: 0 0 10px; }
-          @media (min-width: 768px) {
-            .main-page.service-page .main-tabs#main-tab-service-1 .service-block .service-top ul.nav-tabs li {
-              display: inline-block;
-              float: left;
-              margin: 0; } }
-          .main-page.service-page .main-tabs#main-tab-service-1 .service-block .service-top ul.nav-tabs li a {
-            border: 0;
-            color: #000;
-            font-size: 16px;
-            font-weight: 600;
-            line-height: 16px;
-            outline: 0;
-            padding: 0;
-            text-decoration: none; }
-            .main-page.service-page .main-tabs#main-tab-service-1 .service-block .service-top ul.nav-tabs li a:before {
-              background: url("../img/service-exchange.png") no-repeat;
-              content: '';
-              display: inline-block;
-              height: 15px;
-              margin-right: 12px;
-              vertical-align: middle;
-              width: 17px; }
-            @media (min-width: 768px) {
-              .main-page.service-page .main-tabs#main-tab-service-1 .service-block .service-top ul.nav-tabs li a.exchange, .main-page.service-page .main-tabs#main-tab-service-1 .service-block .service-top ul.nav-tabs li a.storage {
-                margin-right: 50px; } }
-            @media (min-width: 1200px) {
-              .main-page.service-page .main-tabs#main-tab-service-1 .service-block .service-top ul.nav-tabs li a.exchange, .main-page.service-page .main-tabs#main-tab-service-1 .service-block .service-top ul.nav-tabs li a.storage {
-                margin-right: 45px; } }
-            @media (min-width: 1300px) {
-              .main-page.service-page .main-tabs#main-tab-service-1 .service-block .service-top ul.nav-tabs li a.exchange, .main-page.service-page .main-tabs#main-tab-service-1 .service-block .service-top ul.nav-tabs li a.storage {
-                margin-right: 50px; } }
-            .main-page.service-page .main-tabs#main-tab-service-1 .service-block .service-top ul.nav-tabs li a.storage:before {
-              background: url("../img/service-storage.png") no-repeat;
-              height: 17px;
-              width: 18px; }
-            .main-page.service-page .main-tabs#main-tab-service-1 .service-block .service-top ul.nav-tabs li a.scalling:before {
-              background: url("../img/service-scalling.png") no-repeat;
-              height: 15px;
-              width: 15px; }
-          .main-page.service-page .main-tabs#main-tab-service-1 .service-block .service-top ul.nav-tabs li.active a {
-            color: #73b5e0; }
-      .main-page.service-page .main-tabs#main-tab-service-1 .service-block .service-top a {
-        color: #000;
-        font-size: 16px;
-        font-weight: 600;
-        line-height: 16px;
-        outline: 0;
-        text-decoration: none; }
-        .main-page.service-page .main-tabs#main-tab-service-1 .service-block .service-top a:hover, .main-page.service-page .main-tabs#main-tab-service-1 .service-block .service-top a:focus {
-          color: #73b5e0; }
-        .main-page.service-page .main-tabs#main-tab-service-1 .service-block .service-top a:before {
-          background: url("../img/service-exchange.png") no-repeat;
-          content: '';
-          display: inline-block;
-          height: 15px;
-          margin-right: 12px;
-          vertical-align: middle;
-          width: 17px; }
-        @media (min-width: 768px) {
-          .main-page.service-page .main-tabs#main-tab-service-1 .service-block .service-top a.exchange, .main-page.service-page .main-tabs#main-tab-service-1 .service-block .service-top a.storage {
-            margin-right: 50px; } }
-        .main-page.service-page .main-tabs#main-tab-service-1 .service-block .service-top a.storage:before {
-          background: url("../img/service-storage.png") no-repeat;
-          height: 17px;
-          width: 18px; }
-        .main-page.service-page .main-tabs#main-tab-service-1 .service-block .service-top a.scalling:before {
-          background: url("../img/service-scalling.png") no-repeat;
-          height: 15px;
-          width: 15px; }
-    .main-page.service-page .main-tabs#main-tab-service-1 .service-block .service-info {
-      color: #717171;
-      font-size: 14px;
-      letter-spacing: .6px;
-      line-height: 26px;
-      padding: 6.02vh 15px; }
+      .main-page.service-page .main-tabs#main-tab-service-1 {
+        background-size: 100% auto; } }
+    .main-page.service-page .main-tabs#main-tab-service-1 .main-title {
+      font-size: 36px;
+      line-height: 39px; }
       @media (min-width: 768px) {
-        .main-page.service-page .main-tabs#main-tab-service-1 .service-block .service-info {
-          padding: 6.02vh 75px; } }
-  @media (min-width: 1200px) {
-    .main-page.service-page .main-tabs#main-tab-service-2 {
-      background: url("../img/service-tab-2.png") no-repeat;
-      background-position: right bottom;
-      background-size: 80% auto; } }
-  @media (min-width: 1500px) {
-    .main-page.service-page .main-tabs#main-tab-service-2 {
-      background-size: 100% auto; } }
-  .main-page.service-page .main-tabs#main-tab-service-2 .main-title {
-    font-size: 36px;
-    line-height: 39px;
-    margin-bottom: 20px; }
-    @media (min-width: 768px) {
-      .main-page.service-page .main-tabs#main-tab-service-2 .main-title {
-        font-size: 50px;
-        line-height: 53px;
-        margin-top: 250px; } }
-    @media (min-width: 1200px) {
-      .main-page.service-page .main-tabs#main-tab-service-2 .main-title {
-        margin-bottom: 2.32vh;
-        margin-top: 25.93vh; } }
-    .main-page.service-page .main-tabs#main-tab-service-2 .main-title span {
-      color: #4aa3de; }
-  .main-page.service-page .main-tabs#main-tab-service-2 .small-title {
-    font-size: 12px;
-    line-height: 18px;
-    margin-top: 1.25vh; }
-    @media (min-width: 768px) {
-      .main-page.service-page .main-tabs#main-tab-service-2 .small-title {
-        padding-left: 80px; } }
-    @media (min-width: 1200px) {
-      .main-page.service-page .main-tabs#main-tab-service-2 .small-title {
+        .main-page.service-page .main-tabs#main-tab-service-1 .main-title {
+          font-size: 50px;
+          line-height: 53px;
+          margin-top: 250px; } }
+      @media (min-width: 1200px) {
+        .main-page.service-page .main-tabs#main-tab-service-1 .main-title {
+          margin-top: 44.39vh; } }
+      .main-page.service-page .main-tabs#main-tab-service-1 .main-title span {
+        color: #4aa3de; }
+    .main-page.service-page .main-tabs#main-tab-service-1 .small-title {
+      margin-top: 3.25vh; }
+    .main-page.service-page .main-tabs#main-tab-service-1 .bottom-links {
+      margin-top: 100px;
+      position: static; }
+      @media (min-width: 1200px) {
+        .main-page.service-page .main-tabs#main-tab-service-1 .bottom-links {
+          margin-top: 0;
+          position: absolute; } }
+    .main-page.service-page .main-tabs#main-tab-service-1 .start-button {
+      background-image: -ms-linear-gradient(177deg, #79b8e1 0%, #4aa3de 100%);
+      margin-top: 60px;
+      padding: 18px 80px; }
+    .main-page.service-page .main-tabs#main-tab-service-1 .service-block {
+      background-color: #fff;
+      border-radius: 4px;
+      -webkit-box-shadow: 0px 32px 70px 0px rgba(101, 110, 117, 0.14);
+      box-shadow: 0px 32px 70px 0px rgba(101, 110, 117, 0.14);
+      margin-top: 50px; }
+      @media (min-width: 1200px) {
+        .main-page.service-page .main-tabs#main-tab-service-1 .service-block {
+          margin-top: 29.33vh; } }
+      @media (min-width: 1500px) {
+        .main-page.service-page .main-tabs#main-tab-service-1 .service-block {
+          margin-left: 150px;
+          width: 100%; } }
+      .main-page.service-page .main-tabs#main-tab-service-1 .service-block .service-top {
+        border-bottom: 1px solid #e4e4e4;
+        padding: 5.1vh 75px 4.17vh; }
+        .main-page.service-page .main-tabs#main-tab-service-1 .service-block .service-top ul.nav-tabs {
+          border: 0; }
+          .main-page.service-page .main-tabs#main-tab-service-1 .service-block .service-top ul.nav-tabs li {
+            display: block;
+            float: none;
+            margin: 0 0 10px; }
+            @media (min-width: 768px) {
+              .main-page.service-page .main-tabs#main-tab-service-1 .service-block .service-top ul.nav-tabs li {
+                display: inline-block;
+                float: left;
+                margin: 0; } }
+            .main-page.service-page .main-tabs#main-tab-service-1 .service-block .service-top ul.nav-tabs li a {
+              border: 0;
+              color: #000;
+              font-size: 16px;
+              font-weight: 600;
+              line-height: 16px;
+              outline: 0;
+              padding: 0;
+              text-decoration: none; }
+              .main-page.service-page .main-tabs#main-tab-service-1 .service-block .service-top ul.nav-tabs li a:before {
+                background: url("../img/service-exchange.png") no-repeat;
+                content: '';
+                display: inline-block;
+                height: 15px;
+                margin-right: 12px;
+                vertical-align: middle;
+                width: 17px; }
+              @media (min-width: 768px) {
+                .main-page.service-page .main-tabs#main-tab-service-1 .service-block .service-top ul.nav-tabs li a.exchange, .main-page.service-page .main-tabs#main-tab-service-1 .service-block .service-top ul.nav-tabs li a.storage {
+                  margin-right: 50px; } }
+              @media (min-width: 1200px) {
+                .main-page.service-page .main-tabs#main-tab-service-1 .service-block .service-top ul.nav-tabs li a.exchange, .main-page.service-page .main-tabs#main-tab-service-1 .service-block .service-top ul.nav-tabs li a.storage {
+                  margin-right: 45px; } }
+              @media (min-width: 1300px) {
+                .main-page.service-page .main-tabs#main-tab-service-1 .service-block .service-top ul.nav-tabs li a.exchange, .main-page.service-page .main-tabs#main-tab-service-1 .service-block .service-top ul.nav-tabs li a.storage {
+                  margin-right: 50px; } }
+              .main-page.service-page .main-tabs#main-tab-service-1 .service-block .service-top ul.nav-tabs li a.storage:before {
+                background: url("../img/service-storage.png") no-repeat;
+                height: 17px;
+                width: 18px; }
+              .main-page.service-page .main-tabs#main-tab-service-1 .service-block .service-top ul.nav-tabs li a.scalling:before {
+                background: url("../img/service-scalling.png") no-repeat;
+                height: 15px;
+                width: 15px; }
+            .main-page.service-page .main-tabs#main-tab-service-1 .service-block .service-top ul.nav-tabs li.active a {
+              color: #73b5e0; }
+        .main-page.service-page .main-tabs#main-tab-service-1 .service-block .service-top a {
+          color: #000;
+          font-size: 16px;
+          font-weight: 600;
+          line-height: 16px;
+          outline: 0;
+          text-decoration: none; }
+          .main-page.service-page .main-tabs#main-tab-service-1 .service-block .service-top a:hover, .main-page.service-page .main-tabs#main-tab-service-1 .service-block .service-top a:focus {
+            color: #73b5e0; }
+          .main-page.service-page .main-tabs#main-tab-service-1 .service-block .service-top a:before {
+            background: url("../img/service-exchange.png") no-repeat;
+            content: '';
+            display: inline-block;
+            height: 15px;
+            margin-right: 12px;
+            vertical-align: middle;
+            width: 17px; }
+          @media (min-width: 768px) {
+            .main-page.service-page .main-tabs#main-tab-service-1 .service-block .service-top a.exchange, .main-page.service-page .main-tabs#main-tab-service-1 .service-block .service-top a.storage {
+              margin-right: 50px; } }
+          .main-page.service-page .main-tabs#main-tab-service-1 .service-block .service-top a.storage:before {
+            background: url("../img/service-storage.png") no-repeat;
+            height: 17px;
+            width: 18px; }
+          .main-page.service-page .main-tabs#main-tab-service-1 .service-block .service-top a.scalling:before {
+            background: url("../img/service-scalling.png") no-repeat;
+            height: 15px;
+            width: 15px; }
+      .main-page.service-page .main-tabs#main-tab-service-1 .service-block .service-info {
+        color: #717171;
         font-size: 14px;
-        line-height: 2.41vh;
-        margin-top: 3.25vh;
-        padding-left: 20px; } }
-    .main-page.service-page .main-tabs#main-tab-service-2 .small-title.left {
-      text-align: left; }
-      @media (min-width: 1200px) {
-        .main-page.service-page .main-tabs#main-tab-service-2 .small-title.left {
-          max-width: 497px; } }
-    .main-page.service-page .main-tabs#main-tab-service-2 .small-title.right {
-      text-align: left; }
-      @media (min-width: 1200px) {
-        .main-page.service-page .main-tabs#main-tab-service-2 .small-title.right {
-          padding-left: 0; } }
-      @media (min-width: 1400px) {
-        .main-page.service-page .main-tabs#main-tab-service-2 .small-title.right {
-          margin-right: -50px; } }
-  .main-page.service-page .main-tabs#main-tab-service-2 .bottom-links {
-    margin-top: 100px;
-    position: static; }
+        letter-spacing: .6px;
+        line-height: 26px;
+        padding: 6.02vh 15px; }
+        @media (min-width: 768px) {
+          .main-page.service-page .main-tabs#main-tab-service-1 .service-block .service-info {
+            padding: 6.02vh 75px; } }
     @media (min-width: 1200px) {
-      .main-page.service-page .main-tabs#main-tab-service-2 .bottom-links {
-        margin-top: 0;
-        position: absolute; } }
+      .main-page.service-page .main-tabs#main-tab-service-2 {
+        background: url("../img/service-tab-2.png") no-repeat;
+        background-position: right bottom;
+        background-size: 80% auto; } }
+    @media (min-width: 1500px) {
+      .main-page.service-page .main-tabs#main-tab-service-2 {
+        background-size: 100% auto; } }
+    .main-page.service-page .main-tabs#main-tab-service-2 .main-title {
+      font-size: 36px;
+      line-height: 39px;
+      margin-bottom: 20px; }
+      @media (min-width: 768px) {
+        .main-page.service-page .main-tabs#main-tab-service-2 .main-title {
+          font-size: 50px;
+          line-height: 53px;
+          margin-top: 250px; } }
+      @media (min-width: 1200px) {
+        .main-page.service-page .main-tabs#main-tab-service-2 .main-title {
+          margin-bottom: 2.32vh;
+          margin-top: 25.93vh; } }
+      .main-page.service-page .main-tabs#main-tab-service-2 .main-title span {
+        color: #4aa3de; }
+    .main-page.service-page .main-tabs#main-tab-service-2 .small-title {
+      font-size: 12px;
+      line-height: 18px;
+      margin-top: 1.25vh; }
+      @media (min-width: 768px) {
+        .main-page.service-page .main-tabs#main-tab-service-2 .small-title {
+          padding-left: 80px; } }
+      @media (min-width: 1200px) {
+        .main-page.service-page .main-tabs#main-tab-service-2 .small-title {
+          font-size: 14px;
+          line-height: 2.41vh;
+          margin-top: 3.25vh;
+          padding-left: 20px; } }
+      .main-page.service-page .main-tabs#main-tab-service-2 .small-title.left {
+        text-align: left; }
+        @media (min-width: 1200px) {
+          .main-page.service-page .main-tabs#main-tab-service-2 .small-title.left {
+            max-width: 497px; } }
+      .main-page.service-page .main-tabs#main-tab-service-2 .small-title.right {
+        text-align: left; }
+        @media (min-width: 1200px) {
+          .main-page.service-page .main-tabs#main-tab-service-2 .small-title.right {
+            padding-left: 0; } }
+        @media (min-width: 1400px) {
+          .main-page.service-page .main-tabs#main-tab-service-2 .small-title.right {
+            margin-right: -50px; } }
+    .main-page.service-page .main-tabs#main-tab-service-2 .bottom-links {
+      margin-top: 100px;
+      position: static; }
+      @media (min-width: 1200px) {
+        .main-page.service-page .main-tabs#main-tab-service-2 .bottom-links {
+          margin-top: 0;
+          position: absolute; } }
   @media (min-width: 1400px) {
     .main-page.faq-page #main-tab-faq-1 {
       background: url("../img/faq-main-tab-1.png") no-repeat;
@@ -2179,138 +3013,141 @@ body.main-page-body .header {
   @media (min-width: 1800px) {
     .main-page.faq-page #main-tab-faq-1 {
       background-size: auto; } }
-  .main-page.faq-page .main-tabs .bottom-links {
-    margin: 40px 0;
-    position: static; }
-    @media (min-width: 1200px) {
-      .main-page.faq-page .main-tabs .bottom-links {
-        bottom: 50px;
-        left: auto;
-        margin: 0;
-        padding-left: 110px;
-        position: absolute; } }
-  .main-page.faq-page .main-tabs#main-tab-faq-1 .main-title {
-    color: #070a07;
-    font-size: 36px;
-    line-height: 39px; }
-    @media (min-width: 768px) {
-      .main-page.faq-page .main-tabs#main-tab-faq-1 .main-title {
-        font-size: 50px;
-        line-height: 53px;
-        margin-top: 250px;
-        padding-left: 15px; } }
-    @media (min-width: 1200px) {
-      .main-page.faq-page .main-tabs#main-tab-faq-1 .main-title {
-        margin-top: 43.52vh; } }
-  .main-page.faq-page .main-tabs#main-tab-faq-1 .small-title {
-    font-size: 16px;
-    line-height: 26px; }
-    @media (min-width: 768px) {
-      .main-page.faq-page .main-tabs#main-tab-faq-1 .small-title {
-        padding-left: 15px; } }
-  .main-page.faq-page .main-tabs#main-tab-faq-1 .faq-block {
-    margin-top: 50px;
-    overflow: scroll; }
-    @media (min-width: 1200px) {
-      .main-page.faq-page .main-tabs#main-tab-faq-1 .faq-block {
-        height: 52.78vh; } }
-    .main-page.faq-page .main-tabs#main-tab-faq-1 .faq-block::-webkit-scrollbar-track {
-      display: none; }
+  .main-page.faq-page .main-tabs {
+    height: 100%;
+    position: relative; }
+    .main-page.faq-page .main-tabs .bottom-links {
+      margin: 40px 0;
+      position: static; }
       @media (min-width: 1200px) {
-        .main-page.faq-page .main-tabs#main-tab-faq-1 .faq-block::-webkit-scrollbar-track {
-          background-color: #e9e9e9;
-          border-radius: 10px;
-          margin: 1.5px 0; } }
-    .main-page.faq-page .main-tabs#main-tab-faq-1 .faq-block::-webkit-scrollbar {
-      display: none; }
-      @media (min-width: 1200px) {
-        .main-page.faq-page .main-tabs#main-tab-faq-1 .faq-block::-webkit-scrollbar {
-          background-color: #e9e9e9;
-          width: 4px; } }
-    .main-page.faq-page .main-tabs#main-tab-faq-1 .faq-block::-webkit-scrollbar-thumb {
-      display: none; }
-      @media (min-width: 1200px) {
-        .main-page.faq-page .main-tabs#main-tab-faq-1 .faq-block::-webkit-scrollbar-thumb {
-          background-color: #5aaadf;
-          border-radius: 10px;
-          -webkit-box-shadow: inset 0px 0px 3px 0px rgba(0, 0, 0, 0.13);
-          box-shadow: inset 0px 0px 3px 0px rgba(0, 0, 0, 0.13); } }
-    .main-page.faq-page .main-tabs#main-tab-faq-1 .faq-block::-webkit-scrollbar-track:horizontal {
-      display: none;
-      visibility: hidden; }
-    .main-page.faq-page .main-tabs#main-tab-faq-1 .faq-block::-webkit-scrollbar:horizontal {
-      display: none;
-      visibility: hidden; }
-    .main-page.faq-page .main-tabs#main-tab-faq-1 .faq-block::-webkit-scrollbar-thumb:horizontal {
-      display: none;
-      visibility: hidden; }
-    @media (min-width: 1200px) {
-      .main-page.faq-page .main-tabs#main-tab-faq-1 .faq-block {
-        margin-top: 27.32vh;
-        padding-left: 80px; } }
-    .main-page.faq-page .main-tabs#main-tab-faq-1 .faq-block .panel-group .panel {
-      background-color: transparent;
-      border: 0;
-      border-radius: 29px;
-      -webkit-box-shadow: -0.959px 10.958px 21px 0px rgba(0, 0, 0, 0.08);
-      box-shadow: -0.959px 10.958px 21px 0px rgba(0, 0, 0, 0.08);
-      margin: 0 auto;
-      padding: 23px 20px;
-      width: 100%; }
+        .main-page.faq-page .main-tabs .bottom-links {
+          bottom: 50px;
+          left: auto;
+          margin: 0;
+          padding-left: 110px;
+          position: absolute; } }
+    .main-page.faq-page .main-tabs#main-tab-faq-1 .main-title {
+      color: #070a07;
+      font-size: 36px;
+      line-height: 39px; }
       @media (min-width: 768px) {
-        .main-page.faq-page .main-tabs#main-tab-faq-1 .faq-block .panel-group .panel {
-          padding: 23px 60px;
-          width: 78%; } }
-      @media (min-width: 992px) {
-        .main-page.faq-page .main-tabs#main-tab-faq-1 .faq-block .panel-group .panel {
-          width: 715px; } }
+        .main-page.faq-page .main-tabs#main-tab-faq-1 .main-title {
+          font-size: 50px;
+          line-height: 53px;
+          margin-top: 250px;
+          padding-left: 15px; } }
       @media (min-width: 1200px) {
-        .main-page.faq-page .main-tabs#main-tab-faq-1 .faq-block .panel-group .panel {
-          margin: 0; } }
-      .main-page.faq-page .main-tabs#main-tab-faq-1 .faq-block .panel-group .panel .panel-heading {
-        background-color: #fff;
-        padding: 0; }
-        .main-page.faq-page .main-tabs#main-tab-faq-1 .faq-block .panel-group .panel .panel-heading a {
-          -webkit-box-shadow: none;
-          box-shadow: none;
-          color: #000;
-          display: block;
-          font-size: 16px;
-          letter-spacing: .6px;
-          line-height: 18px;
-          outline: 0;
-          position: relative;
-          text-decoration: none; }
-          .main-page.faq-page .main-tabs#main-tab-faq-1 .faq-block .panel-group .panel .panel-heading a:after {
-            background: url("../img/faq-arrow.png") no-repeat;
-            content: '';
-            display: inline-block;
-            height: 10px;
-            position: absolute;
-            right: 0;
-            width: 20px;
-            -webkit-transform: rotate(180deg);
-            transform: rotate(180deg); }
-          .main-page.faq-page .main-tabs#main-tab-faq-1 .faq-block .panel-group .panel .panel-heading a.collapsed:after {
-            -webkit-transform: none;
-            transform: none; }
-      .main-page.faq-page .main-tabs#main-tab-faq-1 .faq-block .panel-group .panel + .panel {
-        margin-top: 20px; }
-      .main-page.faq-page .main-tabs#main-tab-faq-1 .faq-block .panel-group .panel .panel-collapse .panel-body {
+        .main-page.faq-page .main-tabs#main-tab-faq-1 .main-title {
+          margin-top: 43.52vh; } }
+    .main-page.faq-page .main-tabs#main-tab-faq-1 .small-title {
+      font-size: 16px;
+      line-height: 26px; }
+      @media (min-width: 768px) {
+        .main-page.faq-page .main-tabs#main-tab-faq-1 .small-title {
+          padding-left: 15px; } }
+    .main-page.faq-page .main-tabs#main-tab-faq-1 .faq-block {
+      margin-top: 50px;
+      overflow: scroll; }
+      @media (min-width: 1200px) {
+        .main-page.faq-page .main-tabs#main-tab-faq-1 .faq-block {
+          height: 52.78vh; } }
+      .main-page.faq-page .main-tabs#main-tab-faq-1 .faq-block::-webkit-scrollbar-track {
+        display: none; }
+        @media (min-width: 1200px) {
+          .main-page.faq-page .main-tabs#main-tab-faq-1 .faq-block::-webkit-scrollbar-track {
+            background-color: #e9e9e9;
+            border-radius: 10px;
+            margin: 1.5px 0; } }
+      .main-page.faq-page .main-tabs#main-tab-faq-1 .faq-block::-webkit-scrollbar {
+        display: none; }
+        @media (min-width: 1200px) {
+          .main-page.faq-page .main-tabs#main-tab-faq-1 .faq-block::-webkit-scrollbar {
+            background-color: #e9e9e9;
+            width: 4px; } }
+      .main-page.faq-page .main-tabs#main-tab-faq-1 .faq-block::-webkit-scrollbar-thumb {
+        display: none; }
+        @media (min-width: 1200px) {
+          .main-page.faq-page .main-tabs#main-tab-faq-1 .faq-block::-webkit-scrollbar-thumb {
+            background-color: #5aaadf;
+            border-radius: 10px;
+            -webkit-box-shadow: inset 0px 0px 3px 0px rgba(0, 0, 0, 0.13);
+            box-shadow: inset 0px 0px 3px 0px rgba(0, 0, 0, 0.13); } }
+      .main-page.faq-page .main-tabs#main-tab-faq-1 .faq-block::-webkit-scrollbar-track:horizontal {
+        display: none;
+        visibility: hidden; }
+      .main-page.faq-page .main-tabs#main-tab-faq-1 .faq-block::-webkit-scrollbar:horizontal {
+        display: none;
+        visibility: hidden; }
+      .main-page.faq-page .main-tabs#main-tab-faq-1 .faq-block::-webkit-scrollbar-thumb:horizontal {
+        display: none;
+        visibility: hidden; }
+      @media (min-width: 1200px) {
+        .main-page.faq-page .main-tabs#main-tab-faq-1 .faq-block {
+          margin-top: 27.32vh;
+          padding-left: 80px; } }
+      .main-page.faq-page .main-tabs#main-tab-faq-1 .faq-block .panel-group .panel {
+        background-color: transparent;
         border: 0;
-        color: #707070;
-        font-size: 16px;
-        font-weight: 100;
-        letter-spacing: .6px;
-        line-height: 26px;
-        margin: 50px 0;
-        padding: 0; }
-        .main-page.faq-page .main-tabs#main-tab-faq-1 .faq-block .panel-group .panel .panel-collapse .panel-body a {
-          -webkit-box-shadow: none;
-          box-shadow: none;
-          color: #5aaadf;
-          outline: 0;
-          text-decoration: underline; }
+        border-radius: 29px;
+        -webkit-box-shadow: -0.959px 10.958px 21px 0px rgba(0, 0, 0, 0.08);
+        box-shadow: -0.959px 10.958px 21px 0px rgba(0, 0, 0, 0.08);
+        margin: 0 auto;
+        padding: 23px 20px;
+        width: 100%; }
+        @media (min-width: 768px) {
+          .main-page.faq-page .main-tabs#main-tab-faq-1 .faq-block .panel-group .panel {
+            padding: 23px 60px;
+            width: 78%; } }
+        @media (min-width: 992px) {
+          .main-page.faq-page .main-tabs#main-tab-faq-1 .faq-block .panel-group .panel {
+            width: 715px; } }
+        @media (min-width: 1200px) {
+          .main-page.faq-page .main-tabs#main-tab-faq-1 .faq-block .panel-group .panel {
+            margin: 0; } }
+        .main-page.faq-page .main-tabs#main-tab-faq-1 .faq-block .panel-group .panel .panel-heading {
+          background-color: #fff;
+          padding: 0; }
+          .main-page.faq-page .main-tabs#main-tab-faq-1 .faq-block .panel-group .panel .panel-heading a {
+            -webkit-box-shadow: none;
+            box-shadow: none;
+            color: #000;
+            display: block;
+            font-size: 16px;
+            letter-spacing: .6px;
+            line-height: 18px;
+            outline: 0;
+            position: relative;
+            text-decoration: none; }
+            .main-page.faq-page .main-tabs#main-tab-faq-1 .faq-block .panel-group .panel .panel-heading a:after {
+              background: url("../img/faq-arrow.png") no-repeat;
+              content: '';
+              display: inline-block;
+              height: 10px;
+              position: absolute;
+              right: 0;
+              width: 20px;
+              -webkit-transform: rotate(180deg);
+              transform: rotate(180deg); }
+            .main-page.faq-page .main-tabs#main-tab-faq-1 .faq-block .panel-group .panel .panel-heading a.collapsed:after {
+              -webkit-transform: none;
+              transform: none; }
+        .main-page.faq-page .main-tabs#main-tab-faq-1 .faq-block .panel-group .panel + .panel {
+          margin-top: 20px; }
+        .main-page.faq-page .main-tabs#main-tab-faq-1 .faq-block .panel-group .panel .panel-collapse .panel-body {
+          border: 0;
+          color: #707070;
+          font-size: 16px;
+          font-weight: 100;
+          letter-spacing: .6px;
+          line-height: 26px;
+          margin: 50px 0;
+          padding: 0; }
+          .main-page.faq-page .main-tabs#main-tab-faq-1 .faq-block .panel-group .panel .panel-collapse .panel-body a {
+            -webkit-box-shadow: none;
+            box-shadow: none;
+            color: #5aaadf;
+            outline: 0;
+            text-decoration: underline; }
   @media (min-width: 1200px) {
     .main-page.faq-page.news-page #main-tab-news-1, .main-page.faq-page.news-page #main-single-news-1 {
       background: url("../img/news-main-tab-1.png") no-repeat;
@@ -2514,9 +3351,10 @@ body.main-page-body .header {
     .main-page.faq-page.news-page #main-single-news-1 .atb-slider .slider-item {
       -webkit-box-shadow: none;
       box-shadow: none;
-      min-height: 0; }
+      min-height: 0;
+      position: relative; }
       .main-page.faq-page.news-page #main-single-news-1 .atb-slider .slider-item .slider-info-block {
-        padding: 3.72vh 0 0;
+        padding: 5.5vh 0 0;
         position: relative; }
         .main-page.faq-page.news-page #main-single-news-1 .atb-slider .slider-item .slider-info-block .slider-title {
           font-size: 22px;
@@ -2529,7 +3367,7 @@ body.main-page-body .header {
           font-size: 14px;
           letter-spacing: .6px;
           line-height: 14px;
-          margin-bottom: 4.3vh;
+          margin-bottom: 5vh;
           padding: 0 7%; }
         .main-page.faq-page.news-page #main-single-news-1 .atb-slider .slider-item .slider-info-block .close-button {
           background: url("../img/close-news.png") no-repeat;
@@ -2581,8 +3419,47 @@ body.main-page-body .header {
           .main-page.faq-page.news-page #main-single-news-1 .atb-slider .slider-item .slider-info-block .slider-info::-webkit-scrollbar-thumb:horizontal {
             display: none;
             visibility: hidden; }
+      .main-page.faq-page.news-page #main-single-news-1 .atb-slider .slider-item .news-share {
+        background-color: #fff;
+        left: -1.54%;
+        padding: 0 8.5% 20px;
+        position: absolute;
+        right: -1.54%; }
+        .main-page.faq-page.news-page #main-single-news-1 .atb-slider .slider-item .news-share .share-title {
+          color: #717171;
+          font-size: 16px;
+          letter-spacing: .6px;
+          line-height: 16px; }
+        .main-page.faq-page.news-page #main-single-news-1 .atb-slider .slider-item .news-share a {
+          margin-left: 13px;
+          vertical-align: text-bottom; }
+          .main-page.faq-page.news-page #main-single-news-1 .atb-slider .slider-item .news-share a img {
+            border-radius: 0;
+            display: inline;
+            height: 16px;
+            width: 16px; }
+        .main-page.faq-page.news-page #main-single-news-1 .atb-slider .slider-item .news-share .news-likes {
+          float: right; }
+          .main-page.faq-page.news-page #main-single-news-1 .atb-slider .slider-item .news-share .news-likes a {
+            color: #717171;
+            display: inline-block;
+            font-size: 16px;
+            letter-spacing: .6px;
+            line-height: 16px;
+            outline: 0;
+            text-decoration: none; }
+            .main-page.faq-page.news-page #main-single-news-1 .atb-slider .slider-item .news-share .news-likes a:before {
+              background: url("../img/like-inactive.png") no-repeat;
+              content: '';
+              display: inline-block;
+              height: 12px;
+              margin-right: 11px;
+              width: 13px; }
+            .main-page.faq-page.news-page #main-single-news-1 .atb-slider .slider-item .news-share .news-likes a:hover:before, .main-page.faq-page.news-page #main-single-news-1 .atb-slider .slider-item .news-share .news-likes a:focus:before {
+              background: url("../img/like-active.png") no-repeat; }
   @media (min-width: 1200px) {
     .main-page.faq-page.news-page #main-single-news-1 .bottom-links {
+      bottom: 0;
       padding-left: 110px; } }
   @media (min-width: 1280px) {
     .main-page.faq-page.news-page #main-single-news-1 .bottom-links {
@@ -2823,8 +3700,6 @@ body.main-page-body .header {
   width: 14.2%; }
 
 .investments {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 100;
   /* Rounded sliders */ }
   .investments__table {
     display: -webkit-box;
@@ -2872,21 +3747,20 @@ body.main-page-body .header {
       .investments__table--column:last-child {
         border: none; }
       .investments__table--column .sub-title {
-        font-family: "Montserrat UltraLight";
         color: #fff;
-        font-size: 27px;
+        font-size: 25px;
         letter-spacing: 2px;
-        line-height: 20.9px;
+        line-height: 25px;
         margin: 16px 0;
-        font-weight: 100; }
+        font-weight: 200; }
         @media (min-width: 1200px) {
           .investments__table--column .sub-title {
             font-size: 27px;
-            line-height: 16.9px; } }
+            line-height: 27px; } }
         @media (min-width: 1400px) {
           .investments__table--column .sub-title {
             font-size: 27px;
-            line-height: 20.9px; } }
+            line-height: 27px; } }
       .investments__table--column .sub-info {
         font-size: 11.2px;
         font-weight: 100;

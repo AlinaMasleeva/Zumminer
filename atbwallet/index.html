@@ -11,8 +11,8 @@
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/panels.js"></script>
 </head>
-<body>
-    <div class="header">
+<body class="dashboard-body">
+    <div class="header dashboard">
         <nav class="navbar">
             <div class="container-fluid">
                 <div class="row">
@@ -25,8 +25,8 @@
                         <a class="navbar-brand"><img src="assets/img/logo-new.png"></a>
                     </div>
                     <div class="collapse navbar-collapse" id="myNavbar">
-                        <ul class="nav navbar-nav">
-                            <li class="active"><a href="#" class="invest"><span>INVESTMENTS</span></a></li>
+                        <ul class="nav navbar-nav hidden-xs">
+                            <li class="active"><a href="#" class="invest"><span>INVESTMENT</span></a></li>
                             <li><a href="#" class="cloud"><span>CLOUD MINING</span></a></li>
                             <li><a href="#" class="refer"><span>REFERRALS</span></a></li>
                             <li><a href="#" class="tariff"><span>TARIFFS</span></a></li>
@@ -38,6 +38,20 @@
                                 </ul>
                             </li>
                             <li><a href="#" class="language">EN</a></li>
+                        </ul>
+                        <ul class="nav navbar-nav mobile-menu visible-xs">
+                            <li class="dropdown"><a href="#" class="mobile-left btc"><img src="assets/img/btc-mobile.png"></a><a href="#" data-toggle="dropdown" class="dropdown-toggle user"><span>MR JOHN</span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#" class="user">MR JOHN</a></li>
+                                    <li><a href="#" class="settings">SETTINGS</a></li>
+                                    <li><a href="#" class="security">SECURITY</a></li>
+                                </ul>
+                            </li>
+                            <li class="active"><a href="#" class="mobile-left atb"><img src="assets/img/atb-mobile.png"></a><a href="#" class="invest"><span>INVESTMENT</span></a></li>
+                            <li><a href="#" class="mobile-left eth"><img src="assets/img/eth-mobile.png"></a><a href="#" class="cloud"><span>CLOUD MINING</span></a></li>
+                            <li><a href="#" class="mobile-left ltc"><img src="assets/img/ltc-mobile.png"></a><a href="#" class="refer"><span>REFERRALS</span></a></li>
+                            <li><a href="#" class="mobile-left zec"><img src="assets/img/zec-mobile.png"></a><a href="#" class="tariff"><span>TARIFFS</span></a></li>
+                            <li><a href="#" class="mobile-left usd"><img src="assets/img/usd-mobile.png"></a><a href="#" class="logout">LOGOUT</a></li>
                         </ul>
                     </div>
                 </div>
@@ -100,7 +114,7 @@
     <div class="main-block">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-xs-1 hidden-lg">
+                <div class="col-sm-1 hidden-xs hidden-lg">
                     <ul class="nav nav-tabs">
                         <li class="active">
                             <a href="#a" data-toggle="tab" id="a-link"><span>BITCOIN - 0 BTC</span></a>
@@ -124,7 +138,7 @@
                         <li><a href="#" class="logout-icon"><span>LOGOUT</span></a></li>
                     </ul>
                 </div>
-                <div class="col-xs-11 col-lg-12">
+                <div class="col-xs-12 col-sm-11 col-lg-12">
                     <div class="tab-content">
                         <div class="tab-pane active" id="a">
                             <div class="bitcoin-block">
@@ -135,15 +149,18 @@
                                             <!-- Wrapper for slides -->
                                             <div class="carousel-inner">
                                                 <div class="item active">
-                                                  <img src="assets/img/chart-1.png" alt="Item 1">
+                                                  <img src="assets/img/chart-1.png" alt="Item 1" class="hidden-xs">
+                                                  <img src="assets/img/slider-mobile.png" alt="Item 1" class="visible-xs">
                                                 </div>
 
                                                 <div class="item">
-                                                  <img src="assets/img/chart-1.png" alt="Item 2">
+                                                  <img src="assets/img/chart-1.png" alt="Item 2" class="hidden-xs">
+                                                  <img src="assets/img/slider-mobile.png" alt="Item 2" class="visible-xs">
                                                 </div>
 
                                                 <div class="item">
-                                                  <img src="assets/img/chart-1.png" alt="Item 3">
+                                                  <img src="assets/img/chart-1.png" alt="Item 3" class="hidden-xs">
+                                                  <img src="assets/img/slider-mobile.png" alt="Item 3" class="visible-xs">
                                                 </div>
                                             </div>
 
@@ -157,7 +174,62 @@
                                                 <span class="sr-only">Next</span>
                                             </a>
                                         </div>
-                                        <div class="send-btc-block">
+                                        <div class="mobile-graph-info visible-xs">
+                                            <div class="left-info">
+                                                <img src="assets/img/mobile-arrow-amount.png">
+                                                <span class="amount">$5500</span>
+                                                <span class="title">Bitcoin</span>
+                                            </div>
+                                            <div class="right-info">
+                                                <img src="assets/img/mobile-arrow-amount-right.png">
+                                                <span class="amount">2.4%</span>
+                                                <span class="title">Bitcoin</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="mobile-balance visible-xs">
+                                            <div class="balance-title">YOUR BITCOIN BALANCE</div>
+                                            <div class="balance-amount">0.9885786 BTC</div>
+                                        </div>
+
+                                        <div class="mobile-transactions visible-xs">
+                                            <div class="vertical-line"></div>
+                                            <div class="transaction">
+                                                <span class="tran-amount">0.35592100 BTC</span>
+                                                <span class="tran-date">12:53 JULY 07.2017</span>
+                                                <a href="#" class="tran-info" data-toggle="modal" data-target="#transaction-1"><img src="assets/img/mobile-info.png"></a>
+                                            </div>
+                                            <div class="vertical-line not-first"></div>
+                                            <div class="transaction">
+                                                <span class="tran-amount">3.97892100 BTC</span>
+                                                <span class="tran-date">12:53 JULY 07.2017</span>
+                                                <a href="#" class="tran-info" data-toggle="modal" data-target="#transaction-2"><img src="assets/img/mobile-info.png"></a>
+                                            </div>
+                                            <div class="vertical-line not-first"></div>
+                                            <div class="transaction">
+                                                <span class="tran-amount">1.51902100 BTC</span>
+                                                <span class="tran-date">12:53 JULY 07.2017</span>
+                                                <a href="#" class="tran-info" data-toggle="modal" data-target="#transaction-3"><img src="assets/img/mobile-info.png"></a>
+                                            </div>
+                                        </div>
+
+                                        <a href="#" class="mobile-bitcoin-link visible-xs" data-toggle="modal" data-target="#bitcoin-1">
+                                            <img src="assets/img/mobile-bit-up.png" class="left">
+                                            <span>SEND BITCOINS</span>
+                                            <img src="assets/img/mobile-bit-right.png" class="right">
+                                        </a>
+                                        <a href="#" class="mobile-bitcoin-link get visible-xs" data-toggle="modal" data-target="#bitcoin-2">
+                                            <img src="assets/img/mobile-bit-down.png" class="left">
+                                            <span>GET BITCOINS</span>
+                                            <img src="assets/img/mobile-bit-right.png" class="right">
+                                        </a>
+                                        <a href="#" class="mobile-bitcoin-link cloud visible-xs">
+                                            <img src="assets/img/mobile-cloud.png" class="left">
+                                            <span>CLOUD MINING</span>
+                                            <img src="assets/img/mobile-bit-right-grey.png" class="right">
+                                        </a>
+
+                                        <div class="send-btc-block hidden-xs">
                                             <div class="send-title">SEND BTC TO:</div>
                                             <div class="input-wrapper">
                                                 <input type="text" placeholder="Past or scan an address">
@@ -165,10 +237,10 @@
                                             <span class="btc-amount">0.980650 BTC</span><img src="assets/img/arrows.png" class="arrows"><span class="usd-amount">2400 USD</span>
                                             <div class="input-message-wrapper">
                                                 <input type="text" placeholder="Your message" class="message-input">
-                                            </div>                                            
+                                            </div>
                                             <a href="#" class="send-button"></a>
                                         </div>
-                                        <div class="cloud-mining-block">
+                                        <div class="cloud-mining-block hidden-xs">
                                             <div class="cloud-title">CLOUD MINING</div>
                                             <div class="cloud">
                                                 <div class="sub-title">1.00 TH/S</div>
@@ -185,7 +257,7 @@
                                         </div>
                                     </div>
                                     <div class="col-xs-12 col-sm-6 col-sm-offset-3 col-lg-offset-0 col-lg-3">
-                                        <div class="balance-block">
+                                        <div class="balance-block hidden-xs">
                                             <div class="balance-header">
                                                 <span>BALANCE:</span>
                                                 <span class="amount">0.98786 BTC</span>
@@ -283,7 +355,7 @@
                                                 <a href="#">ALL TRANSACTIONS</a>
                                             </div>
                                         </div>
-                                        <div class="balance-block">
+                                        <div class="balance-block hidden-xs">
                                             <div class="balance-header bitcoins">
                                                 <span>GET BITCOINS</span>
                                                 <div class="bitcoin-arrow"></div>
@@ -308,5 +380,134 @@
             </div>
         </div>
     </div>
+    <div class="modal-dashboard modal fade" id="transaction-1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="get-title">YOU GET 0.35592100 BTC</div>
+            <div class="get-date">12:53 JULY 07.2017</div>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="assets/img/close-tran-mobile.png"></span></button>
+          </div>
+          <div class="modal-body">
+            <div class="tran-item">
+                <span>TO:</span> YOUR WALLET
+            </div>
+            <div class="tran-item">
+                <span>FROM:</span> <br>17d6W5t5FkWdwG5zyfrNsjdGWvYG4ECa5m
+            </div>
+            <div class="tran-item">
+                <span>MESSAGE:</span> Hello. It’s your payment for the design. I sent the native files to your mail.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal-dashboard modal fade" id="transaction-2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="get-title">YOU GET 3.97892100 BTC</div>
+            <div class="get-date">12:53 JULY 07.2017</div>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="assets/img/close-tran-mobile.png"></span></button>
+          </div>
+          <div class="modal-body">
+            <div class="tran-item">
+                <span>TO:</span> YOUR WALLET
+            </div>
+            <div class="tran-item">
+                <span>FROM:</span> <br>17d6W5t5FkWdwG5zyfrNsjdGWvYG4ECa5m
+            </div>
+            <div class="tran-item">
+                <span>MESSAGE:</span> Hello. It’s your payment for the design. I sent the native files to your mail.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal-dashboard modal fade" id="transaction-3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="get-title">YOU GET 1.51902100 BTC</div>
+            <div class="get-date">12:53 JULY 07.2017</div>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="assets/img/close-tran-mobile.png"></span></button>
+          </div>
+          <div class="modal-body">
+            <div class="tran-item">
+                <span>TO:</span> YOUR WALLET
+            </div>
+            <div class="tran-item">
+                <span>FROM:</span> <br>17d6W5t5FkWdwG5zyfrNsjdGWvYG4ECa5m
+            </div>
+            <div class="tran-item">
+                <span>MESSAGE:</span> Hello. It’s your payment for the design. I sent the native files to your mail.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal-bitcoins modal fade" id="bitcoin-1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="bitcoin-title">Bitcoin balance<br>BTC</div>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="assets/img/close-tran-mobile.png"></span></button>
+            <div class="bitcoin-amount">0.58912</div>
+            <div class="small-amounts">
+                <span>IT'S</span>
+                <span class="amount"><b>$</b> 5.600</span>
+                <span class="amount"><b>ATB</b> 6.589</span>
+            </div>
+          </div>
+          <div class="modal-body">
+            <form>
+                <div class="input-wrapper qr">
+                    <input type="text" placeholder="Click and your address will copy">
+                </div>
+                <div class="input-wrapper">
+                    <input type="text" placeholder="Description: what’s this transaction for?">
+                </div>
+                <div class="input-wrapper amount">
+                    <input type="text" placeholder="Amount" class="input-amount">
+                </div>
+                <a href="#" class="send-button"><img src="assets/img/get-button-mobile.png"></a>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal-bitcoins modal fade" id="bitcoin-2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="bitcoin-title">Bitcoin balance<br>BTC</div>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="assets/img/close-tran-mobile-get.png"></span></button>
+            <div class="bitcoin-amount">0.98856</div>
+            <div class="small-amounts">
+                <span>IT'S</span>
+                <span class="amount"><b>$</b> 4.300</span>
+                <span class="amount"><b>ATB</b> 13.589</span>
+            </div>
+          </div>
+          <div class="modal-body">
+            <form>
+                <div class="input-wrapper qr">
+                    <input type="text" placeholder="Past an address of the recipient">
+                </div>
+                <div class="input-wrapper">
+                    <input type="text" placeholder="Your message">
+                </div>
+                <div class="input-wrapper amount">
+                    <input type="text" placeholder="Amount" class="input-amount">
+                </div>
+                <a href="#" class="send-button"><img src="assets/img/send-button-mobile.png"></a>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
 </body>
 </html>

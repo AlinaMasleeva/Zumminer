@@ -10,7 +10,7 @@ $(document).ready(function() {
     });
 
     if ($(window).width() > 1200) {
-        $('.nav-tabs').hover(function() {
+        $('.main-menu .nav-tabs').hover(function() {
             openNav();
         });
         $('.left-menu').mouseleave(function() {

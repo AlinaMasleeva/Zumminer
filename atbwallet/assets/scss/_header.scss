@@ -290,6 +290,154 @@ body {
             }
         }
     }
+    &.dashboard {
+        margin-top: 15px;
+        @media (min-width: $screen-sm-min) {
+            margin-top: 5vh;
+        }
+        .navbar {
+            .navbar-header {
+                text-align: left;
+                @media (min-width: $screen-sm-min) {
+                    text-align: center;
+                }
+                .navbar-toggle {
+                    margin-top: 14px;
+                    span {
+                        background-image: -moz-linear-gradient(-165deg, #4691ee 0%, #4ca9d9 25%, #51c0c4 100%);
+                        background-image: -webkit-linear-gradient(-165deg, #4691ee 0%, #4ca9d9 25%, #51c0c4 100%);
+                        background-image: -ms-linear-gradient(-165deg, #4691ee 0%, #4ca9d9 25%, #51c0c4 100%);
+                        border-radius: 12px;
+                        height: 3px;
+                        width: 19px;
+                    }
+                }
+            }
+            .navbar-collapse {
+                .navbar-nav {
+                    &.mobile-menu {
+                        li {
+                            text-align: left;
+                            &:not(:last-child) {
+                                border-bottom: 1px solid rgba(229, 237, 242, 0.251);
+                            }
+                            a {
+                                font-size: 12.7px;
+                                font-weight: 500;
+                                line-height: 12.7px;
+                                &.mobile-left {
+                                    background-image: -moz-linear-gradient( -165deg, rgb(70,145,238) 0%, rgb(76,169,217) 25%, rgb(81,192,196) 100%);
+                                    background-image: -webkit-linear-gradient( -165deg, rgb(70,145,238) 0%, rgb(76,169,217) 25%, rgb(81,192,196) 100%);
+                                    background-image: -ms-linear-gradient( -165deg, rgb(70,145,238) 0%, rgb(76,169,217) 25%, rgb(81,192,196) 100%);
+                                    height: 80px;
+                                    padding: 0;
+                                    text-align: center;
+                                    width: 80px;
+                                    -webkit-background-clip: inherit;
+                                    &:before {
+                                        content: '';
+                                        display: inline-block;
+                                        height: 100%;
+                                        margin: 0;
+                                        vertical-align: middle;
+                                    }
+                                    &.btc {
+                                        img {
+                                            width: 15px;
+                                        }
+                                    }
+                                    &.atb {
+                                        img {
+                                            width: 17px;
+                                        }
+                                    }
+                                    &.eth {
+                                        img {
+                                            width: 15px;
+                                        }
+                                    }
+                                    &.ltc {
+                                        img {
+                                            width: 15px;
+                                        }
+                                    }
+                                    &.zec {
+                                        img {
+                                            width: 15px;
+                                        }
+                                    }
+                                    &.usd {
+                                        img {
+                                            width: 12px;
+                                        }
+                                    }
+                                }
+                                &.dropdown-toggle, &.invest, &.cloud, &.refer, &.tariff, &.logout {
+                                    margin-left: 45px;
+                                    &:before {
+                                        background-size: 100%;
+                                        margin-right: 20px;
+                                    }
+                                }
+                                &.dropdown-toggle {
+                                    &:before {
+                                        background: url('../img/icon-user-mobile.png') no-repeat;
+                                        background-size: 100%;
+                                        height: 12px;
+                                        width: 13px;
+                                    }
+                                }
+                                &.invest {
+                                    &:before {
+                                        background: url('../img/icon-invest-active-mobile.png') no-repeat;
+                                        background-size: 100%;
+                                        height: 10px;
+                                        width: 13px;
+                                    }
+                                }
+                                &.cloud {
+                                    &:before {
+                                        background: url('../img/icon-cloud-mobile.png') no-repeat;
+                                        background-size: 100%;
+                                        height: 10px;
+                                        width: 17px;
+                                        margin-right: 16px;
+                                    }
+                                }
+                                &.refer {
+                                    &:before {
+                                        background: url('../img/icon-refer-mobile.png') no-repeat;
+                                        background-size: 100%;
+                                        height: 16px;
+                                        width: 10px;
+                                        margin-right: 23px;
+                                    }
+                                }
+                                &.tariff {
+                                    &:before {
+                                        background: url('../img/icon-tariff-mobile.png') no-repeat;
+                                        background-size: 100%;
+                                        height: 13px;
+                                        width: 13px;
+                                    }
+                                }
+                                &.logout {
+                                    color: #d2d2d3;
+                                    &:before {
+                                        background: url('../img/logout-icon.png') no-repeat;
+                                        background-size: 100%;
+                                        height: 13px;
+                                        width: 16px;
+                                        margin-right: 17px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 body.main-page-body {
