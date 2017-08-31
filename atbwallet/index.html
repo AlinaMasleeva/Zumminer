@@ -22,7 +22,7 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a class="navbar-brand"><img src="assets/img/logo-new.png"></a>
+                        <a class="navbar-brand navbar-brand-dashboard"><img src="assets/img/logo-new.png"></a>
                     </div>
                     <div class="collapse navbar-collapse" id="myNavbar">
                         <ul class="nav navbar-nav hidden-xs">
@@ -37,7 +37,23 @@
                                     <li><a href="#" class="security">SECURITY</a></li>
                                 </ul>
                             </li>
-                            <li><a href="#" class="language">EN</a></li>
+                            <li class="dashboard-language">
+                                <ul class="nav navbar-nav language-left">
+                                    <li><a href="#" data-toggle="dropdown" class="dropdown-toggle">EN</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#">ID</a></li>
+                                            <li><a href="#">TR</a></li>
+                                            <li><a href="#">DE</a></li>
+                                            <li><a href="#">AR</a></li>
+                                            <li><a href="#">JA</a></li>
+                                            <li><a href="#">CH</a></li>
+                                            <li><a href="#">KO</a></li>
+                                            <li><a href="#">VI</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <!--a href="#" class="language">EN</a-->
+                            </li>
                         </ul>
                         <ul class="nav navbar-nav mobile-menu visible-xs">
                             <li class="dropdown"><a href="#" class="mobile-left btc"><img src="assets/img/btc-mobile.png"></a><a href="#" data-toggle="dropdown" class="dropdown-toggle user"><span>MR JOHN</span></a>
@@ -58,10 +74,10 @@
             </div>
         </nav>
     </div>
-    <div class="left-menu">
+    <div class="left-menu left-menu-dashboard">
         <nav class="navbar">
             <div class="navbar-header">
-                <a class="navbar-brand"><img src="assets/img/logo-left.png"></a>
+                <a class="navbar-brand"><img src="assets/img/logo-left-zumminer.png"></a>
             </div>
         </nav>
         <ul class="nav nav-tabs">
@@ -111,7 +127,7 @@
             <li><a href="#" class="logout-icon"><span>LOGOUT</span></a></li>
         </ul>
     </div>
-    <div class="main-block">
+    <div class="main-block main-dashboard-block">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-sm-1 hidden-xs hidden-lg">
@@ -143,7 +159,7 @@
                         <div class="tab-pane active" id="a">
                             <div class="bitcoin-block">
                                 <div class="row">
-                                    <div class="col-xs-12 col-lg-9">
+                                    <div class="col-xs-12 col-lg-9 dashboard-left-column">
                                         <div id="myCarousel" class="carousel slide" data-ride="carousel">
 
                                             <!-- Wrapper for slides -->
@@ -241,7 +257,7 @@
                                             <a href="#" class="send-button"></a>
                                         </div>
                                         <div class="cloud-mining-block hidden-xs">
-                                            <div class="cloud-title">CLOUD MINING</div>
+                                            <div class="cloud-title"><span>CLOUD MINING</span></div>
                                             <div class="cloud">
                                                 <div class="sub-title">1.00 TH/S</div>
                                                 <div class="sub-info">HASH POWER</div>
@@ -256,7 +272,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-xs-12 col-sm-6 col-sm-offset-3 col-lg-offset-0 col-lg-3">
+                                    <div class="col-xs-12 col-sm-6 col-sm-offset-3 col-lg-offset-0 col-lg-3 dashboard-right-column">
                                         <div class="balance-block hidden-xs">
                                             <div class="balance-header">
                                                 <span>BALANCE:</span>

@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" type="text/css" href="assets/css/slick.css"/>
     <link rel="stylesheet" type="text/css" href="assets/css/slick-theme.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/ninja-slider.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/thumbnail-slider.css"/>
     <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
     <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
     <script src="assets/js/bootstrap.min.js"></script>
@@ -22,9 +24,12 @@
     <script src="assets/js/jquery.scrollify.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="assets/js/slick.min.js"></script>
+    <script src="assets/js/ninja-slider.js"></script>
+    <script src="assets/js/thumbnail-slider.js" type="text/javascript"></script>
+
     <script>
         $(document).ready(function(){
-            $('.atb-slider').slick({
+            $('.atb-slider-all').slick({
               appendArrows: $('.slider-arrows'),
               centerMode: true,
               infinite: true,
@@ -63,7 +68,7 @@
                   }
                 }
               ]
-            });
+            });            
         });
     </script>
 </head>
@@ -143,6 +148,12 @@
                     </li>
                     <li>
                         <a class="page-scroll" href="#main-tab-7"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#main-tab-11"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#main-tab-12"></a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#main-tab-8"></a>
@@ -287,12 +298,127 @@
         </section>
 
         <section id="main-tab-7" class="main-tabs">
+ 
             <div class="container">
                 <div class="row">
                     <div class="col-xs-12 col-lg-6">
                         <div class="main-title"><span>Cloud</span> mining</div>
                         <div class="small-title">Smart and easy way to invest your money</div>
                         <a href="#" class="start-button">START</a>
+                    </div>
+                </div>
+                <div class="bottom-links">
+                    <a href="#" class="follow-news" data-toggle="modal" data-target="#followModal">Follow project news →</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="main-tab-11" class="main-tabs">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-lg-5">
+                        <div class="main-title"><span>Mining</span> farm</div>
+                        <div class="mining-slider-arrows">
+                            <button type="button" class="slick-prev mining-left-button">Previous</button>
+                            <button type="button" class="slick-next mining-right-button">Next</button>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-lg-7">
+                        <div class="mining-slider">
+                            <div id="ninja-slider">
+                                <div class="slider-inner">
+                                    <ul>
+                                        <li><a class="ns-img" href="assets/img/news-item-1.png"></a></li>
+                                        <li><a class="ns-img" href="assets/img/news-item-2.png"></a></li>
+                                        <li><a class="ns-img" href="assets/img/news-item-3.png"></a></li>
+                                        <li><a class="ns-img" href="assets/img/news-item-1.png"></a></li>
+                                        <li><a class="ns-img" href="assets/img/news-item-2.png"></a></li>
+                                        <li><a class="ns-img" href="assets/img/news-item-3.png"></a></li>
+                                        <li><a class="ns-img" href="assets/img/news-item-1.png"></a></li>
+                                        <li><a class="ns-img" href="assets/img/news-item-2.png"></a></li>
+                                        <li><a class="ns-img" href="assets/img/news-item-3.png"></a></li>
+                                        <li><a class="ns-img" href="assets/img/news-item-1.png"></a></li>
+                                        <li><a class="ns-img" href="assets/img/news-item-2.png"></a></li>
+                                        <li><a class="ns-img" href="assets/img/news-item-3.png"></a></li>
+                                    </ul>
+                                    <div class="slider-image-info">
+                                        <div class="slider-count">1/55</div>
+                                        <a href="#">Video</a>
+                                        <a href="#">Photo</a>                                        
+                                        <a href="#" class="active">All media</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="thumbnail-slider" class="visible-md visible-lg">
+                                <div class="inner">
+                                    <ul>
+                                        <li>
+                                            <a class="thumb" href="assets/img/news-item-1.png"></a>
+                                        </li>
+                                        <li>
+                                            <a class="thumb" href="assets/img/news-item-2.png"></a>
+                                        </li>
+                                        <li>
+                                            <a class="thumb" href="assets/img/news-item-3.png"></a>
+                                        </li>
+                                        <li>
+                                            <a class="thumb" href="assets/img/news-item-1.png"></a>
+                                        </li>
+                                        <li>
+                                            <a class="thumb" href="assets/img/news-item-2.png"></a>
+                                        </li>
+                                        <li>
+                                            <a class="thumb" href="assets/img/news-item-3.png"></a>
+                                        </li>
+                                        <li>
+                                            <a class="thumb" href="assets/img/news-item-1.png"></a>
+                                        </li>
+                                        <li>
+                                            <a class="thumb" href="assets/img/news-item-2.png"></a>
+                                        </li>
+                                        <li>
+                                            <a class="thumb" href="assets/img/news-item-3.png"></a>
+                                        </li>
+                                        <li>
+                                            <a class="thumb" href="assets/img/news-item-1.png"></a>
+                                        </li>
+                                        <li>
+                                            <a class="thumb" href="assets/img/news-item-2.png"></a>
+                                        </li>
+                                        <li>
+                                            <a class="thumb" href="assets/img/news-item-3.png"></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div style="clear:both;"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom-links">
+                    <a href="#" class="follow-news" data-toggle="modal" data-target="#followModal">Follow project news →</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="main-tab-12" class="main-tabs">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-lg-6">
+                        <div class="main-title"><span>Online</span> translation</div>
+                        <div class="small-title">Look at mining online</div>
+                        <a href="#" class="start-button">TARIFFS</a>
+                    </div>
+                    <div class="col-xs-12 col-lg-6">
+                        <div class="translation-player visible-lg">
+                            <div class="video-block">
+                                <img src="assets/img/video-example.png">
+                                <div class="video-control">
+                                    <a href="#" class="pause-button"><img src="assets/img/pause-button.png"></a>
+                                    <div class="video-date">12:15 a.m. 21.06.2017</div>
+                                </div>
+                            </div>                            
+                        </div>
                     </div>
                 </div>
                 <div class="bottom-links">
@@ -376,7 +502,16 @@
                 <div class="row">
                     <div class="col-xs-12 col-lg-2">
                         <div class="main-title"><span>Rates</span></div>
+                        <div class="slider-switchers">
+                            <a href="#" class="slider-all-switcher active">All</a>
+                            <span>/</span>
+                            <a href="#" class="slider-invest-switcher">Investments</a>
+                            <span>/</span>
+                            <a href="#" class="slider-cloud-switcher">Cloud mining</a>
+                        </div>
                         <div class="slider-arrows"></div>
+                        <div class="slider-arrows-invest hidden"></div>
+                        <div class="slider-arrows-cloud hidden"></div>
                     </div>
                     <div class="col-xs-12 col-lg-10">                        
                     </div>
@@ -393,7 +528,7 @@
                     <div class="press">Press: <span>marketing@zumminer.com</span></div>
                 </div>
             </div>
-            <div class="atb-slider">
+            <div class="atb-slider atb-slider-all">
                 <div class="slider-item">
                     <div class="slider-title">MEDIAL</div>
                     <div class="slider-info-title">Investment period</div>
@@ -469,6 +604,87 @@
                     <div class="slider-info-amount">0.25% per day</div>
                     <div class="slider-info-title">The forecast of investment profit for the accounting period is</div>
                     <div class="slider-info-amount">7,75 %</div>
+                    <a href="#" class="try-button">TRY</a>
+                </div>
+            </div>
+            <div class="atb-slider atb-slider-invest hidden">
+                <div class="slider-item">
+                    <div class="slider-title">MEDIAL</div>
+                    <div class="slider-info-title">Investment period</div>
+                    <div class="slider-info-amount">92 days</div>
+                    <div class="slider-info-title">The investment rate is</div>
+                    <div class="slider-info-amount">0.3% per day</div>
+                    <div class="slider-info-title">The forecast of investment profit for the accounting period is</div>
+                    <div class="slider-info-amount">27,6 %</div>
+                    <a href="#" class="try-button">TRY</a>
+                </div>
+                <div class="slider-item">
+                    <div class="slider-title">MINE</div>
+                    <div class="slider-info-title">Investment period</div>
+                    <div class="slider-info-amount">183 days</div>
+                    <div class="slider-info-title">The investment rate is</div>
+                    <div class="slider-info-amount">0.33% per day</div>
+                    <div class="slider-info-title">The forecast of investment profit for the accounting period is</div>
+                    <div class="slider-info-amount">60,39 %</div>
+                    <a href="#" class="try-button">TRY</a>
+                </div>
+                <div class="slider-item">
+                    <div class="slider-title">BEGINNER</div>
+                    <div class="slider-info-title">Investment period</div>
+                    <div class="slider-info-amount">31 days</div>
+                    <div class="slider-info-title">The investment rate is</div>
+                    <div class="slider-info-amount">0.25% per day</div>
+                    <div class="slider-info-title">The forecast of investment profit for the accounting period is</div>
+                    <div class="slider-info-amount">7,75 %</div>
+                    <a href="#" class="try-button">TRY</a>
+                </div>
+            </div>
+            <div class="atb-slider atb-slider-cloud hidden">
+                <div class="slider-item individual">
+                    <div class="slider-title">INDIVIDUAL</div>
+                    <div class="slider-info-block individual first">Individual conditions of cloud mining (service is in development)
+                        By investing, you gain the opportunity to participate in a closed alpha test, and will be the first to get the opportunity to mine on individual conditions:
+                    </div>
+                    <div class="slider-info-block individual">Minimum Hashrate: <span>1 MH/s</span></div>
+                    <div class="slider-info-block individual">Maintenance fee: <span>0.01 $ / 1 MH/s / 24h</span></div>
+                    <div class="slider-info-block individual">HArdware: <span>HashCoins SCRYPT</span></div>
+                    <div class="slider-info-block individual">Automatic accruals in BTC</div>
+                    <div class="slider-info-block individual">Term of the contract: <span>1 month, 3 months, 6 months, 1 year</span>
+                    </div>
+                    <div class="slider-info-block individual">Soon</div>
+                    <a href="#" class="try-button individual">Try</a>
+                </div>
+                <div class="slider-item">
+                    <div class="slider-title">ETHEREUM</div>
+                    <div class="slider-info-title">Minimum Hashrate:</div>
+                    <div class="slider-info-amount">100 KH/s</div>
+                    <div class="slider-info-block individual valutes">Service charge: <span>NO</span></div>
+                    <div class="slider-info-block individual valutes">Equipment: <span>GPU Rigs</span></div>
+                    <div class="slider-info-block individual valutes">Automatic accruals in <span>ETH</span></div>
+                    <div class="slider-info-block individual valutes">Term of the contract: <span>1 month, 3 months, 6 months, 1 year</span></div>
+                    <div class="slider-info-block individual valutes">Rental price: <span>will be announced at the time of launch</span></div>
+                    <a href="#" class="try-button">TRY</a>
+                </div>
+                <div class="slider-item">
+                    <div class="slider-title">ZCASH</div>
+                    <div class="slider-info-title">Minimum Hashrate:</div>
+                    <div class="slider-info-amount">0,1 H/s</div>
+                    <div class="slider-info-block individual valutes">Service charge: <span>NO</span></div>
+                    <div class="slider-info-block individual valutes">Equipment: <span>GPU Rigs</span></div>
+                    <div class="slider-info-block individual valutes">Automatic accruals in <span>ZEC</span></div>
+                    <div class="slider-info-block individual valutes">Term of the contract: <span>1 month, 3 months, 6 months, 1 year</span></div>
+                    <div class="slider-info-block individual valutes">Rental price: <span>will be announced at the time of launch</span></div>
+                    <a href="#" class="try-button">TRY</a>
+                </div>
+                <div class="slider-item">
+                    <div class="slider-title">DASH</div>
+                    <div class="slider-info-title">Minimum Hashrate:</div>
+                    <div class="slider-info-amount">1 MH/s</div>
+                    <div class="slider-info-block individual valutes">Service charge: <span>NO</span></div>
+                    <div class="slider-info-block individual valutes">Equipment: <span>GPU Rigs</span></div>
+                    <div class="slider-info-block individual valutes">Automatic accruals in <span>DASH</span></div>
+                    <div class="slider-info-block individual valutes">Term of the contract: <span>1 month, 3 months, 6 months, 1 year</span></div>
+                    <div class="slider-info-block individual valutes">Rental price: <span>will be announced at the time of launch</span></div>
                     <a href="#" class="try-button">TRY</a>
                 </div>
             </div>

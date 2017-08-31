@@ -169,6 +169,7 @@ body {
                             background-image: gradient( linear, left top, right top, color-stop(0, #4d95ef), color-stop(1, #58c2c6));
                             color:transparent;
                             &.invest {
+                                font-weight: 700;
                                 &:before {
                                     background: url('../img/icon-invest-active.png') no-repeat;
                                 }
@@ -269,6 +270,94 @@ body {
                             }
                         }
                     }
+                    &.dashboard-language {
+                        .language-left {
+                            float: left;
+                            font-size: 16px;
+                            line-height: 16px;
+                            margin-top: 0;
+                            position: absolute;
+                            top: 25px;
+                            @media (min-width: $screen-sm-min) {
+                                top: 0;
+                            }
+                            @media (min-width: $screen-lg-min) {
+                                float: left;
+                                padding: 15px 0;
+                                position: static;
+                            }
+                            li {
+                                margin-left: 0;
+                                a {
+                                    color: #070a07;
+                                    letter-spacing: .6px;
+                                    outline: 0;
+                                    text-decoration: none;
+                                    &:hover, &:focus {
+                                        background-color: transparent;
+                                    }
+                                    &.dropdown-toggle {
+                                        font-weight: 700;
+                                        padding: 10px 10px 10px 0;
+                                        @media (min-width: $screen-xs-min) {
+                                            padding: 10px 15px;
+                                        }
+                                        @media (min-width: $screen-sm-min) {
+                                            padding: 3px 15px;
+                                        }
+                                        @media (min-width: $screen-md-min) {
+                                            padding: 1px 15px;
+                                        }
+                                        @media (min-width: $screen-lg-min) {
+                                            padding: 0;
+                                        }
+                                    }
+                                }
+                                &.open {
+                                    a {
+                                        background-color: transparent;
+                                        padding-bottom: 12px;
+                                        &.dropdown-toggle {
+                                            &:after {
+                                                margin-right: 10px;
+                                                -ms-transform: rotate(180deg);
+                                                -webkit-transform: rotate(180deg);
+                                                transform: rotate(180deg);
+                                            }
+                                        }
+                                    }
+                                }
+                                .dropdown-menu {
+                                    background-color: #fff;
+                                    border: 0;
+                                    box-shadow: none;
+                                    min-width: 0;
+                                    padding: 0;
+                                    @media (min-width: $screen-sm-min) {
+                                        left: -8px;
+                                    }
+                                    @media (min-width: $screen-lg-min) {
+                                        left: -13px;
+                                    }
+                                    li {
+                                        background-color: #fff;
+                                        a {
+                                            color: rgba(7, 10, 7, 0.239);
+                                            font-size: 16px;
+                                            line-height: 16px;
+                                            padding: 6px 15px;
+                                        }
+                                    }
+                                }
+                            }
+                            &>li {
+                                float: none;
+                                @media (min-width: $screen-lg-min) {
+                                  float: left;
+                                }
+                            }
+                        }
+                    }
                     .amount-line {
                         background-color: #4d9af3;
                         display: inline-block;
@@ -282,9 +371,10 @@ body {
                     .user-amount {
                         background-clip: text;
                         -webkit-background-clip: text;
-                        background-image: -webkit-gradient( linear, left top, right top, color-stop(0, #4d95ef), color-stop(1, #58c2c6));
-                        background-image: gradient( linear, left top, right top, color-stop(0, #4d95ef), color-stop(1, #58c2c6));
+                        background-image: -webkit-gradient( linear, left top, right top, color-stop(0, #7db9e8), color-stop(0.52, #4e39da), color-stop(1, #9b4abf));
+                        background-image: gradient( linear, left top, right top, color-stop(0, #7db9e8), color-stop(0.52, #4e39da), color-stop(1, #9b4abf));
                         color:transparent;
+                        font-weight: 700;
                     }
                 }
             }

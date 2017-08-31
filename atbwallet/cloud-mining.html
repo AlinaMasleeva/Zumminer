@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/panels.js"></script>
+</head>
+<body class="dashboard-body">
+    <div class="header dashboard">
+        <nav class="navbar">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand navbar-brand-dashboard"><img src="assets/img/logo-new.png"></a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="myNavbar">
+                        <ul class="nav navbar-nav hidden-xs">
+                            <li class="active"><a href="#" class="invest"><span>INVESTMENT</span></a></li>
+                            <li><a href="#" class="cloud"><span>CLOUD MINING</span></a></li>
+                            <li><a href="#" class="refer"><span>REFERRALS</span></a></li>
+                            <li><a href="#" class="tariff"><span>TARIFFS</span></a></li>
+                            <li class="dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle user"><span>MR JOHN</span></a><span class="amount-line"></span><span class="user-amount">750$</span>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#" class="user">MR JOHN</a></li>
+                                    <li><a href="#" class="settings">SETTINGS</a></li>
+                                    <li><a href="#" class="security">SECURITY</a></li>
+                                </ul>
+                            </li>
+                            <li class="dashboard-language">
+                                <ul class="nav navbar-nav language-left">
+                                    <li><a href="#" data-toggle="dropdown" class="dropdown-toggle">EN</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#">ID</a></li>
+                                            <li><a href="#">TR</a></li>
+                                            <li><a href="#">DE</a></li>
+                                            <li><a href="#">AR</a></li>
+                                            <li><a href="#">JA</a></li>
+                                            <li><a href="#">CH</a></li>
+                                            <li><a href="#">KO</a></li>
+                                            <li><a href="#">VI</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <!--a href="#" class="language">EN</a-->
+                            </li>
+                        </ul>
+                        <ul class="nav navbar-nav mobile-menu visible-xs">
+                            <li class="dropdown"><a href="#" class="mobile-left btc"><img src="assets/img/btc-mobile.png"></a><a href="#" data-toggle="dropdown" class="dropdown-toggle user"><span>MR JOHN</span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#" class="user">MR JOHN</a></li>
+                                    <li><a href="#" class="settings">SETTINGS</a></li>
+                                    <li><a href="#" class="security">SECURITY</a></li>
+                                </ul>
+                            </li>
+                            <li class="active"><a href="#" class="mobile-left atb"><img src="assets/img/atb-mobile.png"></a><a href="#" class="invest"><span>INVESTMENT</span></a></li>
+                            <li><a href="#" class="mobile-left eth"><img src="assets/img/eth-mobile.png"></a><a href="#" class="cloud"><span>CLOUD MINING</span></a></li>
+                            <li><a href="#" class="mobile-left ltc"><img src="assets/img/ltc-mobile.png"></a><a href="#" class="refer"><span>REFERRALS</span></a></li>
+                            <li><a href="#" class="mobile-left zec"><img src="assets/img/zec-mobile.png"></a><a href="#" class="tariff"><span>TARIFFS</span></a></li>
+                            <li><a href="#" class="mobile-left usd"><img src="assets/img/usd-mobile.png"></a><a href="#" class="logout">LOGOUT</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="left-menu left-menu-dashboard">
+        <nav class="navbar">
+            <div class="navbar-header">
+                <a class="navbar-brand"><img src="assets/img/logo-left-zumminer.png"></a>
+            </div>
+        </nav>
+        <ul class="nav nav-tabs">
+            <li class="active">
+                <a href="#a" data-toggle="tab" id="a-link"><span>BITCOIN - 0 BTC</span></a>
+            </li>
+            <li>
+                <a href="#b" data-toggle="tab" id="b-link"><span>ATB COIN - 0 ATB</span></a>
+            </li>
+            <li>
+                <a href="#c" data-toggle="tab" id="c-link"><span>ETHEREUM - 0 ETH</span></a>
+            </li>
+            <li>
+                <a href="#d" data-toggle="tab" id="d-link"><span>LITECOIN - 0 LTC</span></a>
+            </li>
+            <li>
+                <a href="#e" data-toggle="tab" id="e-link"><span>Z CASH - 0 ZEC</span></a>
+            </li>
+            <li>
+                <a href="#f" data-toggle="tab" id="f-link"><span>US DOLLAR - 0 USD</span></a>
+            </li>
+            <li><a href="#" class="more-icon"></a></li>
+            <li><a href="#" class="logout-icon"><span>LOGOUT</span></a></li>
+        </ul>
+    </div>
+    <div class="main-menu visible-lg">
+        <ul class="nav nav-tabs">
+            <li class="active">
+                <a href="#a" data-toggle="tab" id="a-link"><span>BITCOIN - 0 BTC</span></a>
+            </li>
+            <li>
+                <a href="#b" data-toggle="tab" id="b-link"><span>ATB COIN - 0 ATB</span></a>
+            </li>
+            <li>
+                <a href="#c" data-toggle="tab" id="c-link"><span>ETHEREUM - 0 ETH</span></a>
+            </li>
+            <li>
+                <a href="#d" data-toggle="tab" id="d-link"><span>LITECOIN - 0 LTC</span></a>
+            </li>
+            <li>
+                <a href="#e" data-toggle="tab" id="e-link"><span>Z CASH - 0 ZEC</span></a>
+            </li>
+            <li>
+                <a href="#f" data-toggle="tab" id="f-link"><span>US DOLLAR - 0 USD</span></a>
+            </li>
+            <li><a href="#" class="more-icon"></a></li>
+            <li><a href="#" class="logout-icon"><span>LOGOUT</span></a></li>
+        </ul>
+    </div>
+    <div class="main-block main-dashboard-block main-cloud-block">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-1 hidden-xs hidden-lg">
+                    <ul class="nav nav-tabs">
+                        <li class="active">
+                            <a href="#a" data-toggle="tab" id="a-link"><span>BITCOIN - 0 BTC</span></a>
+                        </li>
+                        <li>
+                            <a href="#b" data-toggle="tab" id="b-link"><span>ATB COIN - 0 ATB</span></a>
+                        </li>
+                        <li>
+                            <a href="#c" data-toggle="tab" id="c-link"><span>ETHEREUM - 0 ETH</span></a>
+                        </li>
+                        <li>
+                            <a href="#d" data-toggle="tab" id="d-link"><span>LITECOIN - 0 LTC</span></a>
+                        </li>
+                        <li>
+                            <a href="#e" data-toggle="tab" id="e-link"><span>Z CASH - 0 ZEC</span></a>
+                        </li>
+                        <li>
+                            <a href="#f" data-toggle="tab" id="f-link"><span>US DOLLAR - 0 USD</span></a>
+                        </li>
+                        <li><a href="#" class="more-icon"></a></li>
+                        <li><a href="#" class="logout-icon"><span>LOGOUT</span></a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-11 col-lg-12">
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="a">
+                            <div class="bitcoin-block">
+                                <div class="row">
+                                    <div class="col-xs-12 col-lg-3">
+                                        <div class="cloud-history-block">
+                                            <div class="balance-block">
+                                                <div class="balance-header">
+                                                    <ul class="nav nav-tabs">
+                                                        <li class="active">
+                                                            <a href="#atb-cloud" data-toggle="tab" id="atb-cloud-link">ATB</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#eth-cloud" data-toggle="tab" id="eth-cloud-link">ETH</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#btc-cloud" data-toggle="tab" id="btc-cloud-link">BTC</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#ltc-cloud" data-toggle="tab" id="ltc-cloud-link">LTC</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#zec-cloud" data-toggle="tab" id="zec-cloud-link">ZEC</a>
+                                                        </li>
+                                                    </ul>
+                                                    <div class="tab-content">
+                                                        <div class="tab-pane active" id="atb-cloud">
+                                                            <div class="cloud-title">
+                                                                <span>59.90809</span> atb
+                                                            </div>
+                                                            <img src="assets/img/cloud-graph-history.png" class="cloud-graph">
+                                                        </div>
+                                                        <div class="tab-pane" id="eth-cloud">
+                                                            <div class="cloud-title">
+                                                                <span>59.90809</span> eth
+                                                            </div>
+                                                            <img src="assets/img/cloud-graph-history.png" class="cloud-graph">
+                                                        </div>
+                                                        <div class="tab-pane" id="btc-cloud">
+                                                            <div class="cloud-title">
+                                                                <span>59.90809</span> btc
+                                                            </div>
+                                                            <img src="assets/img/cloud-graph-history.png" class="cloud-graph">
+                                                        </div>
+                                                        <div class="tab-pane" id="ltc-cloud">
+                                                            <div class="cloud-title">
+                                                                <span>59.90809</span> ltc
+                                                            </div>
+                                                            <img src="assets/img/cloud-graph-history.png" class="cloud-graph">
+                                                        </div>
+                                                        <div class="tab-pane" id="zec-cloud">
+                                                            <div class="cloud-title">
+                                                                <span>59.90809</span> zec
+                                                            </div>
+                                                            <img src="assets/img/cloud-graph-history.png" class="cloud-graph">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="cloud-group" id="cloud-accordion">
+                                                  <div class="cloud-panel-title">Mining earnings history</div>
+                                                  <div class="panel-cloud-wrapper">
+                                                      <div class="panel-cloud panel-default">
+                                                        <div class="panel-heading">
+                                                          <h4 class="panel-title">
+                                                            <a href="#" class="collapsed">
+                                                                <div class="balance-amount">0.35592100 BTC</div>
+                                                                <div class="balance-date">12:53 July 07.2017</div>
+                                                            </a>
+                                                          </h4>
+                                                        </div>
+                                                      </div>
+                                                      <div class="panel-cloud panel-default">
+                                                        <div class="panel-heading">
+                                                          <h4 class="panel-title">
+                                                            <a href="#" class="collapsed">
+                                                                <div class="balance-amount">0.85362190 BTC</div>
+                                                                <div class="balance-date">11:05 July 06.2017</div>
+                                                            </a>
+                                                          </h4>
+                                                        </div>
+                                                      </div>
+                                                      <div class="panel-cloud panel-default">
+                                                        <div class="panel-heading">
+                                                          <h4 class="panel-title">
+                                                            <a href="#" class="collapsed">
+                                                                <div class="balance-amount">0.85362190 BTC</div>
+                                                                <div class="balance-date">11:05 July 06.2017</div>
+                                                            </a>
+                                                          </h4>
+                                                        </div>
+                                                      </div>
+                                                      <div class="panel-cloud panel-default">
+                                                        <div class="panel-heading">
+                                                          <h4 class="panel-title">
+                                                            <a href="#" class="collapsed">
+                                                                <div class="balance-amount">0.85362190 BTC</div>
+                                                                <div class="balance-date">11:05 July 06.2017</div>
+                                                            </a>
+                                                          </h4>
+                                                        </div>
+                                                      </div>
+                                                      <div class="panel-cloud panel-default">
+                                                        <div class="panel-heading">
+                                                          <h4 class="panel-title">
+                                                            <a href="#" class="collapsed">
+                                                                <div class="balance-amount">0.85362190 BTC</div>
+                                                                <div class="balance-date">11:05 July 06.2017</div>
+                                                            </a>
+                                                          </h4>
+                                                        </div>
+                                                      </div>
+                                                      <div class="panel-cloud panel-default">
+                                                        <div class="panel-heading">
+                                                          <h4 class="panel-title">
+                                                            <a href="#" class="collapsed">
+                                                                <div class="balance-amount">0.85362190 BTC</div>
+                                                                <div class="balance-date">11:05 July 06.2017</div>
+                                                            </a>
+                                                          </h4>
+                                                        </div>
+                                                      </div>
+                                                      <div class="panel-cloud panel-default">
+                                                        <div class="panel-heading last">
+                                                          <h4 class="panel-title">
+                                                            <a href="#" class="collapsed">
+                                                                <div class="balance-amount">0.85362190 BTC</div>
+                                                                <div class="balance-date">22:10 July 05.2017</div>
+                                                            </a>
+                                                          </h4>
+                                                        </div>
+                                                      </div>
+                                                  </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-lg-9">
+                                        <div class="add-new-mining">
+                                            <a href="#">ADD NEW MINING PROGRAMM</a>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-xs-12 col-lg-9 mining-column-fix">
+                                                <div class="hashrate-block">
+                                                    <div class="hashrate-title">MY HASHRATE: 1.00 MH/s</div>
+                                                    <img src="assets/img/hashrate-graph.png">
+                                                </div>
+                                                <div class="sharerate-block">
+                                                    <div class="sharerate-title">MY SHARERATE: 1.00</div>
+                                                    <img src="assets/img/sharerate-graph.png">
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-12 col-lg-3 mining-column-fix">
+                                                <div class="balance-block cloud-balance-block">
+                                                    <div class="balance-header">
+                                                        <span>HISTORY</span>
+                                                    </div>
+                                                    <div class="panel-group" id="accordion">
+                                                      <div class="panel panel-default">
+                                                        <div class="panel-heading">
+                                                          <h4 class="panel-title">
+                                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse1" class="collapsed">
+                                                                <div class="balance-amount">0.35592100 BTC</div>
+                                                                <div class="balance-date">12:53 July 07.2017<br> Mining earnings</div>
+                                                            </a>
+                                                          </h4>
+                                                        </div>
+                                                        <div id="collapse1" class="panel-collapse collapse">
+                                                          <div class="panel-body">
+                                                            <div class="balance-item">
+                                                                <span>TO: </span>
+                                                                YOUR WALLET
+                                                            </div>
+                                                            <div class="balance-item">
+                                                                <span>FROM: </span>
+                                                                17d6W5t5FkWdwG5zyfrNsjdGWvYG4ECa5m
+                                                            </div>
+                                                            <div class="balance-item">
+                                                                <span>MESSAGE: </span>
+                                                                Hello. It’s your payment for the design. I sent the native files to your mail.
+                                                            </div>
+                                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse1" class="close-accordion">
+                                                                <img src="assets/img/close-accordion.png" alt="Close accordion">
+                                                            </a>
+                                                          </div>
+                                                        </div>
+                                                      </div>
+                                                      <div class="panel panel-default">
+                                                        <div class="panel-heading">
+                                                          <h4 class="panel-title">
+                                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse2" class="collapsed">
+                                                                <div class="balance-amount">0.85362190 BTC</div>
+                                                                <div class="balance-date">11:05 July 06.2017<br> Mining earnings</div>
+                                                            </a>
+                                                          </h4>
+                                                        </div>
+                                                        <div id="collapse2" class="panel-collapse collapse">
+                                                          <div class="panel-body">
+                                                            <div class="balance-item">
+                                                                <span>TO: </span>
+                                                                YOUR WALLET
+                                                            </div>
+                                                            <div class="balance-item">
+                                                                <span>FROM: </span>
+                                                                17d6W5t5FkWdwG5zyfrNsjdGWvYG4ECa5m
+                                                            </div>
+                                                            <div class="balance-item">
+                                                                <span>MESSAGE: </span>
+                                                                Hello. It’s your payment for the design. I sent the native files to your mail.
+                                                            </div>
+                                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse2" class="close-accordion">
+                                                                <img src="assets/img/close-accordion.png" alt="Close accordion">
+                                                            </a>
+                                                          </div>
+                                                        </div>
+                                                      </div>
+                                                      <div class="panel panel-default">
+                                                        <div class="panel-heading last">
+                                                          <h4 class="panel-title">
+                                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse3" class="collapsed">
+                                                                <div class="balance-amount">0.85362190 BTC</div>
+                                                                <div class="balance-date">22:10 July 05.2017<br> Mining earnings</div>
+                                                            </a>
+                                                          </h4>
+                                                        </div>
+                                                        <div id="collapse3" class="panel-collapse collapse">
+                                                          <div class="panel-body">
+                                                            <div class="balance-item">
+                                                                <span>TO: </span>
+                                                                YOUR WALLET
+                                                            </div>
+                                                            <div class="balance-item">
+                                                                <span>FROM: </span>
+                                                                17d6W5t5FkWdwG5zyfrNsjdGWvYG4ECa5m
+                                                            </div>
+                                                            <div class="balance-item">
+                                                                <span>MESSAGE: </span>
+                                                                Hello. It’s your payment for the design. I sent the native files to your mail.
+                                                            </div>
+                                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse3" class="close-accordion">
+                                                                <img src="assets/img/close-accordion.png" alt="Close accordion">
+                                                            </a>
+                                                          </div>
+                                                        </div>
+                                                      </div>
+                                                      <div class="panel panel-default">
+                                                        <div class="panel-heading last">
+                                                          <h4 class="panel-title">
+                                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse4" class="collapsed">
+                                                                <div class="balance-amount">0.85362190 BTC</div>
+                                                                <div class="balance-date">22:10 July 05.2017<br> Mining earnings</div>
+                                                            </a>
+                                                          </h4>
+                                                        </div>
+                                                        <div id="collapse4" class="panel-collapse collapse">
+                                                          <div class="panel-body">
+                                                            <div class="balance-item">
+                                                                <span>TO: </span>
+                                                                YOUR WALLET
+                                                            </div>
+                                                            <div class="balance-item">
+                                                                <span>FROM: </span>
+                                                                17d6W5t5FkWdwG5zyfrNsjdGWvYG4ECa5m
+                                                            </div>
+                                                            <div class="balance-item">
+                                                                <span>MESSAGE: </span>
+                                                                Hello. It’s your payment for the design. I sent the native files to your mail.
+                                                            </div>
+                                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse3" class="close-accordion">
+                                                                <img src="assets/img/close-accordion.png" alt="Close accordion">
+                                                            </a>
+                                                          </div>
+                                                        </div>
+                                                      </div>
+                                                      <div class="panel panel-default">
+                                                        <div class="panel-heading">
+                                                          <h4 class="panel-title">
+                                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse5" class="collapsed">
+                                                                <div class="balance-amount">0.85362190 BTC</div>
+                                                                <div class="balance-date">11:05 July 06.2017<br> Mining earnings</div>
+                                                            </a>
+                                                          </h4>
+                                                        </div>
+                                                        <div id="collapse5" class="panel-collapse collapse">
+                                                          <div class="panel-body">
+                                                            <div class="balance-item">
+                                                                <span>TO: </span>
+                                                                YOUR WALLET
+                                                            </div>
+                                                            <div class="balance-item">
+                                                                <span>FROM: </span>
+                                                                17d6W5t5FkWdwG5zyfrNsjdGWvYG4ECa5m
+                                                            </div>
+                                                            <div class="balance-item">
+                                                                <span>MESSAGE: </span>
+                                                                Hello. It’s your payment for the design. I sent the native files to your mail.
+                                                            </div>
+                                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse2" class="close-accordion">
+                                                                <img src="assets/img/close-accordion.png" alt="Close accordion">
+                                                            </a>
+                                                          </div>
+                                                        </div>
+                                                      </div>
+                                                      <div class="panel panel-default">
+                                                        <div class="panel-heading">
+                                                          <h4 class="panel-title">
+                                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse6" class="collapsed">
+                                                                <div class="balance-amount">0.85362190 BTC</div>
+                                                                <div class="balance-date">11:05 July 06.2017<br> Mining earnings</div>
+                                                            </a>
+                                                          </h4>
+                                                        </div>
+                                                        <div id="collapse6" class="panel-collapse collapse">
+                                                          <div class="panel-body">
+                                                            <div class="balance-item">
+                                                                <span>TO: </span>
+                                                                YOUR WALLET
+                                                            </div>
+                                                            <div class="balance-item">
+                                                                <span>FROM: </span>
+                                                                17d6W5t5FkWdwG5zyfrNsjdGWvYG4ECa5m
+                                                            </div>
+                                                            <div class="balance-item">
+                                                                <span>MESSAGE: </span>
+                                                                Hello. It’s your payment for the design. I sent the native files to your mail.
+                                                            </div>
+                                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse2" class="close-accordion">
+                                                                <img src="assets/img/close-accordion.png" alt="Close accordion">
+                                                            </a>
+                                                          </div>
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                </div>
+                                            </div>                                            
+                                        </div>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                    <div class="col-xs-12 col-lg-7">
+                                        <div class="row">
+                                            <div class="col-xs-12">
+                                                <div class="cloud-main-graph">
+                                                    <img src="assets/img/cloud-main-graph.png">
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-12 col-lg-4">
+                                                <div class="round-graph">
+                                                    <div class="round-title">ROUND<br>PROGRESS</div>
+                                                    <img src="assets/img/round-graph.png">
+                                                    <div class="round-amount">75.45</div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-12 col-lg-8">
+                                                <div class="sharerate-block pool">
+                                                    <div class="sharerate-title">POOL HASHRATE: 2398743.02</div>
+                                                    <img src="assets/img/hashrate-graph-pool.png">
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-12">
+                                                <div class="sharerate-block">
+                                                    <div class="sharerate-title">POOL WORKERS: 446</div>
+                                                    <img src="assets/img/hashrate-graph-workers.png">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-lg-5">
+                                        <div class="hashrate-table">
+                                            <table>
+                                                <tbody>
+                                                    <tr class="table-head">
+                                                        <th>WORKER</th>
+                                                        <th class="hidden-xs">HASHRATE</th>
+                                                        <th>DIFFICULTY</th>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>ZCASH MINER</td>
+                                                        <td class="hidden-xs">0.1 MH/s</td>
+                                                        <td>567930.87</td>
+                                                    </tr>
+                                                    <tr class="grey">
+                                                        <td>ETH MINER</td>
+                                                        <td class="hidden-xs">0.1 MH/s</td>
+                                                        <td>657930.80</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>BTC MINER</td>
+                                                        <td class="hidden-xs">0.1 MH/s</td>
+                                                        <td>947602.80</td>
+                                                    </tr>
+                                                    <tr class="grey">
+                                                        <td>LTC MINER</td>
+                                                        <td class="hidden-xs">0.1 MH/s</td>
+                                                        <td>1238787.57</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>ATB MINER</td>
+                                                        <td class="hidden-xs">0.1 MH/s</td>
+                                                        <td>610572.29</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="hashrate-block">
+                                            <div class="hashrate-title">GLOBAL HASHRATE: 2398743.02</div>
+                                            <img src="assets/img/hashrate-graph-global.png">
+                                        </div>
+                                        <div class="hashrate-block">
+                                            <div class="hashrate-title">DIFFICULTY: 652721.90</div>
+                                            <img src="assets/img/hashrate-graph-difficult.png">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="b">ATB COIN</div>
+                        <div class="tab-pane" id="c">ETHEREUM</div>
+                        <div class="tab-pane" id="d">LITECOIN</div>
+                        <div class="tab-pane" id="e">Z CASH</div>
+                        <div class="tab-pane" id="f">USD DOLLAR</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-dashboard modal fade" id="transaction-1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="get-title">YOU GET 0.35592100 BTC</div>
+            <div class="get-date">12:53 JULY 07.2017</div>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="assets/img/close-tran-mobile.png"></span></button>
+          </div>
+          <div class="modal-body">
+            <div class="tran-item">
+                <span>TO:</span> YOUR WALLET
+            </div>
+            <div class="tran-item">
+                <span>FROM:</span> <br>17d6W5t5FkWdwG5zyfrNsjdGWvYG4ECa5m
+            </div>
+            <div class="tran-item">
+                <span>MESSAGE:</span> Hello. It’s your payment for the design. I sent the native files to your mail.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal-dashboard modal fade" id="transaction-2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="get-title">YOU GET 3.97892100 BTC</div>
+            <div class="get-date">12:53 JULY 07.2017</div>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="assets/img/close-tran-mobile.png"></span></button>
+          </div>
+          <div class="modal-body">
+            <div class="tran-item">
+                <span>TO:</span> YOUR WALLET
+            </div>
+            <div class="tran-item">
+                <span>FROM:</span> <br>17d6W5t5FkWdwG5zyfrNsjdGWvYG4ECa5m
+            </div>
+            <div class="tran-item">
+                <span>MESSAGE:</span> Hello. It’s your payment for the design. I sent the native files to your mail.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal-dashboard modal fade" id="transaction-3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="get-title">YOU GET 1.51902100 BTC</div>
+            <div class="get-date">12:53 JULY 07.2017</div>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="assets/img/close-tran-mobile.png"></span></button>
+          </div>
+          <div class="modal-body">
+            <div class="tran-item">
+                <span>TO:</span> YOUR WALLET
+            </div>
+            <div class="tran-item">
+                <span>FROM:</span> <br>17d6W5t5FkWdwG5zyfrNsjdGWvYG4ECa5m
+            </div>
+            <div class="tran-item">
+                <span>MESSAGE:</span> Hello. It’s your payment for the design. I sent the native files to your mail.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal-bitcoins modal fade" id="bitcoin-1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="bitcoin-title">Bitcoin balance<br>BTC</div>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="assets/img/close-tran-mobile.png"></span></button>
+            <div class="bitcoin-amount">0.58912</div>
+            <div class="small-amounts">
+                <span>IT'S</span>
+                <span class="amount"><b>$</b> 5.600</span>
+                <span class="amount"><b>ATB</b> 6.589</span>
+            </div>
+          </div>
+          <div class="modal-body">
+            <form>
+                <div class="input-wrapper qr">
+                    <input type="text" placeholder="Click and your address will copy">
+                </div>
+                <div class="input-wrapper">
+                    <input type="text" placeholder="Description: what’s this transaction for?">
+                </div>
+                <div class="input-wrapper amount">
+                    <input type="text" placeholder="Amount" class="input-amount">
+                </div>
+                <a href="#" class="send-button"><img src="assets/img/get-button-mobile.png"></a>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal-bitcoins modal fade" id="bitcoin-2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="bitcoin-title">Bitcoin balance<br>BTC</div>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="assets/img/close-tran-mobile-get.png"></span></button>
+            <div class="bitcoin-amount">0.98856</div>
+            <div class="small-amounts">
+                <span>IT'S</span>
+                <span class="amount"><b>$</b> 4.300</span>
+                <span class="amount"><b>ATB</b> 13.589</span>
+            </div>
+          </div>
+          <div class="modal-body">
+            <form>
+                <div class="input-wrapper qr">
+                    <input type="text" placeholder="Past an address of the recipient">
+                </div>
+                <div class="input-wrapper">
+                    <input type="text" placeholder="Your message">
+                </div>
+                <div class="input-wrapper amount">
+                    <input type="text" placeholder="Amount" class="input-amount">
+                </div>
+                <a href="#" class="send-button"><img src="assets/img/send-button-mobile.png"></a>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+</body>
+</html>

@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-    $('.panel-title a').click(function() {
+    $('.dashboard-right-column .panel-title a').click(function() {
         var that = $(this);
         that.hasClass('collapsed') ? that.closest('.panel-default').siblings().hide() : that.closest('.panel-default').siblings().show();
     });
@@ -20,10 +20,12 @@ $(document).ready(function() {
 
     function openNav() {
         $('.left-menu').addClass('active');
+        $('.navbar-brand-dashboard').addClass('hidden');
     }
 
     function closeNav() {
         $('.left-menu').removeClass('active');
+        $('.navbar-brand-dashboard').removeClass('hidden');
     }
  
 });
