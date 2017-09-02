@@ -14,13 +14,17 @@ $('.language-left').click(function(e) {
 	e.preventDefault();
 });
 
-$('.registration, .login').click(function() {
-	$.scrollify.disable();
+$('#registerModal, #loginModal, #recoveryModal, #recoveryModal-2').on('hidden.bs.modal', function () {
+    $.scrollify.enable();
 });
 
-$('#registerModal, #loginModal').on('hidden.bs.modal', function () {
-    $.scrollify.enable();
-})
+$('.registration, .login, .forgot-link, .recovery-button, .registration-a').click(function() {
+  $.scrollify.disable();
+});
+
+$('#recoveryModal, #recoveryModal-2, #loginModalSuccess').on('shown.bs.modal', function () {
+    $.scrollify.disable();
+});
 
 $('.start-button').click(function(e) {
 	e.preventDefault();
@@ -29,7 +33,7 @@ $('.start-button').click(function(e) {
 if ( $(window).width() >= 768 && !detectmob()) {
     $.scrollify({
         section : ".main-tabs",
-        scrollSpeed: 500,
+        scrollSpeed: 1000,
     });
 }
 

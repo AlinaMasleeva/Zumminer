@@ -599,7 +599,13 @@ body.main-page-body .header {
       margin: 16px 15px 0;
       width: 3px; }
 
-body.modal-open.dashboard-body .main-block {
+body.referral-page .header {
+  margin-top: 5vh; }
+  @media (min-width: 1600px) {
+    body.referral-page .header {
+      margin-top: 7vh; } }
+
+body.modal-open.dashboard-body .main-block, body.modal-open.dashboard-body .left-menu, body.modal-open.dashboard-body .main-menu, body.modal-open.dashboard-body .header {
   -webkit-filter: blur(4px);
   -moz-filter: blur(4px);
   -o-filter: blur(4px);
@@ -756,6 +762,199 @@ body.modal-open.dashboard-body .modal-backdrop.in {
           color: #60baea;
           font-weight: 700;
           letter-spacing: 2px; }
+
+.modal-dashboard.modal-desktop .modal-dialog {
+  margin: 15vh auto 100px;
+  width: 100%; }
+  @media (min-width: 992px) {
+    .modal-dashboard.modal-desktop .modal-dialog {
+      width: 820px; } }
+  .modal-dashboard.modal-desktop .modal-dialog .modal-content {
+    border-radius: 15px; }
+    .modal-dashboard.modal-desktop .modal-dialog .modal-content .modal-header {
+      background: url("../img/send-btc-background.png") no-repeat;
+      background-size: 100% 105%;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      padding: 30px 0;
+      text-align: center; }
+      .modal-dashboard.modal-desktop .modal-dialog .modal-content .modal-header .get-title {
+        font-size: 17.9px;
+        font-weight: 400;
+        letter-spacing: 2px;
+        line-height: 17.9px;
+        margin-bottom: 0; }
+      .modal-dashboard.modal-desktop .modal-dialog .modal-content .modal-header .close {
+        right: 30px;
+        top: 27px; }
+        .modal-dashboard.modal-desktop .modal-dialog .modal-content .modal-header .close img {
+          height: 15px; }
+    .modal-dashboard.modal-desktop .modal-dialog .modal-content .modal-body {
+      padding: 7.4vh 11%; }
+      .modal-dashboard.modal-desktop .modal-dialog .modal-content .modal-body .input-body {
+        margin-bottom: 30px;
+        padding-top: 24px;
+        position: relative; }
+        .modal-dashboard.modal-desktop .modal-dialog .modal-content .modal-body .input-body label {
+          color: #939495;
+          font-size: 10.8px;
+          font-weight: 500;
+          left: 0;
+          letter-spacing: 2px;
+          line-height: 10.8px;
+          margin-bottom: 14px;
+          position: absolute;
+          top: 0; }
+        .modal-dashboard.modal-desktop .modal-dialog .modal-content .modal-body .input-body input {
+          -webkit-appearance: value;
+          -moz-appearance: value;
+          appearance: value;
+          border: 2px solid #d8d9de;
+          border-radius: 10px;
+          -webkit-box-shadow: none;
+          box-shadow: none;
+          color: #939495;
+          display: block;
+          font-size: 15px;
+          font-weight: 400;
+          line-height: 15px;
+          outline: 0;
+          padding: 20px 15px;
+          width: 100%; }
+          .modal-dashboard.modal-desktop .modal-dialog .modal-content .modal-body .input-body input ::-webkit-input-placeholder {
+            /* Chrome/Opera/Safari */
+            color: #939495; }
+          .modal-dashboard.modal-desktop .modal-dialog .modal-content .modal-body .input-body input ::-moz-placeholder {
+            /* Firefox 19+ */
+            color: #939495; }
+          .modal-dashboard.modal-desktop .modal-dialog .modal-content .modal-body .input-body input :-ms-input-placeholder {
+            /* IE 10+ */
+            color: #939495; }
+          .modal-dashboard.modal-desktop .modal-dialog .modal-content .modal-body .input-body input :-moz-placeholder {
+            /* Firefox 18- */
+            color: #939495; }
+          .modal-dashboard.modal-desktop .modal-dialog .modal-content .modal-body .input-body input:focus, .modal-dashboard.modal-desktop .modal-dialog .modal-content .modal-body .input-body input:active {
+            border-color: #75777a; }
+            .modal-dashboard.modal-desktop .modal-dialog .modal-content .modal-body .input-body input:focus + label, .modal-dashboard.modal-desktop .modal-dialog .modal-content .modal-body .input-body input:active + label {
+              color: #373a41; }
+              .modal-dashboard.modal-desktop .modal-dialog .modal-content .modal-body .input-body input:focus + label + .input-currency, .modal-dashboard.modal-desktop .modal-dialog .modal-content .modal-body .input-body input:active + label + .input-currency {
+                border-color: #75777a;
+                color: #75777a; }
+        .modal-dashboard.modal-desktop .modal-dialog .modal-content .modal-body .input-body.qr:after {
+          background: url("../img/input-qr.png") no-repeat;
+          bottom: 16px;
+          content: '';
+          display: inline-block;
+          height: 30px;
+          position: absolute;
+          right: 10px;
+          width: 30px; }
+        .modal-dashboard.modal-desktop .modal-dialog .modal-content .modal-body .input-body.amount {
+          display: inline-block;
+          width: 45%; }
+          @media (min-width: 768px) {
+            .modal-dashboard.modal-desktop .modal-dialog .modal-content .modal-body .input-body.amount input {
+              padding-right: 80px; } }
+          .modal-dashboard.modal-desktop .modal-dialog .modal-content .modal-body .input-body.amount .input-currency {
+            border-left: 2px solid #d8d9de;
+            bottom: 0;
+            color: #939495;
+            display: none;
+            font-size: 15px;
+            font-weight: 400;
+            height: 63px;
+            line-height: 15px;
+            padding: 25px 0 0 25px;
+            position: absolute;
+            right: 25px; }
+            @media (min-width: 768px) {
+              .modal-dashboard.modal-desktop .modal-dialog .modal-content .modal-body .input-body.amount .input-currency {
+                display: block; } }
+          .modal-dashboard.modal-desktop .modal-dialog .modal-content .modal-body .input-body.amount.amount-right {
+            float: right; }
+          .modal-dashboard.modal-desktop .modal-dialog .modal-content .modal-body .input-body.amount.amount-2 {
+            width: 48%; }
+        .modal-dashboard.modal-desktop .modal-dialog .modal-content .modal-body .input-body.to {
+          display: inline-block;
+          width: 65%; }
+        .modal-dashboard.modal-desktop .modal-dialog .modal-content .modal-body .input-body.from {
+          display: inline-block;
+          float: right;
+          width: 31%; }
+        .modal-dashboard.modal-desktop .modal-dialog .modal-content .modal-body .input-body.confirm {
+          display: inline-block;
+          width: 48%; }
+        .modal-dashboard.modal-desktop .modal-dialog .modal-content .modal-body .input-body.bonus {
+          float: right;
+          width: 48%; }
+      .modal-dashboard.modal-desktop .modal-dialog .modal-content .modal-body .two-inputs-wrapper {
+        position: relative; }
+        .modal-dashboard.modal-desktop .modal-dialog .modal-content .modal-body .two-inputs-wrapper img {
+          left: calc(50% - 13px);
+          position: absolute;
+          top: 50px; }
+      .modal-dashboard.modal-desktop .modal-dialog .modal-content .modal-body .currency-exchange-button, .modal-dashboard.modal-desktop .modal-dialog .modal-content .modal-body .next-step-button {
+        border: 2px solid #d8d9de;
+        border-radius: 10px;
+        color: #b0b2b7;
+        display: inline-block;
+        font-size: 10px;
+        font-weight: 500;
+        letter-spacing: 2px;
+        line-height: 10px;
+        outline: 0;
+        padding: 24px 0;
+        text-align: center;
+        text-decoration: none;
+        width: 45%; }
+        .modal-dashboard.modal-desktop .modal-dialog .modal-content .modal-body .currency-exchange-button.currency-exchange-button-2, .modal-dashboard.modal-desktop .modal-dialog .modal-content .modal-body .next-step-button.currency-exchange-button-2 {
+          width: 48%; }
+          .modal-dashboard.modal-desktop .modal-dialog .modal-content .modal-body .currency-exchange-button.currency-exchange-button-2.right, .modal-dashboard.modal-desktop .modal-dialog .modal-content .modal-body .next-step-button.currency-exchange-button-2.right {
+            float: right;
+            margin-top: 25px; }
+      .modal-dashboard.modal-desktop .modal-dialog .modal-content .modal-body .next-step-button {
+        background: url("../img/modal-exchange-button.png") no-repeat;
+        background-size: 100% 100%;
+        border: 0;
+        color: #fff;
+        float: right;
+        padding: 25px 0; }
+        .modal-dashboard.modal-desktop .modal-dialog .modal-content .modal-body .next-step-button.next-step-button-2 {
+          width: 48%; }
+        .modal-dashboard.modal-desktop .modal-dialog .modal-content .modal-body .next-step-button.inactive {
+          background: #e3e3e3;
+          margin-top: 25px; }
+
+.modal-dashboard.modal-desktop#dashboard-investment-1 .modal-header, .modal-dashboard.modal-desktop#dashboard-investment-2 .modal-header, .modal-dashboard.modal-desktop#dashboard-qr-1 .modal-header {
+  background: url("../img/modal-transition-header.png") no-repeat;
+  background-size: 100% 100%; }
+
+.modal-dashboard.modal-desktop#dashboard-investment-1 .next-step-button, .modal-dashboard.modal-desktop#dashboard-investment-2 .next-step-button, .modal-dashboard.modal-desktop#dashboard-qr-1 .next-step-button {
+  background: url("../img/modal-transition-button.png") no-repeat;
+  background-size: 100% 100%; }
+  .modal-dashboard.modal-desktop#dashboard-investment-1 .next-step-button.inactive, .modal-dashboard.modal-desktop#dashboard-investment-2 .next-step-button.inactive, .modal-dashboard.modal-desktop#dashboard-qr-1 .next-step-button.inactive {
+    background: #e3e3e3;
+    float: none;
+    margin-top: 0; }
+
+.modal-dashboard.modal-desktop#dashboard-qr-1 .modal-dialog {
+  text-align: center;
+  width: 100%; }
+  @media (min-width: 992px) {
+    .modal-dashboard.modal-desktop#dashboard-qr-1 .modal-dialog {
+      width: 490px; } }
+  .modal-dashboard.modal-desktop#dashboard-qr-1 .modal-dialog .next-step-button {
+    display: block;
+    float: none;
+    margin: 25px auto 0;
+    width: 230px; }
+  .modal-dashboard.modal-desktop#dashboard-qr-1 .modal-dialog .qr-text {
+    color: #afb1b4;
+    font-size: 10.8px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    line-height: 20.8px;
+    margin-top: 25px; }
 
 .modal-bitcoins .modal-dialog {
   height: 100%;
@@ -967,9 +1166,13 @@ body.modal-open.dashboard-body .modal-backdrop.in {
       .main-menu .nav-tabs li:not(:last-child) {
         margin-bottom: 6.5vh; }
 
+@media (min-width: 1200px) {
+  .referral-page .main-menu {
+    top: 140px; } }
+
 @media (min-width: 1600px) {
   .referral-page .main-menu {
-    top: 266px; } }
+    top: 200px; } }
 
 .main-block::-webkit-scrollbar-track {
   background-color: #f4f4f4;
@@ -1434,6 +1637,79 @@ body.modal-open.dashboard-body .modal-backdrop.in {
     margin-top: 25px;
     width: 20%; }
 
+.main-block .tab-content .tab-pane .bitcoin-block .send-btc-block-new {
+  border-radius: 20px;
+  -webkit-box-shadow: 2.121px 2.121px 54px 0px rgba(0, 0, 0, 0.08);
+  box-shadow: 2.121px 2.121px 54px 0px rgba(0, 0, 0, 0.08);
+  display: inline-block;
+  margin-top: 20px;
+  width: 100%; }
+  @media (min-width: 768px) {
+    .main-block .tab-content .tab-pane .bitcoin-block .send-btc-block-new {
+      width: 330px; } }
+  @media (min-width: 992px) {
+    .main-block .tab-content .tab-pane .bitcoin-block .send-btc-block-new {
+      width: 385px; } }
+  @media (min-width: 1200px) {
+    .main-block .tab-content .tab-pane .bitcoin-block .send-btc-block-new {
+      width: 425px; } }
+  @media (min-width: 1500px) {
+    .main-block .tab-content .tab-pane .bitcoin-block .send-btc-block-new {
+      width: 485px; } }
+  @media (min-width: 1700px) {
+    .main-block .tab-content .tab-pane .bitcoin-block .send-btc-block-new {
+      width: 495px; } }
+  .main-block .tab-content .tab-pane .bitcoin-block .send-btc-block-new .send-title {
+    background: url("../img/send-bitcoins-background.png") no-repeat;
+    background-size: 100% 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    color: #fff;
+    font-size: 17.9px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    line-height: 17.9px;
+    padding: 32px 0 28px;
+    text-align: center; }
+  .main-block .tab-content .tab-pane .bitcoin-block .send-btc-block-new .send-bitcoins, .main-block .tab-content .tab-pane .bitcoin-block .send-btc-block-new .exchange-bitcoins {
+    display: inline-block;
+    margin: 26px 0;
+    width: 49%; }
+    @media (min-width: 1200px) {
+      .main-block .tab-content .tab-pane .bitcoin-block .send-btc-block-new .send-bitcoins, .main-block .tab-content .tab-pane .bitcoin-block .send-btc-block-new .exchange-bitcoins {
+        margin: 22px 0; } }
+    .main-block .tab-content .tab-pane .bitcoin-block .send-btc-block-new .send-bitcoins a, .main-block .tab-content .tab-pane .bitcoin-block .send-btc-block-new .exchange-bitcoins a {
+      background-clip: text;
+      -webkit-background-clip: text;
+      background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #9b4abf), color-stop(0.52, #4e39da), color-stop(1, #026fee));
+      background-image: gradient(linear, left top, right top, color-stop(0, #9b4abf), color-stop(0.52, #4e39da), color-stop(1, #026fee));
+      color: transparent;
+      display: inline-block;
+      font-size: 11.2px;
+      font-weight: 500;
+      line-height: 19.6px;
+      outline: 0;
+      padding: 15px 4%;
+      width: 100%; }
+      @media (min-width: 992px) {
+        .main-block .tab-content .tab-pane .bitcoin-block .send-btc-block-new .send-bitcoins a, .main-block .tab-content .tab-pane .bitcoin-block .send-btc-block-new .exchange-bitcoins a {
+          padding: 15px 10%; } }
+      @media (min-width: 1200px) {
+        .main-block .tab-content .tab-pane .bitcoin-block .send-btc-block-new .send-bitcoins a, .main-block .tab-content .tab-pane .bitcoin-block .send-btc-block-new .exchange-bitcoins a {
+          padding: 20px 14%; } }
+      @media (min-width: 1500px) {
+        .main-block .tab-content .tab-pane .bitcoin-block .send-btc-block-new .send-bitcoins a, .main-block .tab-content .tab-pane .bitcoin-block .send-btc-block-new .exchange-bitcoins a {
+          padding: 20px 19%; } }
+      .main-block .tab-content .tab-pane .bitcoin-block .send-btc-block-new .send-bitcoins a:after, .main-block .tab-content .tab-pane .bitcoin-block .send-btc-block-new .exchange-bitcoins a:after {
+        background: url("../img/send-bitcoins-arrow.png") no-repeat;
+        content: '';
+        display: inline-block;
+        height: 10px;
+        margin-left: 15px;
+        width: 15px; }
+  .main-block .tab-content .tab-pane .bitcoin-block .send-btc-block-new .send-bitcoins {
+    border-right: 1px solid #eeeeee; }
+
 .main-block .tab-content .tab-pane .bitcoin-block .cloud-mining-block {
   background: url("../img/cloud-mining-background.png") no-repeat;
   background-size: 100% 100%;
@@ -1593,6 +1869,7 @@ body.modal-open.dashboard-body .modal-backdrop.in {
     font-weight: 700;
     letter-spacing: 2px;
     line-height: 14px;
+    outline: 0;
     padding: 30px 0;
     text-align: center; }
     @media (min-width: 1200px) {
@@ -2980,14 +3257,11 @@ body.modal-open.dashboard-body .modal-backdrop.in {
         .main-page .main-tabs#main-tab-11 .mining-slider-arrows button:before {
           display: none; }
     .main-page .main-tabs#main-tab-11 .mining-slider {
-      height: 35vh;
       margin: 3vh auto 0;
       width: 80%; }
-      @media (min-width: 768px) {
-        .main-page .main-tabs#main-tab-11 .mining-slider {
-          height: 46.3vh; } }
       @media (min-width: 992px) {
         .main-page .main-tabs#main-tab-11 .mining-slider {
+          height: 46.3vh;
           width: 65%; } }
       @media (min-width: 1200px) {
         .main-page .main-tabs#main-tab-11 .mining-slider {
@@ -3017,60 +3291,65 @@ body.modal-open.dashboard-body .modal-backdrop.in {
           .main-page .main-tabs#main-tab-11 .mining-slider #ninja-slider {
             margin-right: 30px;
             width: 740px; } }
-        .main-page .main-tabs#main-tab-11 .mining-slider #ninja-slider .slider-inner {
-          height: 100%; }
-          .main-page .main-tabs#main-tab-11 .mining-slider #ninja-slider .slider-inner ul {
-            height: 100% !important; }
-            .main-page .main-tabs#main-tab-11 .mining-slider #ninja-slider .slider-inner ul li a {
-              background-color: transparent;
-              background-size: 100% 100%; }
-          .main-page .main-tabs#main-tab-11 .mining-slider #ninja-slider .slider-inner .slider-image-info {
-            background-color: rgba(255, 255, 255, 0.949);
-            bottom: 0;
-            -webkit-box-shadow: 0px 22px 43px 0px rgba(45, 107, 123, 0.4);
-            box-shadow: 0px 22px 43px 0px rgba(45, 107, 123, 0.4);
-            color: #717171;
-            height: 50px;
-            left: 0;
-            padding: 18px 8px;
-            position: absolute;
-            right: 0;
-            z-index: 2; }
+        @media (min-width: 992px) {
+          .main-page .main-tabs#main-tab-11 .mining-slider #ninja-slider .slider-inner {
+            height: 100%; } }
+        .main-page .main-tabs#main-tab-11 .mining-slider #ninja-slider .slider-inner ul {
+          height: 100% !important;
+          margin: 0; }
+          .main-page .main-tabs#main-tab-11 .mining-slider #ninja-slider .slider-inner ul li a {
+            background-color: transparent;
+            background-size: 100% 100%; }
+          .main-page .main-tabs#main-tab-11 .mining-slider #ninja-slider .slider-inner ul li.video iframe {
+            height: 100%;
+            width: 100%; }
+        .main-page .main-tabs#main-tab-11 .mining-slider #ninja-slider .slider-inner .slider-image-info {
+          background-color: rgba(255, 255, 255, 0.949);
+          bottom: 0;
+          -webkit-box-shadow: 0px 22px 43px 0px rgba(45, 107, 123, 0.4);
+          box-shadow: 0px 22px 43px 0px rgba(45, 107, 123, 0.4);
+          color: #717171;
+          height: 50px;
+          left: 0;
+          padding: 18px 8px;
+          position: absolute;
+          right: 0;
+          z-index: 2; }
+          @media (min-width: 768px) {
+            .main-page .main-tabs#main-tab-11 .mining-slider #ninja-slider .slider-inner .slider-image-info {
+              padding: 18px 35px; } }
+          .main-page .main-tabs#main-tab-11 .mining-slider #ninja-slider .slider-inner .slider-image-info .slider-count {
+            display: inline-block;
+            font-size: 13px;
+            letter-spacing: .6px;
+            line-height: 13px; }
             @media (min-width: 768px) {
-              .main-page .main-tabs#main-tab-11 .mining-slider #ninja-slider .slider-inner .slider-image-info {
-                padding: 18px 35px; } }
-            .main-page .main-tabs#main-tab-11 .mining-slider #ninja-slider .slider-inner .slider-image-info .slider-count {
-              display: inline-block;
-              font-size: 13px;
-              letter-spacing: .6px;
-              line-height: 13px; }
+              .main-page .main-tabs#main-tab-11 .mining-slider #ninja-slider .slider-inner .slider-image-info .slider-count {
+                font-size: 16px;
+                line-height: 16px; } }
+          .main-page .main-tabs#main-tab-11 .mining-slider #ninja-slider .slider-inner .slider-image-info a {
+            color: #717171;
+            display: inline-block;
+            float: right;
+            font-size: 13px;
+            letter-spacing: .6px;
+            line-height: 13px;
+            outline: 0;
+            text-decoration: none; }
+            @media (min-width: 768px) {
+              .main-page .main-tabs#main-tab-11 .mining-slider #ninja-slider .slider-inner .slider-image-info a {
+                font-size: 16px;
+                line-height: 16px; } }
+            .main-page .main-tabs#main-tab-11 .mining-slider #ninja-slider .slider-inner .slider-image-info a.active {
+              color: #4fa7d0;
+              font-weight: 500; }
+            .main-page .main-tabs#main-tab-11 .mining-slider #ninja-slider .slider-inner .slider-image-info a:not(:first-child) {
+              margin-right: 7px; }
               @media (min-width: 768px) {
-                .main-page .main-tabs#main-tab-11 .mining-slider #ninja-slider .slider-inner .slider-image-info .slider-count {
-                  font-size: 16px;
-                  line-height: 16px; } }
-            .main-page .main-tabs#main-tab-11 .mining-slider #ninja-slider .slider-inner .slider-image-info a {
-              color: #717171;
-              display: inline-block;
-              float: right;
-              font-size: 13px;
-              letter-spacing: .6px;
-              line-height: 13px;
-              outline: 0;
-              text-decoration: none; }
-              @media (min-width: 768px) {
-                .main-page .main-tabs#main-tab-11 .mining-slider #ninja-slider .slider-inner .slider-image-info a {
-                  font-size: 16px;
-                  line-height: 16px; } }
-              .main-page .main-tabs#main-tab-11 .mining-slider #ninja-slider .slider-inner .slider-image-info a.active {
-                color: #4fa7d0;
-                font-weight: 500; }
-              .main-page .main-tabs#main-tab-11 .mining-slider #ninja-slider .slider-inner .slider-image-info a:not(:first-child) {
-                margin-right: 7px; }
-                @media (min-width: 768px) {
-                  .main-page .main-tabs#main-tab-11 .mining-slider #ninja-slider .slider-inner .slider-image-info a:not(:first-child) {
-                    margin-right: 60px; } }
-          .main-page .main-tabs#main-tab-11 .mining-slider #ninja-slider .slider-inner #ninja-slider-prev, .main-page .main-tabs#main-tab-11 .mining-slider #ninja-slider .slider-inner #ninja-slider-next {
-            visibility: hidden; }
+                .main-page .main-tabs#main-tab-11 .mining-slider #ninja-slider .slider-inner .slider-image-info a:not(:first-child) {
+                  margin-right: 60px; } }
+        .main-page .main-tabs#main-tab-11 .mining-slider #ninja-slider .slider-inner #ninja-slider-prev, .main-page .main-tabs#main-tab-11 .mining-slider #ninja-slider .slider-inner #ninja-slider-next {
+          visibility: hidden; }
       .main-page .main-tabs#main-tab-11 .mining-slider #thumbnail-slider {
         float: left;
         height: 100%;
@@ -3086,9 +3365,20 @@ body.modal-open.dashboard-body .modal-backdrop.in {
             filter: none;
             -webkit-filter: none;
             margin: 0 0 18px;
+            position: relative;
             width: 130px !important; }
             .main-page .main-tabs#main-tab-11 .mining-slider #thumbnail-slider .inner ul li a {
               background-size: 100% 100%; }
+            .main-page .main-tabs#main-tab-11 .mining-slider #thumbnail-slider .inner ul li.video:before {
+              background: url("../img/video-play.png") no-repeat;
+              content: '';
+              display: inline-block;
+              height: 42px;
+              left: 20px;
+              position: absolute;
+              top: 15px;
+              width: 42px;
+              z-index: 2; }
         .main-page .main-tabs#main-tab-11 .mining-slider #thumbnail-slider #thumbnail-slider-prev, .main-page .main-tabs#main-tab-11 .mining-slider #thumbnail-slider #thumbnail-slider-next {
           display: none; }
     .main-page .main-tabs#main-tab-12 .translation-player {
@@ -3300,6 +3590,12 @@ body.modal-open.dashboard-body .modal-backdrop.in {
           @media (min-width: 1200px) {
             .main-page .main-tabs#main-tab-10 .atb-slider .slider-item .slider-title {
               padding: 3.24vh 0 3.24vh 19%; } }
+          @media (min-width: 1920px) {
+            .main-page .main-tabs#main-tab-10 .atb-slider .slider-item .slider-title {
+              padding: 35px 0 35px 65px; } }
+          @media (min-width: 1920px) {
+            .main-page .main-tabs#main-tab-10 .atb-slider .slider-item .slider-title.individual {
+              padding: 35px 0 35px 80px; } }
         .main-page .main-tabs#main-tab-10 .atb-slider .slider-item .slider-info-title {
           color: #8e9aa8;
           font-size: 14px;
@@ -3310,6 +3606,10 @@ body.modal-open.dashboard-body .modal-backdrop.in {
           @media (min-width: 1200px) {
             .main-page .main-tabs#main-tab-10 .atb-slider .slider-item .slider-info-title {
               padding: 0 14.55% 0 19%; } }
+          @media (min-width: 1920px) {
+            .main-page .main-tabs#main-tab-10 .atb-slider .slider-item .slider-info-title {
+              margin: 35px 0 17px;
+              padding: 0 50px 0 65px; } }
         .main-page .main-tabs#main-tab-10 .atb-slider .slider-item .slider-info-amount {
           color: #000000;
           font-size: 21px;
@@ -3319,6 +3619,10 @@ body.modal-open.dashboard-body .modal-backdrop.in {
           @media (min-width: 1200px) {
             .main-page .main-tabs#main-tab-10 .atb-slider .slider-item .slider-info-amount {
               padding-left: 19%; } }
+          @media (min-width: 1920px) {
+            .main-page .main-tabs#main-tab-10 .atb-slider .slider-item .slider-info-amount {
+              margin-bottom: 35px;
+              padding-left: 65px; } }
         .main-page .main-tabs#main-tab-10 .atb-slider .slider-item .slider-info-block {
           color: #8e9aa8;
           font-size: 14px;
@@ -3327,10 +3631,17 @@ body.modal-open.dashboard-body .modal-backdrop.in {
           margin-bottom: 25px;
           padding-left: 19%;
           padding-right: 14%; }
+          @media (min-width: 1920px) {
+            .main-page .main-tabs#main-tab-10 .atb-slider .slider-item .slider-info-block {
+              padding-left: 80px;
+              padding-right: 59px; } }
           .main-page .main-tabs#main-tab-10 .atb-slider .slider-item .slider-info-block.individual {
             margin-bottom: 0; }
             .main-page .main-tabs#main-tab-10 .atb-slider .slider-item .slider-info-block.individual.first {
               margin: 3.24vh 0 1.39vh; }
+              @media (min-width: 1920px) {
+                .main-page .main-tabs#main-tab-10 .atb-slider .slider-item .slider-info-block.individual.first {
+                  margin: 35px 0 15px; } }
             .main-page .main-tabs#main-tab-10 .atb-slider .slider-item .slider-info-block.individual span {
               color: #000; }
             .main-page .main-tabs#main-tab-10 .atb-slider .slider-item .slider-info-block.individual.valutes {
@@ -3339,6 +3650,12 @@ body.modal-open.dashboard-body .modal-backdrop.in {
               @media (min-width: 1500px) {
                 .main-page .main-tabs#main-tab-10 .atb-slider .slider-item .slider-info-block.individual.valutes {
                   margin-bottom: 1.77vh; } }
+              @media (min-width: 1920px) {
+                .main-page .main-tabs#main-tab-10 .atb-slider .slider-item .slider-info-block.individual.valutes {
+                  margin-bottom: 19px; } }
+          @media (min-width: 1920px) {
+            .main-page .main-tabs#main-tab-10 .atb-slider .slider-item .slider-info-block.valutes {
+              padding-left: 65px; } }
         @media (min-width: 768px) {
           .main-page .main-tabs#main-tab-10 .atb-slider .slider-item.individual {
             width: 420px !important; } }
@@ -3363,16 +3680,28 @@ body.modal-open.dashboard-body .modal-backdrop.in {
         width: 62%; }
         @media (min-width: 1200px) {
           .main-page .main-tabs#main-tab-10 .atb-slider .try-button {
-            margin: 3vh 0 3.24vh 19%; } }
+            bottom: 0;
+            margin: 3vh 0 3.24vh 19%;
+            position: absolute; } }
         @media (min-width: 1500px) {
           .main-page .main-tabs#main-tab-10 .atb-slider .try-button {
-            margin: 4.65vh 0 3.24vh 19%; } }
+            margin: 4.65vh 0 3.24vh 19%;
+            position: static; } }
+        @media (min-width: 1920px) {
+          .main-page .main-tabs#main-tab-10 .atb-slider .try-button {
+            margin: 50px 0 35px 65px; } }
         @media (min-width: 1200px) {
           .main-page .main-tabs#main-tab-10 .atb-slider .try-button.individual {
             margin: 4.5vh 0 3.24vh 19%; } }
         @media (min-width: 1500px) {
           .main-page .main-tabs#main-tab-10 .atb-slider .try-button.individual {
             margin: 7.6vh 0 3.24vh 19%; } }
+        @media (min-width: 1920px) {
+          .main-page .main-tabs#main-tab-10 .atb-slider .try-button.individual {
+            margin: 102px 0 35px 80px; } }
+        @media (min-width: 1920px) {
+          .main-page .main-tabs#main-tab-10 .atb-slider .try-button.common {
+            margin: 69px 0 35px 80px; } }
     @media (min-width: 1200px) {
       .main-page .main-tabs#main-tab-9 {
         background: url("../img/main-tab-8.png") no-repeat;
@@ -3537,6 +3866,9 @@ body.modal-open.dashboard-body .modal-backdrop.in {
         @media (min-width: 768px) {
           .main-page.service-page .main-tabs#main-tab-service-1 .service-block .service-info {
             padding: 6.02vh 75px; } }
+        @media (min-width: 1200px) {
+          .main-page.service-page .main-tabs#main-tab-service-1 .service-block .service-info {
+            min-height: 340px; } }
     @media (min-width: 1200px) {
       .main-page.service-page .main-tabs#main-tab-service-2 {
         background: url("../img/service-tab-2.png") no-repeat;
@@ -4065,6 +4397,14 @@ body.modal-open.dashboard-body .modal-backdrop.in {
     .main-page.faq-page.news-page #main-single-news-1 .bottom-links {
       padding-left: 20px; } }
 
+@media (min-width: 1200px) {
+  .referral-page .main-block {
+    top: 140px; } }
+
+@media (min-width: 1600px) {
+  .referral-page .main-block {
+    top: 200px; } }
+
 .ui-tooltip {
   border: 0 !important;
   border-radius: 4px;
@@ -4104,9 +4444,9 @@ body.modal-open.dashboard-body .modal-backdrop.in {
         .social-share a.facebook {
           margin-right: 25px; } }
 
-#registerModal, #loginModal, #followModal, #settingsProfile {
+#registerModal, #loginModal, #followModal, #recoveryModal, #recoveryModal-2, #loginModalSuccess {
   background-color: #fff; }
-  #registerModal .close, #loginModal .close, #followModal .close, #settingsProfile .close {
+  #registerModal .close, #loginModal .close, #followModal .close, #recoveryModal .close, #recoveryModal-2 .close, #loginModalSuccess .close {
     background: url("../img/close-modal.png") no-repeat;
     background-size: 100%;
     height: 50px;
@@ -4118,24 +4458,24 @@ body.modal-open.dashboard-body .modal-backdrop.in {
     top: 20px;
     width: 50px; }
     @media (min-width: 768px) {
-      #registerModal .close, #loginModal .close, #followModal .close, #settingsProfile .close {
+      #registerModal .close, #loginModal .close, #followModal .close, #recoveryModal .close, #recoveryModal-2 .close, #loginModalSuccess .close {
         height: 100px;
         width: 100px; } }
-  #registerModal .modal-dialog, #loginModal .modal-dialog, #followModal .modal-dialog, #settingsProfile .modal-dialog {
+  #registerModal .modal-dialog, #loginModal .modal-dialog, #followModal .modal-dialog, #recoveryModal .modal-dialog, #recoveryModal-2 .modal-dialog, #loginModalSuccess .modal-dialog {
     -webkit-box-shadow: -24.724px 61.194px 90px 0px rgba(119, 133, 148, 0.23);
     box-shadow: -24.724px 61.194px 90px 0px rgba(119, 133, 148, 0.23);
     margin: 19vh 0 0;
     width: 100%; }
     @media (min-width: 768px) {
-      #registerModal .modal-dialog, #loginModal .modal-dialog, #followModal .modal-dialog, #settingsProfile .modal-dialog {
+      #registerModal .modal-dialog, #loginModal .modal-dialog, #followModal .modal-dialog, #recoveryModal .modal-dialog, #recoveryModal-2 .modal-dialog, #loginModalSuccess .modal-dialog {
         margin: 19vh auto 0;
         width: 425px; } }
-    #registerModal .modal-dialog .modal-content, #loginModal .modal-dialog .modal-content, #followModal .modal-dialog .modal-content, #settingsProfile .modal-dialog .modal-content {
+    #registerModal .modal-dialog .modal-content, #loginModal .modal-dialog .modal-content, #followModal .modal-dialog .modal-content, #recoveryModal .modal-dialog .modal-content, #recoveryModal-2 .modal-dialog .modal-content, #loginModalSuccess .modal-dialog .modal-content {
       border: 0;
       border-radius: 4px;
       -webkit-box-shadow: none;
       box-shadow: none; }
-      #registerModal .modal-dialog .modal-content .modal-title, #loginModal .modal-dialog .modal-content .modal-title, #followModal .modal-dialog .modal-content .modal-title, #settingsProfile .modal-dialog .modal-content .modal-title {
+      #registerModal .modal-dialog .modal-content .modal-title, #loginModal .modal-dialog .modal-content .modal-title, #followModal .modal-dialog .modal-content .modal-title, #recoveryModal .modal-dialog .modal-content .modal-title, #recoveryModal-2 .modal-dialog .modal-content .modal-title, #loginModalSuccess .modal-dialog .modal-content .modal-title {
         border-bottom: 1px solid #f2f2f2;
         color: #869696;
         font-size: 22px;
@@ -4143,9 +4483,9 @@ body.modal-open.dashboard-body .modal-backdrop.in {
         line-height: 22px;
         padding: 3.25vh 0;
         text-align: center; }
-    #registerModal .modal-dialog .modal-body, #loginModal .modal-dialog .modal-body, #followModal .modal-dialog .modal-body, #settingsProfile .modal-dialog .modal-body {
+    #registerModal .modal-dialog .modal-body, #loginModal .modal-dialog .modal-body, #followModal .modal-dialog .modal-body, #recoveryModal .modal-dialog .modal-body, #recoveryModal-2 .modal-dialog .modal-body, #loginModalSuccess .modal-dialog .modal-body {
       padding: 3.25vh 14.1%; }
-      #registerModal .modal-dialog .modal-body form input[type="text"], #registerModal .modal-dialog .modal-body form input[type="password"], #loginModal .modal-dialog .modal-body form input[type="text"], #loginModal .modal-dialog .modal-body form input[type="password"], #followModal .modal-dialog .modal-body form input[type="text"], #followModal .modal-dialog .modal-body form input[type="password"], #settingsProfile .modal-dialog .modal-body form input[type="text"], #settingsProfile .modal-dialog .modal-body form input[type="password"] {
+      #registerModal .modal-dialog .modal-body form input[type="text"], #registerModal .modal-dialog .modal-body form input[type="password"], #loginModal .modal-dialog .modal-body form input[type="text"], #loginModal .modal-dialog .modal-body form input[type="password"], #followModal .modal-dialog .modal-body form input[type="text"], #followModal .modal-dialog .modal-body form input[type="password"], #recoveryModal .modal-dialog .modal-body form input[type="text"], #recoveryModal .modal-dialog .modal-body form input[type="password"], #recoveryModal-2 .modal-dialog .modal-body form input[type="text"], #recoveryModal-2 .modal-dialog .modal-body form input[type="password"], #loginModalSuccess .modal-dialog .modal-body form input[type="text"], #loginModalSuccess .modal-dialog .modal-body form input[type="password"] {
         -webkit-appearance: none;
         -moz-appearance: none;
         appearance: none;
@@ -4162,48 +4502,52 @@ body.modal-open.dashboard-body .modal-backdrop.in {
         outline: 0;
         padding: 1.11vh 0;
         width: 100%; }
-        #registerModal .modal-dialog .modal-body form input[type="text"]::-webkit-input-placeholder, #registerModal .modal-dialog .modal-body form input[type="password"]::-webkit-input-placeholder, #loginModal .modal-dialog .modal-body form input[type="text"]::-webkit-input-placeholder, #loginModal .modal-dialog .modal-body form input[type="password"]::-webkit-input-placeholder, #followModal .modal-dialog .modal-body form input[type="text"]::-webkit-input-placeholder, #followModal .modal-dialog .modal-body form input[type="password"]::-webkit-input-placeholder, #settingsProfile .modal-dialog .modal-body form input[type="text"]::-webkit-input-placeholder, #settingsProfile .modal-dialog .modal-body form input[type="password"]::-webkit-input-placeholder {
+        #registerModal .modal-dialog .modal-body form input[type="text"]::-webkit-input-placeholder, #registerModal .modal-dialog .modal-body form input[type="password"]::-webkit-input-placeholder, #loginModal .modal-dialog .modal-body form input[type="text"]::-webkit-input-placeholder, #loginModal .modal-dialog .modal-body form input[type="password"]::-webkit-input-placeholder, #followModal .modal-dialog .modal-body form input[type="text"]::-webkit-input-placeholder, #followModal .modal-dialog .modal-body form input[type="password"]::-webkit-input-placeholder, #recoveryModal .modal-dialog .modal-body form input[type="text"]::-webkit-input-placeholder, #recoveryModal .modal-dialog .modal-body form input[type="password"]::-webkit-input-placeholder, #recoveryModal-2 .modal-dialog .modal-body form input[type="text"]::-webkit-input-placeholder, #recoveryModal-2 .modal-dialog .modal-body form input[type="password"]::-webkit-input-placeholder, #loginModalSuccess .modal-dialog .modal-body form input[type="text"]::-webkit-input-placeholder, #loginModalSuccess .modal-dialog .modal-body form input[type="password"]::-webkit-input-placeholder {
           color: #8e9aa8; }
-        #registerModal .modal-dialog .modal-body form input[type="text"]::-moz-placeholder, #registerModal .modal-dialog .modal-body form input[type="password"]::-moz-placeholder, #loginModal .modal-dialog .modal-body form input[type="text"]::-moz-placeholder, #loginModal .modal-dialog .modal-body form input[type="password"]::-moz-placeholder, #followModal .modal-dialog .modal-body form input[type="text"]::-moz-placeholder, #followModal .modal-dialog .modal-body form input[type="password"]::-moz-placeholder, #settingsProfile .modal-dialog .modal-body form input[type="text"]::-moz-placeholder, #settingsProfile .modal-dialog .modal-body form input[type="password"]::-moz-placeholder {
+        #registerModal .modal-dialog .modal-body form input[type="text"]::-moz-placeholder, #registerModal .modal-dialog .modal-body form input[type="password"]::-moz-placeholder, #loginModal .modal-dialog .modal-body form input[type="text"]::-moz-placeholder, #loginModal .modal-dialog .modal-body form input[type="password"]::-moz-placeholder, #followModal .modal-dialog .modal-body form input[type="text"]::-moz-placeholder, #followModal .modal-dialog .modal-body form input[type="password"]::-moz-placeholder, #recoveryModal .modal-dialog .modal-body form input[type="text"]::-moz-placeholder, #recoveryModal .modal-dialog .modal-body form input[type="password"]::-moz-placeholder, #recoveryModal-2 .modal-dialog .modal-body form input[type="text"]::-moz-placeholder, #recoveryModal-2 .modal-dialog .modal-body form input[type="password"]::-moz-placeholder, #loginModalSuccess .modal-dialog .modal-body form input[type="text"]::-moz-placeholder, #loginModalSuccess .modal-dialog .modal-body form input[type="password"]::-moz-placeholder {
           color: #8e9aa8; }
-        #registerModal .modal-dialog .modal-body form input[type="text"]:-ms-input-placeholder, #registerModal .modal-dialog .modal-body form input[type="password"]:-ms-input-placeholder, #loginModal .modal-dialog .modal-body form input[type="text"]:-ms-input-placeholder, #loginModal .modal-dialog .modal-body form input[type="password"]:-ms-input-placeholder, #followModal .modal-dialog .modal-body form input[type="text"]:-ms-input-placeholder, #followModal .modal-dialog .modal-body form input[type="password"]:-ms-input-placeholder, #settingsProfile .modal-dialog .modal-body form input[type="text"]:-ms-input-placeholder, #settingsProfile .modal-dialog .modal-body form input[type="password"]:-ms-input-placeholder {
+        #registerModal .modal-dialog .modal-body form input[type="text"]:-ms-input-placeholder, #registerModal .modal-dialog .modal-body form input[type="password"]:-ms-input-placeholder, #loginModal .modal-dialog .modal-body form input[type="text"]:-ms-input-placeholder, #loginModal .modal-dialog .modal-body form input[type="password"]:-ms-input-placeholder, #followModal .modal-dialog .modal-body form input[type="text"]:-ms-input-placeholder, #followModal .modal-dialog .modal-body form input[type="password"]:-ms-input-placeholder, #recoveryModal .modal-dialog .modal-body form input[type="text"]:-ms-input-placeholder, #recoveryModal .modal-dialog .modal-body form input[type="password"]:-ms-input-placeholder, #recoveryModal-2 .modal-dialog .modal-body form input[type="text"]:-ms-input-placeholder, #recoveryModal-2 .modal-dialog .modal-body form input[type="password"]:-ms-input-placeholder, #loginModalSuccess .modal-dialog .modal-body form input[type="text"]:-ms-input-placeholder, #loginModalSuccess .modal-dialog .modal-body form input[type="password"]:-ms-input-placeholder {
           color: #8e9aa8; }
-        #registerModal .modal-dialog .modal-body form input[type="text"]:-moz-placeholder, #registerModal .modal-dialog .modal-body form input[type="password"]:-moz-placeholder, #loginModal .modal-dialog .modal-body form input[type="text"]:-moz-placeholder, #loginModal .modal-dialog .modal-body form input[type="password"]:-moz-placeholder, #followModal .modal-dialog .modal-body form input[type="text"]:-moz-placeholder, #followModal .modal-dialog .modal-body form input[type="password"]:-moz-placeholder, #settingsProfile .modal-dialog .modal-body form input[type="text"]:-moz-placeholder, #settingsProfile .modal-dialog .modal-body form input[type="password"]:-moz-placeholder {
+        #registerModal .modal-dialog .modal-body form input[type="text"]:-moz-placeholder, #registerModal .modal-dialog .modal-body form input[type="password"]:-moz-placeholder, #loginModal .modal-dialog .modal-body form input[type="text"]:-moz-placeholder, #loginModal .modal-dialog .modal-body form input[type="password"]:-moz-placeholder, #followModal .modal-dialog .modal-body form input[type="text"]:-moz-placeholder, #followModal .modal-dialog .modal-body form input[type="password"]:-moz-placeholder, #recoveryModal .modal-dialog .modal-body form input[type="text"]:-moz-placeholder, #recoveryModal .modal-dialog .modal-body form input[type="password"]:-moz-placeholder, #recoveryModal-2 .modal-dialog .modal-body form input[type="text"]:-moz-placeholder, #recoveryModal-2 .modal-dialog .modal-body form input[type="password"]:-moz-placeholder, #loginModalSuccess .modal-dialog .modal-body form input[type="text"]:-moz-placeholder, #loginModalSuccess .modal-dialog .modal-body form input[type="password"]:-moz-placeholder {
           color: #8e9aa8; }
-        #registerModal .modal-dialog .modal-body form input[type="text"].email, #registerModal .modal-dialog .modal-body form input[type="password"].email, #loginModal .modal-dialog .modal-body form input[type="text"].email, #loginModal .modal-dialog .modal-body form input[type="password"].email, #followModal .modal-dialog .modal-body form input[type="text"].email, #followModal .modal-dialog .modal-body form input[type="password"].email, #settingsProfile .modal-dialog .modal-body form input[type="text"].email, #settingsProfile .modal-dialog .modal-body form input[type="password"].email {
+        #registerModal .modal-dialog .modal-body form input[type="text"].email, #registerModal .modal-dialog .modal-body form input[type="password"].email, #loginModal .modal-dialog .modal-body form input[type="text"].email, #loginModal .modal-dialog .modal-body form input[type="password"].email, #followModal .modal-dialog .modal-body form input[type="text"].email, #followModal .modal-dialog .modal-body form input[type="password"].email, #recoveryModal .modal-dialog .modal-body form input[type="text"].email, #recoveryModal .modal-dialog .modal-body form input[type="password"].email, #recoveryModal-2 .modal-dialog .modal-body form input[type="text"].email, #recoveryModal-2 .modal-dialog .modal-body form input[type="password"].email, #loginModalSuccess .modal-dialog .modal-body form input[type="text"].email, #loginModalSuccess .modal-dialog .modal-body form input[type="password"].email {
           border-bottom: 1px solid #74b6e1;
           color: #5eabdf; }
-          #registerModal .modal-dialog .modal-body form input[type="text"].email::-webkit-input-placeholder, #registerModal .modal-dialog .modal-body form input[type="password"].email::-webkit-input-placeholder, #loginModal .modal-dialog .modal-body form input[type="text"].email::-webkit-input-placeholder, #loginModal .modal-dialog .modal-body form input[type="password"].email::-webkit-input-placeholder, #followModal .modal-dialog .modal-body form input[type="text"].email::-webkit-input-placeholder, #followModal .modal-dialog .modal-body form input[type="password"].email::-webkit-input-placeholder, #settingsProfile .modal-dialog .modal-body form input[type="text"].email::-webkit-input-placeholder, #settingsProfile .modal-dialog .modal-body form input[type="password"].email::-webkit-input-placeholder {
+          #registerModal .modal-dialog .modal-body form input[type="text"].email::-webkit-input-placeholder, #registerModal .modal-dialog .modal-body form input[type="password"].email::-webkit-input-placeholder, #loginModal .modal-dialog .modal-body form input[type="text"].email::-webkit-input-placeholder, #loginModal .modal-dialog .modal-body form input[type="password"].email::-webkit-input-placeholder, #followModal .modal-dialog .modal-body form input[type="text"].email::-webkit-input-placeholder, #followModal .modal-dialog .modal-body form input[type="password"].email::-webkit-input-placeholder, #recoveryModal .modal-dialog .modal-body form input[type="text"].email::-webkit-input-placeholder, #recoveryModal .modal-dialog .modal-body form input[type="password"].email::-webkit-input-placeholder, #recoveryModal-2 .modal-dialog .modal-body form input[type="text"].email::-webkit-input-placeholder, #recoveryModal-2 .modal-dialog .modal-body form input[type="password"].email::-webkit-input-placeholder, #loginModalSuccess .modal-dialog .modal-body form input[type="text"].email::-webkit-input-placeholder, #loginModalSuccess .modal-dialog .modal-body form input[type="password"].email::-webkit-input-placeholder {
             color: #5eabdf; }
-          #registerModal .modal-dialog .modal-body form input[type="text"].email::-moz-placeholder, #registerModal .modal-dialog .modal-body form input[type="password"].email::-moz-placeholder, #loginModal .modal-dialog .modal-body form input[type="text"].email::-moz-placeholder, #loginModal .modal-dialog .modal-body form input[type="password"].email::-moz-placeholder, #followModal .modal-dialog .modal-body form input[type="text"].email::-moz-placeholder, #followModal .modal-dialog .modal-body form input[type="password"].email::-moz-placeholder, #settingsProfile .modal-dialog .modal-body form input[type="text"].email::-moz-placeholder, #settingsProfile .modal-dialog .modal-body form input[type="password"].email::-moz-placeholder {
+          #registerModal .modal-dialog .modal-body form input[type="text"].email::-moz-placeholder, #registerModal .modal-dialog .modal-body form input[type="password"].email::-moz-placeholder, #loginModal .modal-dialog .modal-body form input[type="text"].email::-moz-placeholder, #loginModal .modal-dialog .modal-body form input[type="password"].email::-moz-placeholder, #followModal .modal-dialog .modal-body form input[type="text"].email::-moz-placeholder, #followModal .modal-dialog .modal-body form input[type="password"].email::-moz-placeholder, #recoveryModal .modal-dialog .modal-body form input[type="text"].email::-moz-placeholder, #recoveryModal .modal-dialog .modal-body form input[type="password"].email::-moz-placeholder, #recoveryModal-2 .modal-dialog .modal-body form input[type="text"].email::-moz-placeholder, #recoveryModal-2 .modal-dialog .modal-body form input[type="password"].email::-moz-placeholder, #loginModalSuccess .modal-dialog .modal-body form input[type="text"].email::-moz-placeholder, #loginModalSuccess .modal-dialog .modal-body form input[type="password"].email::-moz-placeholder {
             color: #5eabdf; }
-          #registerModal .modal-dialog .modal-body form input[type="text"].email:-ms-input-placeholder, #registerModal .modal-dialog .modal-body form input[type="password"].email:-ms-input-placeholder, #loginModal .modal-dialog .modal-body form input[type="text"].email:-ms-input-placeholder, #loginModal .modal-dialog .modal-body form input[type="password"].email:-ms-input-placeholder, #followModal .modal-dialog .modal-body form input[type="text"].email:-ms-input-placeholder, #followModal .modal-dialog .modal-body form input[type="password"].email:-ms-input-placeholder, #settingsProfile .modal-dialog .modal-body form input[type="text"].email:-ms-input-placeholder, #settingsProfile .modal-dialog .modal-body form input[type="password"].email:-ms-input-placeholder {
+          #registerModal .modal-dialog .modal-body form input[type="text"].email:-ms-input-placeholder, #registerModal .modal-dialog .modal-body form input[type="password"].email:-ms-input-placeholder, #loginModal .modal-dialog .modal-body form input[type="text"].email:-ms-input-placeholder, #loginModal .modal-dialog .modal-body form input[type="password"].email:-ms-input-placeholder, #followModal .modal-dialog .modal-body form input[type="text"].email:-ms-input-placeholder, #followModal .modal-dialog .modal-body form input[type="password"].email:-ms-input-placeholder, #recoveryModal .modal-dialog .modal-body form input[type="text"].email:-ms-input-placeholder, #recoveryModal .modal-dialog .modal-body form input[type="password"].email:-ms-input-placeholder, #recoveryModal-2 .modal-dialog .modal-body form input[type="text"].email:-ms-input-placeholder, #recoveryModal-2 .modal-dialog .modal-body form input[type="password"].email:-ms-input-placeholder, #loginModalSuccess .modal-dialog .modal-body form input[type="text"].email:-ms-input-placeholder, #loginModalSuccess .modal-dialog .modal-body form input[type="password"].email:-ms-input-placeholder {
             color: #5eabdf; }
-          #registerModal .modal-dialog .modal-body form input[type="text"].email:-moz-placeholder, #registerModal .modal-dialog .modal-body form input[type="password"].email:-moz-placeholder, #loginModal .modal-dialog .modal-body form input[type="text"].email:-moz-placeholder, #loginModal .modal-dialog .modal-body form input[type="password"].email:-moz-placeholder, #followModal .modal-dialog .modal-body form input[type="text"].email:-moz-placeholder, #followModal .modal-dialog .modal-body form input[type="password"].email:-moz-placeholder, #settingsProfile .modal-dialog .modal-body form input[type="text"].email:-moz-placeholder, #settingsProfile .modal-dialog .modal-body form input[type="password"].email:-moz-placeholder {
+          #registerModal .modal-dialog .modal-body form input[type="text"].email:-moz-placeholder, #registerModal .modal-dialog .modal-body form input[type="password"].email:-moz-placeholder, #loginModal .modal-dialog .modal-body form input[type="text"].email:-moz-placeholder, #loginModal .modal-dialog .modal-body form input[type="password"].email:-moz-placeholder, #followModal .modal-dialog .modal-body form input[type="text"].email:-moz-placeholder, #followModal .modal-dialog .modal-body form input[type="password"].email:-moz-placeholder, #recoveryModal .modal-dialog .modal-body form input[type="text"].email:-moz-placeholder, #recoveryModal .modal-dialog .modal-body form input[type="password"].email:-moz-placeholder, #recoveryModal-2 .modal-dialog .modal-body form input[type="text"].email:-moz-placeholder, #recoveryModal-2 .modal-dialog .modal-body form input[type="password"].email:-moz-placeholder, #loginModalSuccess .modal-dialog .modal-body form input[type="text"].email:-moz-placeholder, #loginModalSuccess .modal-dialog .modal-body form input[type="password"].email:-moz-placeholder {
             color: #5eabdf; }
-        #registerModal .modal-dialog .modal-body form input[type="text"].confirm-password, #registerModal .modal-dialog .modal-body form input[type="password"].confirm-password, #loginModal .modal-dialog .modal-body form input[type="text"].confirm-password, #loginModal .modal-dialog .modal-body form input[type="password"].confirm-password, #followModal .modal-dialog .modal-body form input[type="text"].confirm-password, #followModal .modal-dialog .modal-body form input[type="password"].confirm-password, #settingsProfile .modal-dialog .modal-body form input[type="text"].confirm-password, #settingsProfile .modal-dialog .modal-body form input[type="password"].confirm-password {
+        #registerModal .modal-dialog .modal-body form input[type="text"].confirm-password, #registerModal .modal-dialog .modal-body form input[type="password"].confirm-password, #loginModal .modal-dialog .modal-body form input[type="text"].confirm-password, #loginModal .modal-dialog .modal-body form input[type="password"].confirm-password, #followModal .modal-dialog .modal-body form input[type="text"].confirm-password, #followModal .modal-dialog .modal-body form input[type="password"].confirm-password, #recoveryModal .modal-dialog .modal-body form input[type="text"].confirm-password, #recoveryModal .modal-dialog .modal-body form input[type="password"].confirm-password, #recoveryModal-2 .modal-dialog .modal-body form input[type="text"].confirm-password, #recoveryModal-2 .modal-dialog .modal-body form input[type="password"].confirm-password, #loginModalSuccess .modal-dialog .modal-body form input[type="text"].confirm-password, #loginModalSuccess .modal-dialog .modal-body form input[type="password"].confirm-password {
           border-bottom: 1px solid #e07f8a;
           color: #c0616c; }
-          #registerModal .modal-dialog .modal-body form input[type="text"].confirm-password::-webkit-input-placeholder, #registerModal .modal-dialog .modal-body form input[type="password"].confirm-password::-webkit-input-placeholder, #loginModal .modal-dialog .modal-body form input[type="text"].confirm-password::-webkit-input-placeholder, #loginModal .modal-dialog .modal-body form input[type="password"].confirm-password::-webkit-input-placeholder, #followModal .modal-dialog .modal-body form input[type="text"].confirm-password::-webkit-input-placeholder, #followModal .modal-dialog .modal-body form input[type="password"].confirm-password::-webkit-input-placeholder, #settingsProfile .modal-dialog .modal-body form input[type="text"].confirm-password::-webkit-input-placeholder, #settingsProfile .modal-dialog .modal-body form input[type="password"].confirm-password::-webkit-input-placeholder {
+          #registerModal .modal-dialog .modal-body form input[type="text"].confirm-password::-webkit-input-placeholder, #registerModal .modal-dialog .modal-body form input[type="password"].confirm-password::-webkit-input-placeholder, #loginModal .modal-dialog .modal-body form input[type="text"].confirm-password::-webkit-input-placeholder, #loginModal .modal-dialog .modal-body form input[type="password"].confirm-password::-webkit-input-placeholder, #followModal .modal-dialog .modal-body form input[type="text"].confirm-password::-webkit-input-placeholder, #followModal .modal-dialog .modal-body form input[type="password"].confirm-password::-webkit-input-placeholder, #recoveryModal .modal-dialog .modal-body form input[type="text"].confirm-password::-webkit-input-placeholder, #recoveryModal .modal-dialog .modal-body form input[type="password"].confirm-password::-webkit-input-placeholder, #recoveryModal-2 .modal-dialog .modal-body form input[type="text"].confirm-password::-webkit-input-placeholder, #recoveryModal-2 .modal-dialog .modal-body form input[type="password"].confirm-password::-webkit-input-placeholder, #loginModalSuccess .modal-dialog .modal-body form input[type="text"].confirm-password::-webkit-input-placeholder, #loginModalSuccess .modal-dialog .modal-body form input[type="password"].confirm-password::-webkit-input-placeholder {
             color: #c0616c; }
-          #registerModal .modal-dialog .modal-body form input[type="text"].confirm-password::-moz-placeholder, #registerModal .modal-dialog .modal-body form input[type="password"].confirm-password::-moz-placeholder, #loginModal .modal-dialog .modal-body form input[type="text"].confirm-password::-moz-placeholder, #loginModal .modal-dialog .modal-body form input[type="password"].confirm-password::-moz-placeholder, #followModal .modal-dialog .modal-body form input[type="text"].confirm-password::-moz-placeholder, #followModal .modal-dialog .modal-body form input[type="password"].confirm-password::-moz-placeholder, #settingsProfile .modal-dialog .modal-body form input[type="text"].confirm-password::-moz-placeholder, #settingsProfile .modal-dialog .modal-body form input[type="password"].confirm-password::-moz-placeholder {
+          #registerModal .modal-dialog .modal-body form input[type="text"].confirm-password::-moz-placeholder, #registerModal .modal-dialog .modal-body form input[type="password"].confirm-password::-moz-placeholder, #loginModal .modal-dialog .modal-body form input[type="text"].confirm-password::-moz-placeholder, #loginModal .modal-dialog .modal-body form input[type="password"].confirm-password::-moz-placeholder, #followModal .modal-dialog .modal-body form input[type="text"].confirm-password::-moz-placeholder, #followModal .modal-dialog .modal-body form input[type="password"].confirm-password::-moz-placeholder, #recoveryModal .modal-dialog .modal-body form input[type="text"].confirm-password::-moz-placeholder, #recoveryModal .modal-dialog .modal-body form input[type="password"].confirm-password::-moz-placeholder, #recoveryModal-2 .modal-dialog .modal-body form input[type="text"].confirm-password::-moz-placeholder, #recoveryModal-2 .modal-dialog .modal-body form input[type="password"].confirm-password::-moz-placeholder, #loginModalSuccess .modal-dialog .modal-body form input[type="text"].confirm-password::-moz-placeholder, #loginModalSuccess .modal-dialog .modal-body form input[type="password"].confirm-password::-moz-placeholder {
             color: #c0616c; }
-          #registerModal .modal-dialog .modal-body form input[type="text"].confirm-password:-ms-input-placeholder, #registerModal .modal-dialog .modal-body form input[type="password"].confirm-password:-ms-input-placeholder, #loginModal .modal-dialog .modal-body form input[type="text"].confirm-password:-ms-input-placeholder, #loginModal .modal-dialog .modal-body form input[type="password"].confirm-password:-ms-input-placeholder, #followModal .modal-dialog .modal-body form input[type="text"].confirm-password:-ms-input-placeholder, #followModal .modal-dialog .modal-body form input[type="password"].confirm-password:-ms-input-placeholder, #settingsProfile .modal-dialog .modal-body form input[type="text"].confirm-password:-ms-input-placeholder, #settingsProfile .modal-dialog .modal-body form input[type="password"].confirm-password:-ms-input-placeholder {
+          #registerModal .modal-dialog .modal-body form input[type="text"].confirm-password:-ms-input-placeholder, #registerModal .modal-dialog .modal-body form input[type="password"].confirm-password:-ms-input-placeholder, #loginModal .modal-dialog .modal-body form input[type="text"].confirm-password:-ms-input-placeholder, #loginModal .modal-dialog .modal-body form input[type="password"].confirm-password:-ms-input-placeholder, #followModal .modal-dialog .modal-body form input[type="text"].confirm-password:-ms-input-placeholder, #followModal .modal-dialog .modal-body form input[type="password"].confirm-password:-ms-input-placeholder, #recoveryModal .modal-dialog .modal-body form input[type="text"].confirm-password:-ms-input-placeholder, #recoveryModal .modal-dialog .modal-body form input[type="password"].confirm-password:-ms-input-placeholder, #recoveryModal-2 .modal-dialog .modal-body form input[type="text"].confirm-password:-ms-input-placeholder, #recoveryModal-2 .modal-dialog .modal-body form input[type="password"].confirm-password:-ms-input-placeholder, #loginModalSuccess .modal-dialog .modal-body form input[type="text"].confirm-password:-ms-input-placeholder, #loginModalSuccess .modal-dialog .modal-body form input[type="password"].confirm-password:-ms-input-placeholder {
             color: #c0616c; }
-          #registerModal .modal-dialog .modal-body form input[type="text"].confirm-password:-moz-placeholder, #registerModal .modal-dialog .modal-body form input[type="password"].confirm-password:-moz-placeholder, #loginModal .modal-dialog .modal-body form input[type="text"].confirm-password:-moz-placeholder, #loginModal .modal-dialog .modal-body form input[type="password"].confirm-password:-moz-placeholder, #followModal .modal-dialog .modal-body form input[type="text"].confirm-password:-moz-placeholder, #followModal .modal-dialog .modal-body form input[type="password"].confirm-password:-moz-placeholder, #settingsProfile .modal-dialog .modal-body form input[type="text"].confirm-password:-moz-placeholder, #settingsProfile .modal-dialog .modal-body form input[type="password"].confirm-password:-moz-placeholder {
+          #registerModal .modal-dialog .modal-body form input[type="text"].confirm-password:-moz-placeholder, #registerModal .modal-dialog .modal-body form input[type="password"].confirm-password:-moz-placeholder, #loginModal .modal-dialog .modal-body form input[type="text"].confirm-password:-moz-placeholder, #loginModal .modal-dialog .modal-body form input[type="password"].confirm-password:-moz-placeholder, #followModal .modal-dialog .modal-body form input[type="text"].confirm-password:-moz-placeholder, #followModal .modal-dialog .modal-body form input[type="password"].confirm-password:-moz-placeholder, #recoveryModal .modal-dialog .modal-body form input[type="text"].confirm-password:-moz-placeholder, #recoveryModal .modal-dialog .modal-body form input[type="password"].confirm-password:-moz-placeholder, #recoveryModal-2 .modal-dialog .modal-body form input[type="text"].confirm-password:-moz-placeholder, #recoveryModal-2 .modal-dialog .modal-body form input[type="password"].confirm-password:-moz-placeholder, #loginModalSuccess .modal-dialog .modal-body form input[type="text"].confirm-password:-moz-placeholder, #loginModalSuccess .modal-dialog .modal-body form input[type="password"].confirm-password:-moz-placeholder {
             color: #c0616c; }
       #registerModal .modal-dialog .modal-body form [type="checkbox"]:not(:checked),
       #registerModal .modal-dialog .modal-body form [type="checkbox"]:checked, #loginModal .modal-dialog .modal-body form [type="checkbox"]:not(:checked),
       #loginModal .modal-dialog .modal-body form [type="checkbox"]:checked, #followModal .modal-dialog .modal-body form [type="checkbox"]:not(:checked),
-      #followModal .modal-dialog .modal-body form [type="checkbox"]:checked, #settingsProfile .modal-dialog .modal-body form [type="checkbox"]:not(:checked),
-      #settingsProfile .modal-dialog .modal-body form [type="checkbox"]:checked {
+      #followModal .modal-dialog .modal-body form [type="checkbox"]:checked, #recoveryModal .modal-dialog .modal-body form [type="checkbox"]:not(:checked),
+      #recoveryModal .modal-dialog .modal-body form [type="checkbox"]:checked, #recoveryModal-2 .modal-dialog .modal-body form [type="checkbox"]:not(:checked),
+      #recoveryModal-2 .modal-dialog .modal-body form [type="checkbox"]:checked, #loginModalSuccess .modal-dialog .modal-body form [type="checkbox"]:not(:checked),
+      #loginModalSuccess .modal-dialog .modal-body form [type="checkbox"]:checked {
         position: absolute;
         left: -9999px; }
         #registerModal .modal-dialog .modal-body form [type="checkbox"]:not(:checked) + label,
         #registerModal .modal-dialog .modal-body form [type="checkbox"]:checked + label, #loginModal .modal-dialog .modal-body form [type="checkbox"]:not(:checked) + label,
         #loginModal .modal-dialog .modal-body form [type="checkbox"]:checked + label, #followModal .modal-dialog .modal-body form [type="checkbox"]:not(:checked) + label,
-        #followModal .modal-dialog .modal-body form [type="checkbox"]:checked + label, #settingsProfile .modal-dialog .modal-body form [type="checkbox"]:not(:checked) + label,
-        #settingsProfile .modal-dialog .modal-body form [type="checkbox"]:checked + label {
+        #followModal .modal-dialog .modal-body form [type="checkbox"]:checked + label, #recoveryModal .modal-dialog .modal-body form [type="checkbox"]:not(:checked) + label,
+        #recoveryModal .modal-dialog .modal-body form [type="checkbox"]:checked + label, #recoveryModal-2 .modal-dialog .modal-body form [type="checkbox"]:not(:checked) + label,
+        #recoveryModal-2 .modal-dialog .modal-body form [type="checkbox"]:checked + label, #loginModalSuccess .modal-dialog .modal-body form [type="checkbox"]:not(:checked) + label,
+        #loginModalSuccess .modal-dialog .modal-body form [type="checkbox"]:checked + label {
           color: #8e9aa8;
           cursor: pointer;
           font-family: "Gilroy Light", sans-serif;
@@ -4216,8 +4560,10 @@ body.modal-open.dashboard-body .modal-backdrop.in {
           #registerModal .modal-dialog .modal-body form [type="checkbox"]:not(:checked) + label:before,
           #registerModal .modal-dialog .modal-body form [type="checkbox"]:checked + label:before, #loginModal .modal-dialog .modal-body form [type="checkbox"]:not(:checked) + label:before,
           #loginModal .modal-dialog .modal-body form [type="checkbox"]:checked + label:before, #followModal .modal-dialog .modal-body form [type="checkbox"]:not(:checked) + label:before,
-          #followModal .modal-dialog .modal-body form [type="checkbox"]:checked + label:before, #settingsProfile .modal-dialog .modal-body form [type="checkbox"]:not(:checked) + label:before,
-          #settingsProfile .modal-dialog .modal-body form [type="checkbox"]:checked + label:before {
+          #followModal .modal-dialog .modal-body form [type="checkbox"]:checked + label:before, #recoveryModal .modal-dialog .modal-body form [type="checkbox"]:not(:checked) + label:before,
+          #recoveryModal .modal-dialog .modal-body form [type="checkbox"]:checked + label:before, #recoveryModal-2 .modal-dialog .modal-body form [type="checkbox"]:not(:checked) + label:before,
+          #recoveryModal-2 .modal-dialog .modal-body form [type="checkbox"]:checked + label:before, #loginModalSuccess .modal-dialog .modal-body form [type="checkbox"]:not(:checked) + label:before,
+          #loginModalSuccess .modal-dialog .modal-body form [type="checkbox"]:checked + label:before {
             background: #fff;
             border: 1px solid #919caa;
             border-radius: 50%;
@@ -4230,8 +4576,10 @@ body.modal-open.dashboard-body .modal-backdrop.in {
           #registerModal .modal-dialog .modal-body form [type="checkbox"]:not(:checked) + label:after,
           #registerModal .modal-dialog .modal-body form [type="checkbox"]:checked + label:after, #loginModal .modal-dialog .modal-body form [type="checkbox"]:not(:checked) + label:after,
           #loginModal .modal-dialog .modal-body form [type="checkbox"]:checked + label:after, #followModal .modal-dialog .modal-body form [type="checkbox"]:not(:checked) + label:after,
-          #followModal .modal-dialog .modal-body form [type="checkbox"]:checked + label:after, #settingsProfile .modal-dialog .modal-body form [type="checkbox"]:not(:checked) + label:after,
-          #settingsProfile .modal-dialog .modal-body form [type="checkbox"]:checked + label:after {
+          #followModal .modal-dialog .modal-body form [type="checkbox"]:checked + label:after, #recoveryModal .modal-dialog .modal-body form [type="checkbox"]:not(:checked) + label:after,
+          #recoveryModal .modal-dialog .modal-body form [type="checkbox"]:checked + label:after, #recoveryModal-2 .modal-dialog .modal-body form [type="checkbox"]:not(:checked) + label:after,
+          #recoveryModal-2 .modal-dialog .modal-body form [type="checkbox"]:checked + label:after, #loginModalSuccess .modal-dialog .modal-body form [type="checkbox"]:not(:checked) + label:after,
+          #loginModalSuccess .modal-dialog .modal-body form [type="checkbox"]:checked + label:after {
             background-color: #919caa;
             border-radius: 50%;
             content: '';
@@ -4243,15 +4591,15 @@ body.modal-open.dashboard-body .modal-backdrop.in {
             -webkit-transition: all .2s;
             transition: all .2s;
             width: 6px; }
-      #registerModal .modal-dialog .modal-body form [type="checkbox"]:not(:checked) + label:after, #loginModal .modal-dialog .modal-body form [type="checkbox"]:not(:checked) + label:after, #followModal .modal-dialog .modal-body form [type="checkbox"]:not(:checked) + label:after, #settingsProfile .modal-dialog .modal-body form [type="checkbox"]:not(:checked) + label:after {
+      #registerModal .modal-dialog .modal-body form [type="checkbox"]:not(:checked) + label:after, #loginModal .modal-dialog .modal-body form [type="checkbox"]:not(:checked) + label:after, #followModal .modal-dialog .modal-body form [type="checkbox"]:not(:checked) + label:after, #recoveryModal .modal-dialog .modal-body form [type="checkbox"]:not(:checked) + label:after, #recoveryModal-2 .modal-dialog .modal-body form [type="checkbox"]:not(:checked) + label:after, #loginModalSuccess .modal-dialog .modal-body form [type="checkbox"]:not(:checked) + label:after {
         opacity: 0;
         -webkit-transform: scale(0);
         transform: scale(0); }
-      #registerModal .modal-dialog .modal-body form [type="checkbox"]:checked + label:after, #loginModal .modal-dialog .modal-body form [type="checkbox"]:checked + label:after, #followModal .modal-dialog .modal-body form [type="checkbox"]:checked + label:after, #settingsProfile .modal-dialog .modal-body form [type="checkbox"]:checked + label:after {
+      #registerModal .modal-dialog .modal-body form [type="checkbox"]:checked + label:after, #loginModal .modal-dialog .modal-body form [type="checkbox"]:checked + label:after, #followModal .modal-dialog .modal-body form [type="checkbox"]:checked + label:after, #recoveryModal .modal-dialog .modal-body form [type="checkbox"]:checked + label:after, #recoveryModal-2 .modal-dialog .modal-body form [type="checkbox"]:checked + label:after, #loginModalSuccess .modal-dialog .modal-body form [type="checkbox"]:checked + label:after {
         opacity: 1;
         -webkit-transform: scale(1);
         transform: scale(1); }
-      #registerModal .modal-dialog .modal-body .registration-button, #loginModal .modal-dialog .modal-body .registration-button, #followModal .modal-dialog .modal-body .registration-button, #settingsProfile .modal-dialog .modal-body .registration-button {
+      #registerModal .modal-dialog .modal-body .registration-button, #loginModal .modal-dialog .modal-body .registration-button, #followModal .modal-dialog .modal-body .registration-button, #recoveryModal .modal-dialog .modal-body .registration-button, #recoveryModal-2 .modal-dialog .modal-body .registration-button, #loginModalSuccess .modal-dialog .modal-body .registration-button {
         background-image: -ms-linear-gradient(-165deg, rgba(70, 145, 238, 0.929) 0%, rgba(76, 169, 217, 0.929) 25%, rgba(81, 192, 196, 0.929) 100%);
         border: 0;
         border-radius: 24px;
@@ -4270,7 +4618,7 @@ body.modal-open.dashboard-body .modal-backdrop.in {
         text-decoration: none;
         text-transform: uppercase;
         width: 80%; }
-      #registerModal .modal-dialog .modal-body .register-link, #loginModal .modal-dialog .modal-body .register-link, #followModal .modal-dialog .modal-body .register-link, #settingsProfile .modal-dialog .modal-body .register-link {
+      #registerModal .modal-dialog .modal-body .register-link, #loginModal .modal-dialog .modal-body .register-link, #followModal .modal-dialog .modal-body .register-link, #recoveryModal .modal-dialog .modal-body .register-link, #recoveryModal-2 .modal-dialog .modal-body .register-link, #loginModalSuccess .modal-dialog .modal-body .register-link {
         color: #8e9aa8;
         display: block;
         font-family: "Gilroy Light", sans-serif;
@@ -4296,6 +4644,154 @@ body.modal-open.dashboard-body .modal-backdrop.in {
 
 #followModal .modal-dialog .modal-body .registration-button {
   margin: 2.32vh auto 1.39vh; }
+
+#recoveryModal .modal-dialog .modal-body, #recoveryModal-2 .modal-dialog .modal-body {
+  padding: 3.25vh 11%; }
+
+#recoveryModal .forget-text, #recoveryModal-2 .forget-text {
+  color: #8e9aa8;
+  font-size: 14px;
+  letter-spacing: .6px;
+  line-height: 19px;
+  margin-bottom: 20px; }
+  #recoveryModal .forget-text a, #recoveryModal-2 .forget-text a {
+    color: #5eabdf;
+    font-size: 14px;
+    letter-spacing: .6px;
+    line-height: 14px;
+    outline: 0;
+    text-decoration: none; }
+  #recoveryModal .forget-text.bottom, #recoveryModal-2 .forget-text.bottom {
+    margin-bottom: 45px;
+    margin-top: 10px; }
+
+#recoveryModal form input, #recoveryModal-2 form input {
+  border-color: #b5c4c4 !important;
+  color: #8e9aa8 !important; }
+  #recoveryModal form input::-webkit-input-placeholder, #recoveryModal-2 form input::-webkit-input-placeholder {
+    color: #8e9aa8 !important; }
+  #recoveryModal form input::-moz-placeholder, #recoveryModal-2 form input::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #8e9aa8 !important; }
+  #recoveryModal form input:-ms-input-placeholder, #recoveryModal-2 form input:-ms-input-placeholder {
+    /* IE 10+ */
+    color: #8e9aa8 !important; }
+  #recoveryModal form input:-moz-placeholder, #recoveryModal-2 form input:-moz-placeholder {
+    /* Firefox 18- */
+    color: #8e9aa8 !important; }
+
+#recoveryModal-2 .modal-content .modal-body form input.recovery-phrase {
+  border-color: #5eabdf !important;
+  color: #5eabdf !important; }
+  #recoveryModal-2 .modal-content .modal-body form input.recovery-phrase::-webkit-input-placeholder {
+    color: #5eabdf !important; }
+  #recoveryModal-2 .modal-content .modal-body form input.recovery-phrase::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #5eabdf !important; }
+  #recoveryModal-2 .modal-content .modal-body form input.recovery-phrase:-ms-input-placeholder {
+    /* IE 10+ */
+    color: #5eabdf !important; }
+  #recoveryModal-2 .modal-content .modal-body form input.recovery-phrase:-moz-placeholder {
+    /* Firefox 18- */
+    color: #5eabdf !important; }
+  #recoveryModal-2 .modal-content .modal-body form input.recovery-phrase.bottom {
+    margin-bottom: 50px; }
+
+#loginModalSuccess .modal-content .modal-title {
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #58c2c6), color-stop(1, #4d95ef));
+  background-image: gradient(linear, left top, right top, color-stop(0, #58c2c6), color-stop(1, #4d95ef));
+  color: transparent !important; }
+
+#loginModalSuccess .modal-content .success-message, #loginModalSuccess .modal-content .success-info {
+  color: #8e9aa8;
+  font-size: 14px;
+  letter-spacing: .6px;
+  line-height: 19px;
+  margin-bottom: 30px; }
+
+#loginModalSuccess .modal-content .success-message {
+  color: #5eabdf;
+  margin-bottom: 20px;
+  margin-top: 30px; }
+
+.email-page {
+  overflow: visible; }
+  .email-page .email-container {
+    border-radius: 20px;
+    -webkit-box-shadow: 2.121px 2.121px 54px 0px rgba(0, 0, 0, 0.08);
+    box-shadow: 2.121px 2.121px 54px 0px rgba(0, 0, 0, 0.08);
+    margin: 120px 15px; }
+    @media (min-width: 992px) {
+      .email-page .email-container {
+        margin: 120px auto;
+        width: 790px; } }
+    .email-page .email-container .email-header {
+      background-image: -ms-linear-gradient(-165deg, rgba(70, 145, 238, 0.9) 0%, rgba(76, 169, 217, 0.9) 25%, rgba(81, 192, 196, 0.9) 100%);
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+      padding: 30px 0;
+      text-align: center; }
+    .email-page .email-container .email-body {
+      padding: 20px 25px; }
+      @media (min-width: 768px) {
+        .email-page .email-container .email-body {
+          padding: 55px 60px; } }
+      .email-page .email-container .email-body .email-title {
+        background-clip: text;
+        -webkit-background-clip: text;
+        background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #51c0c4), color-stop(1, #4691ee));
+        background-image: gradient(linear, left top, right top, color-stop(0, #51c0c4), color-stop(1, #4691ee));
+        color: transparent;
+        font-size: 25px;
+        font-weight: 600;
+        letter-spacing: .5px;
+        line-height: 25px;
+        margin-bottom: 30px; }
+        @media (min-width: 768px) {
+          .email-page .email-container .email-body .email-title {
+            margin-bottom: 50px; } }
+      .email-page .email-container .email-body .email-text {
+        color: #abacae;
+        font-size: 16.6px;
+        font-weight: 400;
+        letter-spacing: .5px;
+        line-height: 25px;
+        margin-bottom: 15px; }
+        @media (min-width: 768px) {
+          .email-page .email-container .email-body .email-text {
+            margin-bottom: 27px; } }
+        .email-page .email-container .email-body .email-text.no-margin {
+          margin: 0; }
+        .email-page .email-container .email-body .email-text span {
+          color: #3a3a3a;
+          font-weight: 600; }
+      .email-page .email-container .email-body a.confirm-button, .email-page .email-container .email-body a.contact-button {
+        background-image: -ms-linear-gradient(-165deg, rgba(70, 145, 238, 0.9) 0%, rgba(76, 169, 217, 0.9) 25%, rgba(81, 192, 196, 0.9) 100%);
+        border-radius: 10px;
+        color: #fff;
+        display: inline-block;
+        font-size: 12.5px;
+        font-weight: 500;
+        letter-spacing: 2px;
+        line-height: 12.5px;
+        margin-bottom: 20px;
+        outline: 0;
+        padding: 24px 0;
+        text-align: center;
+        text-decoration: none;
+        width: 100%; }
+        @media (min-width: 768px) {
+          .email-page .email-container .email-body a.confirm-button, .email-page .email-container .email-body a.contact-button {
+            margin-bottom: 40px;
+            width: 48%; } }
+      .email-page .email-container .email-body a.contact-button {
+        background: #fff;
+        border: 2px solid #d8d9de;
+        color: #afb1b4;
+        float: right;
+        padding: 22px 0; }
 
 #settingsProfile {
   background-color: rgba(255, 255, 255, 0.8); }
@@ -4390,6 +4886,14 @@ body.modal-open.dashboard-body .modal-backdrop.in {
   color: #6f7275;
   width: 100%;
   padding: 0.8em 0.6em; }
+  .settings-popup input[type="text"]::-webkit-input-placeholder, .settings-popup input[type="password"]::-webkit-input-placeholder {
+    color: #d7d8dd; }
+  .settings-popup input[type="text"]::-moz-placeholder, .settings-popup input[type="password"]::-moz-placeholder {
+    color: #d7d8dd; }
+  .settings-popup input[type="text"]:-ms-input-placeholder, .settings-popup input[type="password"]:-ms-input-placeholder {
+    color: #d7d8dd; }
+  .settings-popup input[type="text"]:-moz-placeholder, .settings-popup input[type="password"]:-moz-placeholder {
+    color: #d7d8dd; }
 
 .settings-popup__tab .tab-steps__item::after {
   content: " ";
@@ -4468,126 +4972,123 @@ body.modal-open.dashboard-body .modal-backdrop.in {
   letter-spacing: 0.1em;
   margin: 0; }
 
+.settings-popup__tab-content .slider {
+  background-color: #fff; }
+
+.settings-popup__tab-content .slider.round {
+  border: 1px solid #f3f3f3; }
+
+.settings-popup__tab-content input:checked + .slider {
+  background-color: #54add6; }
+
+.settings-popup__tab-content input:checked + .slider:before {
+  background-color: #fff;
+  color: #cdcdd1;
+  border: 1px solid #f3f3f3; }
+
+.settings-popup__tab-content .i-action-accordion {
+  width: 1.25em; }
+
+.settings-popup__tab-content .panel-heading.collapsed .i-action-accordion {
+  background: url("../img/faq-arrow.png") no-repeat;
+  background-size: contain; }
+
+.settings-popup__tab-content .panel-heading .i-action-accordion {
+  background: url("../img/close-news.png") no-repeat;
+  background-size: contain; }
+
+.settings-popup__tab-content .panel-heading .i-action-accordion {
+  width: 1.25em;
+  height: 1.25em; }
+
+.settings-popup__tab-content .tab-content__accordion-table {
+  margin-top: 1.5em;
+  color: #bdbdbe; }
+  .settings-popup__tab-content .tab-content__accordion-table th {
+    color: #737373;
+    font-weight: 400; }
+  .settings-popup__tab-content .tab-content__accordion-table .table > thead > tr > th,
+  .settings-popup__tab-content .tab-content__accordion-table .table > tbody > tr > td,
+  .settings-popup__tab-content .tab-content__accordion-table .table > tbody > tr > th,
+  .settings-popup__tab-content .tab-content__accordion-table .table > tfoot > tr > td,
+  .settings-popup__tab-content .tab-content__accordion-table .table > tfoot > tr > th,
+  .settings-popup__tab-content .tab-content__accordion-table .table > thead > tr > td,
+  .settings-popup__tab-content .tab-content__accordion-table .table > thead > tr > th {
+    border: 0; }
+
 .investments__table--cols7 > .investments__table--cell {
   width: 14.2%; }
 
-.investments {
-  /* Rounded sliders */ }
-  .investments__table {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    background: url("../img/table-background.png") no-repeat;
-    background-color: #5068c6;
-    background-size: 100% 100%;
-    border-radius: 10px;
-    color: #fff;
-    text-transform: uppercase;
-    margin-top: 20px;
-    width: 100%; }
-    .investments__table--cell {
-      -webkit-box-sizing: border-box;
-      box-sizing: border-box;
-      -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-      flex-grow: 1;
-      width: 100%;
-      padding: 0.8em 1.2em;
-      overflow: hidden;
-      list-style: none; }
-    .investments__table--title {
-      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-      border-right: 1px solid rgba(255, 255, 255, 0.2);
-      font-weight: 100;
-      font-size: 10px;
-      line-height: 19.6px;
-      padding: 15px 10px;
-      text-align: center; }
-    .investments__table--column {
-      padding: 2em 1em;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-      border-right: 1px solid rgba(255, 255, 255, 0.2);
-      color: #b4afdb; }
-      @media (min-width: 1200px) {
-        .investments__table--column {
-          padding: 2em 1.5em; } }
-      @media (min-width: 1400px) {
-        .investments__table--column {
-          padding: 2em 2em; } }
-      .investments__table--column:last-child {
-        border: none; }
-      .investments__table--column .sub-title {
-        color: #fff;
-        font-size: 25px;
-        letter-spacing: 2px;
-        line-height: 25px;
-        margin: 16px 0;
-        font-weight: 200; }
-        @media (min-width: 1200px) {
-          .investments__table--column .sub-title {
-            font-size: 27px;
-            line-height: 27px; } }
-        @media (min-width: 1400px) {
-          .investments__table--column .sub-title {
-            font-size: 27px;
-            line-height: 27px; } }
-      .investments__table--column .sub-info {
-        font-size: 11.2px;
-        font-weight: 300;
-        letter-spacing: 1px;
-        line-height: 11.2px; }
-      .investments__table--column .sub-text-bold {
-        font-size: 13px;
-        font-weight: 300;
-        margin: 10px 0;
-        color: #fff; }
-  .investments .switch {
-    position: relative;
-    display: inline-block;
-    width: 80px;
-    height: 28px;
-    font-size: 10px;
+.investments__table {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  background: url("../img/table-background.png") no-repeat;
+  background-color: #5068c6;
+  background-size: 100% 100%;
+  border-radius: 10px;
+  color: #fff;
+  text-transform: uppercase;
+  margin-top: 20px;
+  width: 100%; }
+  .investments__table--cell {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    width: 100%;
+    padding: 0.8em 1.2em;
+    overflow: hidden;
+    list-style: none; }
+  .investments__table--title {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
     font-weight: 100;
-    line-height: 3; }
-  .investments .switch input {
-    display: none; }
-  .investments .slider {
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #797ecd;
-    -webkit-transition: .4s;
-    transition: .4s; }
-  .investments .slider:before {
-    position: absolute;
-    content: 'ON';
-    text-align: center;
-    height: 28px;
-    width: 55px;
-    left: 0;
-    bottom: 0;
-    -webkit-transition: .4s;
-    transition: .4s; }
-  .investments input:checked + .slider {
-    background-color: #797ecd; }
-  .investments input:focus + .slider {
-    -webkit-box-shadow: 0 0 1px #2196F3;
-    box-shadow: 0 0 1px #2196F3; }
-  .investments input:checked + .slider:before {
-    -webkit-transform: translateX(30px);
-    transform: translateX(30px);
-    content: 'OFF';
-    background-color: #805eb7; }
-  .investments .slider.round {
-    border-radius: 20px; }
-  .investments .slider.round:before {
-    border-radius: 20px;
-    background-color: #64bbe0; }
+    font-size: 10px;
+    line-height: 19.6px;
+    padding: 15px 10px;
+    text-align: center; }
+  .investments__table--column {
+    padding: 2em 1em;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    color: #b4afdb; }
+    @media (min-width: 1200px) {
+      .investments__table--column {
+        padding: 2em 1.5em; } }
+    @media (min-width: 1400px) {
+      .investments__table--column {
+        padding: 2em 2em; } }
+    .investments__table--column:last-child {
+      border: none; }
+    .investments__table--column .sub-title {
+      color: #fff;
+      font-size: 25px;
+      letter-spacing: 2px;
+      line-height: 25px;
+      margin: 16px 0;
+      font-weight: 200; }
+      @media (min-width: 1200px) {
+        .investments__table--column .sub-title {
+          font-size: 27px;
+          line-height: 27px; } }
+      @media (min-width: 1400px) {
+        .investments__table--column .sub-title {
+          font-size: 27px;
+          line-height: 27px; } }
+    .investments__table--column .sub-info {
+      font-size: 11.2px;
+      font-weight: 300;
+      letter-spacing: 1px;
+      line-height: 11.2px; }
+    .investments__table--column .sub-text-bold {
+      font-size: 13px;
+      font-weight: 300;
+      margin: 10px 0;
+      color: #fff; }
 
 .c-btn {
   border-radius: 10px;
@@ -4626,14 +5127,23 @@ body.modal-open.dashboard-body .modal-backdrop.in {
   border: 1px solid #e5e5e5;
   background: #e5e5e5; }
 
+.c-btn-space-between + .c-btn-space-between {
+  margin-left: 1em; }
+
 .full-width {
   width: 100%; }
+
+.line-height-2 {
+  line-height: 2em; }
 
 .text-green {
   color: #5bbcd0; }
 
 .text-purple {
   color: #b785d0; }
+
+.text-l-green {
+  color: #60d4b2; }
 
 .gradient-text {
   background: linear-gradient(45deg, #63c5c9 33%, #5ba1ea 55%, #5a9aef);
@@ -4752,46 +5262,113 @@ div.donut {
   div.donut input {
     width: 40px; }
 
-button.accordion {
+.panel {
+  border: none;
+  -webkit-box-shadow: none;
+  box-shadow: none; }
+
+.panel-default > .panel-heading {
   background-color: #fff;
   color: #000;
   cursor: pointer;
   padding: 20px 50px;
   width: 100%;
   border: none;
-  border-radius: 25px;
   text-align: left;
   outline: none;
   font-size: 12px;
   -webkit-transition: 0.4s;
   transition: 0.4s; }
-  button.accordion .text-level {
+  .panel-default > .panel-heading .text-level {
     font-size: 1.1em;
     font-weight: 600;
     text-transform: uppercase; }
-  button.accordion .text-disable {
+  .panel-default > .panel-heading .text-disable {
+    color: #000; }
+  .panel-default > .panel-heading .text-disable.collapsed {
     color: #bcbdc2; }
 
-button.accordion.active {
-  border-radius: 25px 25px 0 0; }
+.panel-group .panel {
+  border-radius: 25px; }
 
-button.accordion.active + div.panel {
-  padding: 10px 50px 30px; }
+.panel-title {
+  font-size: 12px; }
+  .panel-title a:hover {
+    text-decoration: none; }
 
-button.accordion.active, button.accordion:hover {
-  border: 0; }
+.panel-group .panel-heading + .panel-collapse > .list-group,
+.panel-group .panel-heading + .panel-collapse > .panel-body {
+  border-top: none; }
+
+.panel-body {
+  padding: 20px 50px; }
+  .panel-body .c-btn {
+    margin-top: 0;
+    line-height: 8px; }
 
 div.panel {
-  padding: 0 50px;
   background-color: #fff;
-  max-height: 0;
   overflow: hidden;
   -webkit-transition: max-height 0.2s ease-out;
   transition: max-height 0.2s ease-out;
-  -webkit-transition: padding 0.2s ease-out;
-  transition: padding 0.2s ease-out;
   border: 0;
   -webkit-box-shadow: none;
   box-shadow: none;
   margin-bottom: 30px;
   border-radius: 0 0 25px 25px; }
+
+label.switch {
+  position: relative;
+  display: inline-block;
+  width: 85px;
+  height: 28px;
+  font-size: 10px;
+  font-weight: 100;
+  line-height: 3;
+  color: #fff; }
+
+label.switch input {
+  display: none; }
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #797ecd;
+  -webkit-transition: .4s;
+  transition: .4s; }
+
+.slider:before {
+  position: absolute;
+  content: 'ON';
+  text-align: center;
+  height: 28px;
+  width: 55px;
+  left: 0;
+  bottom: 0;
+  -webkit-transition: .4s;
+  transition: .4s; }
+
+input:checked + .slider {
+  background-color: #797ecd; }
+
+input:focus + .slider {
+  -webkit-box-shadow: 0 0 1px #2196F3;
+  box-shadow: 0 0 1px #2196F3; }
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(30px);
+  transform: translateX(30px);
+  content: 'OFF';
+  background-color: #805eb7; }
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 20px; }
+
+.slider.round:before {
+  border-radius: 20px;
+  background-color: #64bbe0; }

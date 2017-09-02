@@ -1,9 +1,5 @@
 $(document).ready(function() {
 
-    $('.referral-table td, .referral-table th').click(function() {
-        $(this).toggleClass('active');
-    });
-
     setTabHeight();
 
     $(window).resize(function () {

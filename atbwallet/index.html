@@ -245,16 +245,14 @@
                                             <img src="assets/img/mobile-bit-right-grey.png" class="right">
                                         </a>
 
-                                        <div class="send-btc-block hidden-xs">
-                                            <div class="send-title">SEND BTC TO:</div>
-                                            <div class="input-wrapper">
-                                                <input type="text" placeholder="Past or scan an address">
+                                        <div class="send-btc-block-new hidden-xs">
+                                            <div class="send-title">SEND BITCOINS</div>
+                                            <div class="send-bitcoins">
+                                                <a href="#" data-toggle="modal" data-target="#dashboard-send-bitcoins-1">SEND TO ANOTHER WALLET</a>
                                             </div>
-                                            <span class="btc-amount">0.980650 BTC</span><img src="assets/img/arrows.png" class="arrows"><span class="usd-amount">2400 USD</span>
-                                            <div class="input-message-wrapper">
-                                                <input type="text" placeholder="Your message" class="message-input">
-                                            </div>
-                                            <a href="#" class="send-button"></a>
+                                            <div class="exchange-bitcoins">
+                                                <a href="#" data-toggle="modal" data-target="#dashboard-currency-exchange-1">EXCHANGE TO ANOTHER CURRENCY</a>
+                                            </div>                                            
                                         </div>
                                         <div class="cloud-mining-block hidden-xs">
                                             <div class="cloud-title"><span>CLOUD MINING</span></div>
@@ -378,8 +376,8 @@
                                             </div>
                                             <div class="bitcoin-links">
                                                 <a href="#">COPY YOUR ADDRESS</a>
-                                                <a href="#">USE QR CODE</a>
-                                                <a href="#" class="send">SEND A REQUEST</a>
+                                                <a href="#" data-toggle="modal" data-target="#dashboard-qr-1">USE QR CODE</a>
+                                                <a href="#" class="send" data-toggle="modal" data-target="#dashboard-investment-1">INVESTMENT TO ATB</a>
                                             </div>
                                         </div>
                                     </div>
@@ -520,6 +518,245 @@
                 </div>
                 <a href="#" class="send-button"><img src="assets/img/send-button-mobile.png"></a>
             </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal-dashboard modal-desktop modal fade" id="dashboard-send-bitcoins-1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="get-title">SEND BITCOINS</div>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="assets/img/close-tran-mobile.png"></span></button>
+          </div>
+          <div class="modal-body">
+            <div class="input-body qr">
+                <input type="text" id="send-bitcoins-input-1">
+                <label for="send-bitcoins-input-1">TO (PASTE OR SCAN THE ADDRESS)</label>
+            </div>
+            <div class="two-inputs-wrapper">
+                <div class="input-body amount">
+                    <input type="text" id="send-bitcoins-input-2">
+                    <label for="send-bitcoins-input-2">AMOUNT</label>
+                    <div class="input-currency">BTC</div>
+                </div>
+                <img src="assets/img/modal-arrows.png">
+                <div class="input-body amount amount-right">
+                    <input type="text" id="send-bitcoins-input-3">
+                    <label for="send-bitcoins-input-3">AMOUNT</label>
+                    <div class="input-currency">USD</div>
+                </div>
+            </div>
+            <div class="input-body">
+                <input type="text" id="send-bitcoins-input-4">
+                <label for="send-bitcoins-input-4">NOTE OR MESSAGE</label>
+            </div>
+            <a href="#dashboard-currency-exchange-1" class="currency-exchange-button" data-toggle="modal" data-dismiss="modal">CURRENCY EXCHANGE</a>
+            <a href="#dashboard-send-bitcoins-2" class="next-step-button" data-toggle="modal" data-dismiss="modal">NEXT STEP</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal-dashboard modal-desktop modal fade" id="dashboard-send-bitcoins-2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="get-title">SEND BITCOINS</div>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="assets/img/close-tran-mobile.png"></span></button>
+          </div>
+          <div class="modal-body">
+            <div class="input-body to">
+                <input type="text" id="send-bitcoins-input-5" disabled>
+                <label for="send-bitcoins-input-5">TO</label>
+            </div>
+            <div class="input-body from">
+                <input type="text" id="send-bitcoins-input-6" disabled>
+                <label for="send-bitcoins-input-6">FROM</label>
+            </div>
+            <div class="two-inputs-wrapper">
+                <div class="input-body amount amount-2">
+                    <input type="text" id="send-bitcoins-input-7" disabled>
+                    <label for="send-bitcoins-input-7">AMOUNT</label>
+                    <div class="input-currency">BTC</div>
+                </div>
+                <div class="input-body amount amount-right amount-2">
+                    <input type="text" id="send-bitcoins-input-8" disabled>
+                    <label for="send-bitcoins-input-8">TRANSACTIOB COMISSION</label>
+                    <div class="input-currency">BTC</div>
+                </div>
+            </div>
+            <div class="input-body confirm">
+                <input type="text" id="send-bitcoins-input-9">
+                <label for="send-bitcoins-input-9">CONFIRM PIN CODE</label>
+            </div>
+            <a href="#" class="next-step-button next-step-button-2 inactive">SEND PIN CODE</a>
+            <a href="#dashboard-send-bitcoins-1" class="currency-exchange-button currency-exchange-button-2" data-toggle="modal" data-dismiss="modal">BACK TO TRANSACTION INFO</a>
+            <a href="#" class="next-step-button next-step-button-2">CONFIRM</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal-dashboard modal-desktop modal fade" id="dashboard-currency-exchange-1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="get-title">EXCHANGE</div>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="assets/img/close-tran-mobile.png"></span></button>
+          </div>
+          <div class="modal-body">
+            <div class="two-inputs-wrapper">
+                <div class="input-body amount">
+                    <input type="text" id="send-bitcoins-input-10">
+                    <label for="send-bitcoins-input-10">AMOUNT</label>
+                    <div class="input-currency">BTC</div>
+                </div>
+                <img src="assets/img/modal-arrows.png">
+                <div class="input-body amount amount-right">
+                    <input type="text" id="send-bitcoins-input-11">
+                    <label for="send-bitcoins-input-11">AMOUNT</label>
+                    <div class="input-currency">USD</div>
+                </div>
+            </div>
+            <a href="#" class="currency-exchange-button currency-exchange-button-2" data-dismiss="modal">BACK TO THE DASHBOARD</a>
+            <a href="#dashboard-currency-exchange-2" class="next-step-button next-step-button-2" data-toggle="modal" data-dismiss="modal">NEXT STEP</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal-dashboard modal-desktop modal fade" id="dashboard-currency-exchange-2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="get-title">EXCHANGE</div>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="assets/img/close-tran-mobile.png"></span></button>
+          </div>
+          <div class="modal-body">
+            <div class="two-inputs-wrapper">
+                <div class="input-body amount">
+                    <input type="text" id="send-bitcoins-input-12" disabled>
+                    <label for="send-bitcoins-input-12">YOU GIVE</label>
+                    <div class="input-currency">BTC</div>
+                </div>
+                <img src="assets/img/modal-arrows.png">
+                <div class="input-body amount amount-right">
+                    <input type="text" id="send-bitcoins-input-13" disabled>
+                    <label for="send-bitcoins-input-13">YOU GET</label>
+                    <div class="input-currency">USD</div>
+                </div>
+            </div>
+            <div class="two-inputs-wrapper">
+                <div class="input-body amount amount-2">
+                    <input type="text" id="send-bitcoins-input-14" disabled>
+                    <label for="send-bitcoins-input-14">TRANSACTION ID</label>
+                    <div class="input-currency">BTC</div>
+                </div>
+                <div class="input-body amount amount-right amount-2">
+                    <input type="text" id="send-bitcoins-input-15" disabled>
+                    <label for="send-bitcoins-input-15">TIME CREATE</label>
+                </div>
+            </div>
+            <div class="input-body confirm">
+                <input type="text" id="send-bitcoins-input-16">
+                <label for="send-bitcoins-input-16">CONFIRM PIN CODE</label>
+            </div>
+            <a href="#" class="next-step-button next-step-button-2 inactive">SEND PIN CODE</a>
+            <a href="#dashboard-currency-exchange-1" class="currency-exchange-button currency-exchange-button-2" data-toggle="modal" data-dismiss="modal">BACK TO TRANSACTION INFO</a>
+            <a href="#" class="next-step-button next-step-button-2">CONFIRM</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal-dashboard modal-desktop modal fade" id="dashboard-investment-1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="get-title">INVESTMENT TO ATB</div>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="assets/img/close-tran-mobile.png"></span></button>
+          </div>
+          <div class="modal-body">
+            <div class="two-inputs-wrapper">
+                <div class="input-body amount">
+                    <input type="text" id="send-bitcoins-input-17">
+                    <label for="send-bitcoins-input-17">YOU GIVE</label>
+                    <div class="input-currency">BTC</div>
+                </div>
+                <img src="assets/img/modal-arrows.png">
+                <div class="input-body amount amount-right">
+                    <input type="text" id="send-bitcoins-input-18">
+                    <label for="send-bitcoins-input-18">YOU GET</label>
+                    <div class="input-currency">ATB</div>
+                </div>
+            </div>
+            <a href="#" class="currency-exchange-button currency-exchange-button-2" data-dismiss="modal">BACK TO THE DASHBOARD</a>
+            <a href="#dashboard-investment-2" class="next-step-button next-step-button-2" data-toggle="modal" data-dismiss="modal">NEXT STEP</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal-dashboard modal-desktop modal fade" id="dashboard-investment-2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="get-title">INVESTMENT TO ATB</div>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="assets/img/close-tran-mobile.png"></span></button>
+          </div>
+          <div class="modal-body">
+            <div class="two-inputs-wrapper">
+                <div class="input-body amount">
+                    <input type="text" id="send-bitcoins-input-19" disabled>
+                    <label for="send-bitcoins-input-19">YOU GIVE</label>
+                    <div class="input-currency">BTC</div>
+                </div>
+                <img src="assets/img/modal-arrows.png">
+                <div class="input-body amount amount-right">
+                    <input type="text" id="send-bitcoins-input-20" disabled>
+                    <label for="send-bitcoins-input-20">YOU GET</label>
+                    <div class="input-currency">USD</div>
+                </div>
+            </div>
+            <div class="two-inputs-wrapper">
+                <div class="input-body amount amount-2">
+                    <input type="text" id="send-bitcoins-input-21" disabled>
+                    <label for="send-bitcoins-input-21">TRANSACTION ID</label>
+                    <div class="input-currency">BTC</div>
+                </div>
+                <div class="input-body amount amount-right amount-2">
+                    <input type="text" id="send-bitcoins-input-22" disabled>
+                    <label for="send-bitcoins-input-22">TIME CREATE</label>
+                </div>
+            </div>
+            <div class="input-body confirm">
+                <input type="text" id="send-bitcoins-input-23">
+                <label for="send-bitcoins-input-23">CONFIRM PIN CODE</label>
+            </div>            
+            <div class="input-body bonus">
+                <input type="text" id="send-bitcoins-input-24" disabled>
+                <label for="send-bitcoins-input-24">ATB BONUS</label>
+            </div>
+            <a href="#" class="next-step-button next-step-button-2 inactive">SEND PIN CODE</a>
+            <a href="#" class="next-step-button next-step-button-2">CONFIRM</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal-dashboard modal-desktop modal fade" id="dashboard-qr-1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="get-title">GET BITCOINS</div>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="assets/img/close-tran-mobile.png"></span></button>
+          </div>
+          <div class="modal-body">
+            <img src="assets/img/qr-big.png">
+            <div class="qr-text">SCAN THE QR CODE <br>OR</div>
+            <a href="#" class="next-step-button next-step-button-2">COPY YOUR ADDRESS</a>
           </div>
         </div>
       </div>

@@ -476,23 +476,147 @@
                         </div>
 
                         <div role="tabpanel" class="tab-pane" id="security">
-                            <button class="accordion text-disable">
-                                <span class="text-level">Level 1:</span> e-mail verification
-                            </button>
-                            <div class="panel row">
-                                <div class="col-xs-12 col-sm-9"><input id="email" class="field-group__input" type="text" placeholder="johnwalker@gmail.com" class="email"></div>
-                                <button type="submit" class="col-xs-12 col-sm-3 c-btn c-btn-blue">Verify</button>
+                            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="headingOne" data-toggle="collapse" data-parent="#accordion" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        <h4 class="panel-title">
+                                            <a class="text-disable" role="button">
+                                                <span class="text-level">Level 1:</span> e-mail verification
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                                        <div class="panel-body">
+                                            <div class="col-xs-12 col-sm-8"><input id="email" class="field-group__input" type="text" placeholder="johnwalker@gmail.com" class="email"></div>
+                                            <button type="submit" class="col-xs-12 col-sm-4 c-btn c-btn-blue">Verify</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="headingTwo" data-toggle="collapse" data-parent="#accordion" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        <h4 class="panel-title">
+                                            <a class="text-disable" role="button">
+                                                <span class="text-level text-purple">Level 1:</span> recovery phrase
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="collapseTwo">
+                                        <div class="panel-body">
+                                            <p class="line-height-2">
+                                                Your backup secret phrase is:</br>
+                                                1. claws 2. dog 3. sick 4. helicopter 5. ocean 6. beach
+                                                7. coala 8. cat 9. friend 10. sweet 11. store 12. crocodile
+                                            </p>
+                                            <div class="row col-xs-12">
+                                                <button type="submit" class="col-xs-6 col-sm-4 c-btn c-btn-blue c-btn-space-between">Copy</button>
+                                                <button type="submit" class="col-xs-6 col-sm-4 c-btn c-btn-blue c-btn-space-between">Activate</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="headingThree" data-toggle="collapse" data-parent="#accordion" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        <h4 class="panel-title">
+                                            <a class="text-disable" role="button">
+                                                <span class="text-level text-purple">Level 1:</span> password hint
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                                        <div class="panel-body">
+                                            <div class="col-xs-12 col-sm-8"><input id="hint" class="field-group__input" type="text" placeholder="my dog's name" class="email"></div>
+                                            <button type="submit" class="col-xs-12 col-sm-4 c-btn c-btn-blue">Activate</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="headingFour" data-toggle="collapse" data-parent="#accordion" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                        <h4 class="panel-title">
+                                            <a class="text-disable" role="button">
+                                                <span class="text-level text-green">Level 2:</span> phone number
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                                        <div class="panel-body">
+                                            <div class="col-xs-12 col-sm-8"><input id="phone" class="field-group__input" type="text" placeholder="+7 (918) 650 - 89 -23" class="email"></div>
+                                            <button type="submit" class="col-xs-12 col-sm-4 c-btn c-btn-blue">Save</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="headingFive" data-target="#collapseFive" data-toggle="collapse" data-parent="#accordion" aria-expanded="false" aria-controls="collapseFive">
+                                        <h4 class="panel-title">
+                                            <a class="text-disable" role="button">
+                                                <span class="text-level text-green">Level 2:</span> two-step verification
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+                                        <div class="panel-body">
+                                            <div class="col-xs-8">
+                                                <p class="line-height-2">With e-mail and phone number</p>
+                                            </div>
+                                            <label class="switch col-xs-4">
+                                                <input type="checkbox">
+                                                <span class="slider round"></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="headingSix" data-toggle="collapse" data-parent="#accordion" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                        <h4 class="panel-title">
+                                            <a class="text-disable" role="button">
+                                                <span class="text-level text-l-green">Level 3:</span> list allow IP for login
+                                            </a>
+                                            <span class="pull-right i-action-accordion"></span>
+                                        </h4>
+                                    </div>
+                                    <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
+                                        <div class="panel-body">
+                                            <div class="row">
+                                                <div class="col-xs-12 col-sm-8"><input id="phone" class="field-group__input" type="text" placeholder="178.76.231.3" class="email"></div>
+                                                <button type="submit" class="col-xs-12 col-sm-4 c-btn c-btn-blue">Save</button>
+                                            </div>
+                                            <div class="tab-content__accordion-table row table-responsive">
+                                                <table class="table table-sm">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>IP</th>
+                                                            <th>Time create</th>
+                                                            <th></th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>178.76.231.3</td>
+                                                            <td>Aug 29,2017, 11:10</td>
+                                                            <td></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>178.76.231.3</td>
+                                                            <td>Aug 29,2017, 11:10</td>
+                                                            <td></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>178.76.231.3</td>
+                                                            <td>Aug 29,2017, 11:10</td>
+                                                            <td></td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
                             </div>
-
-                            <button class="accordion">
-                                <span class="text-level text-purple">Level 1:</span> recovery phrase
-                            </button>
-                            <div class="panel">tetetedfuhgdftete</div>
-
-                            <button class="accordion">
-                                <span class="text-level text-purple">Level 1:</span> password hint
-                            </button>
-                            <div class="panel">34te6t365</div>
                         </div>
                     </div>
                 </div>
@@ -503,19 +627,3 @@
 </body>
 </html>
 <script src="assets/js/donut-progress-bar.js"></script>
-<script>
-    var acc = document.getElementsByClassName("accordion");
-    var i;
-
-    for (i = 0; i < acc.length; i++) {
-        acc[i].onclick = function() {
-            this.classList.toggle("active");
-            var panel = this.nextElementSibling;
-            if (panel.style.maxHeight){
-                panel.style.maxHeight = null;
-            } else {
-                panel.style.maxHeight = panel.scrollHeight + "px";
-            } 
-        }
-    }
-</script>
