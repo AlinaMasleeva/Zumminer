@@ -31,7 +31,17 @@
                             <li><a href="#" class="cloud"><span>CLOUD MINING</span></a></li>
                             <li class="active"><a href="#" class="refer"><span>REFERRALS</span></a></li>
                             <li><a href="#" class="tariff"><span>TARIFFS</span></a></li>
-                            <li><a href="#" class="user"><span>MR JOHN</span></a><span class="amount-line"></span><span class="user-amount">750$</span></li>
+                            <li class="dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle user"><span>MR JOHN</span></a><span class="amount-line"></span><span class="user-amount">750$</span>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#" class="user">MR JOHN</a></li>
+                                    <li class="settings-profile">
+                                        <a href="#" class="settings" data-toggle="modal" data-target="#settingsProfile">
+                                            SETTINGS
+                                        </a>
+                                    </li>
+                                    <li><a href="#" class="security">SECURITY</a></li>
+                                </ul>
+                            </li>
                             <li><a href="#" class="language">EN</a></li>
                         </ul>
                     </div>
@@ -393,6 +403,285 @@
                 </div>
             </div>
         </div>
+    </div>
+
+    <div id="settingsProfile" class="settings-popup modal fade" role="dialog">
+        <button type="button" class="close" data-dismiss="modal"></button>
+        <div class="dbl-popup">
+            <div class="info-modal-dialog modal-dialog hidden">
+                <div class="modal-content">
+                    <div class="info-modal-body">
+                        <h3>User Identification <br />
+                            Requirement: Fill The Form
+                        </h3>
+                        <p>
+                            It is necessary to have two separate acting state identity cards with a photograph of the owner. For example, a passport, a national identity card, a driver's license, a residence card, a work permit card, etc.<br />
+                            If you do not have two identity documents, you can only provide one number and contact our verification department to arrange a Skype or google video call.<br /><br />
+                            
+                            Bank statement: it must clearly indicate that you are the account holder (this is the account of your first deposit with Zumminer).<br /><br />
+                            
+                            Confirmation of the address: account not older than 3 months for utilities or services of a service company, a licensed corporation or a government agency with explicit indication of your name and address.<br />
+                            All documents must be in Latin or in the form of a certified translation into English.<br /><br />
+                            
+                            All downloaded files must be in pdf, jpeg, png, text (txt), ms. word.
+                            All fields in the verification form below are mandatory for filling (you can use "NA", if not applicable).<br /><br />
+                            
+                            To avoid possible delays, please check the accuracy before sending the documents. Also, make sure that you do not send the same document twice or possibly forgot to attach the second document.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="settings-popup__tab modal-title">
+                        <ul class="tab-steps nav nav-tabs row" role="tablist">
+                            <li role="settings" class="tab-steps__item col-xs-4 active">
+                                <a href="#settings" class="switch-tab" aria-controls="settings" role="tab" data-toggle="tab">
+                                    <i></i><p>Settings</p>
+                                </a>
+                            </li>
+                            <li role="settings" class="tab-steps__item col-xs-4">
+                                <a href="#verification" class="switch-tab" aria-controls="verification" role="tab" data-toggle="tab">
+                                    <i></i><p>Verification</p>
+                                </a>
+                            </li>
+                            <li role="settings" class="tab-steps__item col-xs-4">
+                                <a href="#security" class="switch-tab" aria-controls="security" role="tab" data-toggle="tab">
+                                    <i></i><p>Security</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="settings-popup__tab-content modal-body tab-content">
+                        <div role="tabpanel" class="tab-pane active" id="settings">
+                            <form>
+                                <div class="row">
+                                    <div class="field-group col-xs-12 col-sm-6">
+                                        <input id="name" class="field-group__input" type="text" placeholder="John">
+                                        <label for="name" class="field-group__label">First name</label>
+                                    </div>
+                                    <div class="field-group col-xs-12 col-sm-6">
+                                        <input id="lastName" class="field-group__input" type="text" placeholder="Williamson">
+                                        <label for="lastName" class="field-group__label">Last name</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="field-group col-xs-12 col-sm-6">
+                                        <input id="email" class="field-group__input" type="text" placeholder="johnwalker@gmail.com" class="email">
+                                        <label for="email" class="field-group__label">Email</label>
+                                    </div>
+                                    <div class="field-group col-xs-12 col-sm-6">
+                                        <input id="pass" class="field-group__input" type="password" placeholder="">
+                                        <label for="pass" class="field-group__label">Type password</label>
+                                    </div>
+                                </div>
+                            </form>
+                            <div class="row settings-popup__tab-content__footer">
+                                <div class="col-xs-12 col-sm-6">
+                                    <button type="submit" class="c-btn c-btn-transparent full-width">Change password</button>
+                                </div>
+                                <div class="col-xs-12 col-sm-6">
+                                    <button type="submit" class="c-btn c-btn-blue full-width">Save changes</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div role="tabpanel" class="tab-pane" id="verification">
+                            <form>
+                                <div class="row">
+                                    <div class="field-group col-xs-12 col-sm-6">
+                                        <input id="name" class="field-group__input" type="text" placeholder="John">
+                                        <label for="name" class="field-group__label">Full name</label>
+                                    </div>
+                                    <div class="field-group col-xs-12 col-sm-6">
+                                        <input id="email" class="field-group__input" type="text" placeholder="johnwalker@gmail.com" class="email">
+                                        <label for="email" class="field-group__label">Email</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="field-group col-xs-12 col-sm-6">
+                                        <input id="lastName" class="field-group__input" type="text" placeholder="Williamson">
+                                        <label for="lastName" class="field-group__label">Address</label>
+                                    </div>
+                                    <div class="field-group col-xs-12 col-sm-6">
+                                        <input id="pass" class="field-group__input" type="text" placeholder="">
+                                        <label for="pass" class="field-group__label">Phone number</label>
+                                    </div>
+                                </div>
+                            </form>
+                            <div class="row settings-popup__tab-content__footer">
+                                <div class="footer__cell col-xs-12 col-sm-6">
+                                    <p>Identity card 1: <span class="text-green">Submitted</span></p>
+                                    <button type="submit" class="c-btn c-btn-grey full-width">Change document file</button>
+                                </div>
+                                <div class="footer__cell col-xs-12 col-sm-6">
+                                    <p>Identity card 1: <span class="text-green">Not submitted</span></p>
+                                    <button type="submit" class="c-btn c-btn-blue full-width">Upload document</button>
+                                </div>
+                            </div>
+                            <div class="row settings-popup__tab-content__footer">
+                                <div class="footer__cell col-xs-12 col-sm-6">
+                                    <p>Bank statement: <span class="text-purple">Rejected</span></p>
+                                    <button type="submit" class="c-btn c-btn-grey full-width">Change document file</button>
+                                </div>
+                                <div class="footer__cell col-xs-12 col-sm-6">
+                                    <p>Identity card 1: <span class="text-green">Approved</span></p>
+                                    <button type="submit" class="c-btn c-btn-grey full-width">Change document file</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div role="tabpanel" class="tab-pane" id="security">
+                            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="headingOne" data-toggle="collapse" data-parent="#accordion" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        <h4 class="panel-title">
+                                            <a class="text-disable" role="button">
+                                                <span class="text-level">Level 1:</span> e-mail verification
+                                            </a>
+                                            <span class="pull-right i-action-accordion"></span>
+                                        </h4>
+                                    </div>
+                                    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                                        <div class="panel-body">
+                                            <div class="col-xs-12 col-sm-8"><input id="email" class="field-group__input" type="text" placeholder="johnwalker@gmail.com" class="email"></div>
+                                            <button type="submit" class="col-xs-12 col-sm-4 c-btn c-btn-blue">Verify</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="headingTwo" data-toggle="collapse" data-parent="#accordion" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        <h4 class="panel-title">
+                                            <a class="text-disable" role="button">
+                                                <span class="text-level text-purple">Level 1:</span> recovery phrase
+                                            </a>
+                                            <span class="pull-right i-action-accordion"></span>
+                                        </h4>
+                                    </div>
+                                    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="collapseTwo">
+                                        <div class="panel-body">
+                                            <p class="line-height-2">
+                                                Your backup secret phrase is:</br>
+                                                1. claws 2. dog 3. sick 4. helicopter 5. ocean 6. beach
+                                                7. coala 8. cat 9. friend 10. sweet 11. store 12. crocodile
+                                            </p>
+                                            <div class="row col-xs-12">
+                                                <button type="submit" class="col-xs-6 col-sm-4 c-btn c-btn-blue c-btn-space-between">Copy</button>
+                                                <button type="submit" class="col-xs-6 col-sm-4 c-btn c-btn-blue c-btn-space-between">Activate</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="headingThree" data-toggle="collapse" data-parent="#accordion" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        <h4 class="panel-title">
+                                            <a class="text-disable" role="button">
+                                                <span class="text-level text-purple">Level 1:</span> password hint
+                                            </a>
+                                            <span class="pull-right i-action-accordion"></span>
+                                        </h4>
+                                    </div>
+                                    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                                        <div class="panel-body">
+                                            <div class="col-xs-12 col-sm-8"><input id="hint" class="field-group__input" type="text" placeholder="my dog's name" class="email"></div>
+                                            <button type="submit" class="col-xs-12 col-sm-4 c-btn c-btn-blue">Activate</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="headingFour" data-toggle="collapse" data-parent="#accordion" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                        <h4 class="panel-title">
+                                            <a class="text-disable" role="button">
+                                                <span class="text-level text-green">Level 2:</span> phone number
+                                            </a>
+                                            <span class="pull-right i-action-accordion"></span>
+                                        </h4>
+                                    </div>
+                                    <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                                        <div class="panel-body">
+                                            <div class="col-xs-12 col-sm-8"><input id="phone" class="field-group__input" type="text" placeholder="+7 (918) 650 - 89 -23" class="email"></div>
+                                            <button type="submit" class="col-xs-12 col-sm-4 c-btn c-btn-blue">Save</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="headingFive" data-target="#collapseFive" data-toggle="collapse" data-parent="#accordion" aria-expanded="false" aria-controls="collapseFive">
+                                        <h4 class="panel-title">
+                                            <a class="text-disable" role="button">
+                                                <span class="text-level text-green">Level 2:</span> two-step verification
+                                            </a>
+                                            <span class="pull-right i-action-accordion"></span>
+                                        </h4>
+                                    </div>
+                                    <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+                                        <div class="panel-body">
+                                            <div class="col-xs-8">
+                                                <p class="line-height-2">With e-mail and phone number</p>
+                                            </div>
+                                            <label class="switch col-xs-4">
+                                                <input type="checkbox">
+                                                <span class="slider round"></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="headingSix" data-toggle="collapse" data-parent="#accordion" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                        <h4 class="panel-title">
+                                            <a class="text-disable" role="button">
+                                                <span class="text-level text-l-green">Level 3:</span> list allow IP for login
+                                            </a>
+                                            <span class="pull-right i-action-accordion"></span>
+                                        </h4>
+                                    </div>
+                                    <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
+                                        <div class="panel-body">
+                                            <div class="row">
+                                                <div class="col-xs-12 col-sm-8"><input id="phone" class="field-group__input" type="text" placeholder="178.76.231.3" class="email"></div>
+                                                <button type="submit" class="col-xs-12 col-sm-4 c-btn c-btn-blue">Save</button>
+                                            </div>
+                                            <div class="tab-content__accordion-table row table-responsive">
+                                                <table class="table table-sm">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>IP</th>
+                                                            <th>Time create</th>
+                                                            <th></th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>178.76.231.3</td>
+                                                            <td>Aug 29,2017, 11:10</td>
+                                                            <td></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>178.76.231.3</td>
+                                                            <td>Aug 29,2017, 11:10</td>
+                                                            <td></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>178.76.231.3</td>
+                                                            <td>Aug 29,2017, 11:10</td>
+                                                            <td></td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>            
     </div>
 </body>
 </html>
