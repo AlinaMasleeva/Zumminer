@@ -6,14 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/css/bootstrap-select.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
     <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
     <script src="assets/js/jquery-1.12.4.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/bootstrap-select.min.js"></script>
     <script src="assets/js/panels.js"></script>
     <script src="assets/js/main.js"></script>
 </head>
-<body>
+<body class="investment-body">
     <div class="header">
         <nav class="navbar">
             <div class="container-fluid">
@@ -35,7 +37,11 @@
                             <li class="dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle user"><span>MR JOHN</span></a><span class="amount-line"></span><span class="user-amount">750$</span>
                                 <ul class="dropdown-menu">
                                     <li><a href="#" class="user">MR JOHN</a></li>
-                                    <li class="settings-profile"><a href="#" class="settings" data-toggle="modal" data-target="#settingsProfile">SETTINGS</a></li>
+                                    <li class="settings-profile">
+                                        <a href="#" class="settings" data-toggle="modal" data-target="#settingsProfile">
+                                            SETTINGS
+                                        </a>
+                                    </li>
                                     <li><a href="#" class="security">SECURITY</a></li>
                                 </ul>
                             </li>
@@ -129,10 +135,10 @@
                 <div class="col-xs-11 col-lg-offset-1 investments">
                     <div class="row">
                         <div class="col-xs-12 col-sm-6">
-                            <button type="submit" class="c-btn c-btn-white full-width gradient-text">Invest to cloud mining</button>
+                            <button type="submit" class="c-btn c-btn-white full-width gradient-text" data-toggle="modal" data-target="#investToCloudModal">Invest to cloud mining</button>
                         </div>
                         <div class="col-xs-12 col-sm-6">
-                            <button type="submit" class="c-btn c-btn-white full-width gradient-text">About investments</button>
+                            <button type="submit" class="c-btn c-btn-white full-width gradient-text" data-toggle="modal" data-target="#investToCloudModal-3">About investments</button>
                         </div>
                     </div>
                     <div class="row">
@@ -627,6 +633,119 @@
                 </div>
             </div>
         </div>            
+    </div>
+
+    <div class="modal-dashboard modal-desktop modal-invest modal fade" id="investToCloudModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="navigation-line">
+                <div class="first-circle"><img src="assets/img/invest-circle-first.png"></div>
+                <div class="active-circle"><img src="assets/img/invest-circle-active.png"></div>
+                <div class="inactive-circle"><img src="assets/img/invest-circle-inactive.png"></div>
+                <div class="horizontal-line"></div>
+            </div>
+            <div class="navigation-text">
+                <div class="first-text">INVEST</div>
+                <div class="active-text">SETTINGS</div>
+                <div class="inactive-text">CONFIRMATION</div>
+            </div>
+          </div>
+          <div class="modal-body">            
+            <div class="auto-prolong">
+                <div class="prolong-title">AUTO PROLONGATION</div>
+                <div class="prolong-switcher">
+                    <a href="#" class="prolong-on active">ON</a>
+                    <a href="#" class="prolong-off">OFF</a>
+                </div>
+            </div>
+            <div class="two-inputs-wrapper">                
+                <div class="input-body amount amount-2 invest-left">
+                    <select class="selectpicker">
+                      <option>BEGINNER (0,25%, 92 days)</option>
+                      <option>MEDIAL (0,3%, 183 days)</option>
+                      <option>MINE (0,33%, 274 days)</option>
+                    </select>
+                    <label for="send-bitcoins-input-2">TYPE</label>
+                </div>
+                <div class="input-body amount amount-right amount-2 invest-right">
+                    <select class="selectpicker">
+                      <option>BTC</option>
+                      <option>ETH</option>
+                      <option>LTC</option>
+                      <option>ZEC</option>
+                      <option>USD</option>
+                    </select>
+                    <label for="send-bitcoins-input-3">CURRENCY</label>
+                </div>
+            </div>
+            <div class="two-inputs-wrapper">
+                <div class="input-body amount amount-2">
+                    <input type="text" id="modal-invest-input-3">
+                    <label for="send-bitcoins-input-2">AMOUNT $</label>
+                </div>
+                <div class="input-body amount amount-right amount-2">
+                    <input type="text" id="modal-invest-input-4">
+                    <label for="send-bitcoins-input-3">PRICE</label>
+                </div>
+            </div>
+            <a href="#" class="currency-exchange-button" data-toggle="modal" data-dismiss="modal">BACK TO DASHBOARD</a>
+            <a href="#investToCloudModal-2" class="next-step-button" data-toggle="modal" data-dismiss="modal">CONTINUE</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal-dashboard modal-desktop modal-invest modal fade" id="investToCloudModal-2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="navigation-line">
+                <div class="first-circle"><img src="assets/img/invest-circle-first.png"></div>                
+                <div class="first-circle"><img src="assets/img/invest-circle-first.png"></div>
+                <div class="active-circle"><img src="assets/img/invest-circle-active.png"></div>
+                <div class="horizontal-line"></div>
+            </div>
+            <div class="navigation-text">
+                <div class="first-text">INVEST</div>
+                <div class="first-text">SETTINGS</div>
+                <div class="active-text">CONFIRMATION</div>
+            </div>
+          </div>
+          <div class="modal-body">
+            <div class="invest-amount">$ 894.55</div>
+            <div class="invest-info">Your investment program is ready. <br>Please confirm to finish.</div>
+            <div class="invest-time">
+                <img src="assets/img/invest-time.png">
+                <div class="time">6 months <br>Program will end in 07.04.18</div>
+            </div>
+            <a href="#investToCloudModal" class="currency-exchange-button" data-toggle="modal" data-dismiss="modal">BACK TO SETTINGS</a>
+            <a href="#" class="next-step-button">CONTINUE</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal-dashboard modal-desktop modal-invest modal fade" id="investToCloudModal-3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="about-title">About Investments</div>
+            <button type="button" class="close" data-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <div class="about-info">
+                It is necessary to have two separate acting state identity cards with a photograph of the owner. For example, a passport, a national identity card, a driver's license, a residence card, a work permit card, etc.<br>
+                If you do not have two identity documents, you can only provide one number and contact our verification department to arrange a Skype or google video call.<br><br>
+                Bank statement: it must clearly indicate that you are the account holder (this is the account of your first deposit with Zumminer).<br><br>
+                Confirmation of the address: account not older than 3 months for utilities or services of a service company, a licensed corporation or a government agency with explicit indication of your name and address.<br>All documents must be in Latin or in the form of a certified translation into English.<br><br>
+                All downloaded files must be in pdf, jpeg, png, text (txt), ms. word.
+                All fields in the verification form below are mandatory for filling (you can use "NA", if not applicable).<br><br>
+                To avoid possible delays, please check the accuracy before sending the documents. Also, make sure that you do not send the same document twice or possibly forgot to attach the second document.
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
 </body>

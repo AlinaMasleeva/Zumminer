@@ -6,9 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/css/bootstrap-select.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
     <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
     <script src="assets/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/bootstrap-select.min.js"></script>
     <script src="assets/js/panels.js"></script>
 </head>
 <body class="dashboard-body">
@@ -612,10 +614,16 @@
           </div>
           <div class="modal-body">
             <div class="two-inputs-wrapper">
-                <div class="input-body amount">
+                <div class="input-body amount picker-index">
                     <input type="text" id="send-bitcoins-input-10">
                     <label for="send-bitcoins-input-10">AMOUNT</label>
-                    <div class="input-currency">BTC</div>
+                    <select class="selectpicker">
+                      <option>BTC</option>
+                      <option>ETH</option>
+                      <option>LTC</option>
+                      <option>ZEC</option>
+                      <option>USD</option>
+                    </select>
                 </div>
                 <img src="assets/img/modal-arrows.png">
                 <div class="input-body amount amount-right">
@@ -1044,5 +1052,6 @@
             </div>
         </div>            
     </div>
+
 </body>
 </html>

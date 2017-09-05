@@ -605,7 +605,7 @@ body.referral-page .header {
     body.referral-page .header {
       margin-top: 7vh; } }
 
-body.modal-open.dashboard-body .main-block, body.modal-open.dashboard-body .left-menu, body.modal-open.dashboard-body .main-menu, body.modal-open.dashboard-body .header {
+body.modal-open.dashboard-body .main-block, body.modal-open.dashboard-body .left-menu, body.modal-open.dashboard-body .main-menu, body.modal-open.dashboard-body .header, body.modal-open.investment-body .main-block, body.modal-open.investment-body .left-menu, body.modal-open.investment-body .main-menu, body.modal-open.investment-body .header {
   -webkit-filter: blur(4px);
   -moz-filter: blur(4px);
   -o-filter: blur(4px);
@@ -613,7 +613,7 @@ body.modal-open.dashboard-body .main-block, body.modal-open.dashboard-body .left
   filter: blur(4px);
   filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius='4'); }
 
-body.modal-open.dashboard-body .modal-backdrop.in {
+body.modal-open.dashboard-body .modal-backdrop.in, body.modal-open.investment-body .modal-backdrop.in {
   opacity: 0; }
 
 .left-menu {
@@ -840,6 +840,8 @@ body.modal-open.dashboard-body .modal-backdrop.in {
               .modal-dashboard.modal-desktop .modal-dialog .modal-content .modal-body .input-body input:focus + label + .input-currency, .modal-dashboard.modal-desktop .modal-dialog .modal-content .modal-body .input-body input:active + label + .input-currency {
                 border-color: #75777a;
                 color: #75777a; }
+              .modal-dashboard.modal-desktop .modal-dialog .modal-content .modal-body .input-body input:focus + label + .bootstrap-select .dropdown-toggle, .modal-dashboard.modal-desktop .modal-dialog .modal-content .modal-body .input-body input:active + label + .bootstrap-select .dropdown-toggle {
+                border-color: #75777a; }
         .modal-dashboard.modal-desktop .modal-dialog .modal-content .modal-body .input-body.qr:after {
           background: url("../img/input-qr.png") no-repeat;
           bottom: 16px;
@@ -887,6 +889,49 @@ body.modal-open.dashboard-body .modal-backdrop.in {
         .modal-dashboard.modal-desktop .modal-dialog .modal-content .modal-body .input-body.bonus {
           float: right;
           width: 48%; }
+        .modal-dashboard.modal-desktop .modal-dialog .modal-content .modal-body .input-body.picker-index .bootstrap-select {
+          bottom: 0;
+          color: #939495;
+          display: none;
+          font-size: 15px;
+          font-weight: 400;
+          height: 63px;
+          line-height: 15px;
+          padding: 0;
+          position: absolute;
+          right: 0;
+          width: 82px; }
+          @media (min-width: 768px) {
+            .modal-dashboard.modal-desktop .modal-dialog .modal-content .modal-body .input-body.picker-index .bootstrap-select {
+              display: block; } }
+          .modal-dashboard.modal-desktop .modal-dialog .modal-content .modal-body .input-body.picker-index .bootstrap-select .dropdown-toggle {
+            background-color: #fff;
+            border: 2px solid #d8d9de;
+            border-radius: 10px;
+            border-bottom-left-radius: 0;
+            border-top-left-radius: 0;
+            -webkit-box-shadow: none;
+            box-shadow: none;
+            color: #939495;
+            outline: 0 !important;
+            padding: 19px 20px 20px 15px; }
+            .modal-dashboard.modal-desktop .modal-dialog .modal-content .modal-body .input-body.picker-index .bootstrap-select .dropdown-toggle .bs-caret .caret {
+              background: url("../img/dropdown-arrow.png") no-repeat;
+              border: 0;
+              height: 5px;
+              width: 10px; }
+          .modal-dashboard.modal-desktop .modal-dialog .modal-content .modal-body .input-body.picker-index .bootstrap-select div.dropdown-menu {
+            border: 2px solid #75777a;
+            border-radius: 10px;
+            padding: 0;
+            top: -2px; }
+            .modal-dashboard.modal-desktop .modal-dialog .modal-content .modal-body .input-body.picker-index .bootstrap-select div.dropdown-menu ul.dropdown-menu li a {
+              background-color: #fff;
+              color: #939495;
+              outline: 0 !important;
+              padding: 19px 20px 20px 15px; }
+            .modal-dashboard.modal-desktop .modal-dialog .modal-content .modal-body .input-body.picker-index .bootstrap-select div.dropdown-menu ul.dropdown-menu li:not(:last-child) {
+              border-bottom: 2px solid #d8d9de; }
       .modal-dashboard.modal-desktop .modal-dialog .modal-content .modal-body .two-inputs-wrapper {
         position: relative; }
         .modal-dashboard.modal-desktop .modal-dialog .modal-content .modal-body .two-inputs-wrapper img {
@@ -955,6 +1000,209 @@ body.modal-open.dashboard-body .modal-backdrop.in {
     letter-spacing: 2px;
     line-height: 20.8px;
     margin-top: 25px; }
+
+.modal-dashboard.modal-desktop.modal-invest .modal-dialog .modal-content .modal-header {
+  background: transparent;
+  border: 0;
+  padding: 60px 0 25px; }
+  .modal-dashboard.modal-desktop.modal-invest .modal-dialog .modal-content .modal-header .navigation-line {
+    position: relative; }
+    .modal-dashboard.modal-desktop.modal-invest .modal-dialog .modal-content .modal-header .navigation-line .first-circle, .modal-dashboard.modal-desktop.modal-invest .modal-dialog .modal-content .modal-header .navigation-line .active-circle, .modal-dashboard.modal-desktop.modal-invest .modal-dialog .modal-content .modal-header .navigation-line .inactive-circle {
+      display: inline-block;
+      position: relative;
+      width: 32.5%;
+      z-index: 2; }
+      @media (min-width: 768px) {
+        .modal-dashboard.modal-desktop.modal-invest .modal-dialog .modal-content .modal-header .navigation-line .first-circle, .modal-dashboard.modal-desktop.modal-invest .modal-dialog .modal-content .modal-header .navigation-line .active-circle, .modal-dashboard.modal-desktop.modal-invest .modal-dialog .modal-content .modal-header .navigation-line .inactive-circle {
+          width: 33%; } }
+    .modal-dashboard.modal-desktop.modal-invest .modal-dialog .modal-content .modal-header .navigation-line .horizontal-line {
+      background: #f1f1f1;
+      height: 1px;
+      left: 16%;
+      position: absolute;
+      right: 16%;
+      top: 10.5px; }
+  .modal-dashboard.modal-desktop.modal-invest .modal-dialog .modal-content .modal-header .navigation-text {
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    line-height: 10px;
+    margin-top: 25px; }
+    @media (min-width: 768px) {
+      .modal-dashboard.modal-desktop.modal-invest .modal-dialog .modal-content .modal-header .navigation-text {
+        font-size: 14px;
+        letter-spacing: 2px;
+        line-height: 14px; } }
+    .modal-dashboard.modal-desktop.modal-invest .modal-dialog .modal-content .modal-header .navigation-text .first-text, .modal-dashboard.modal-desktop.modal-invest .modal-dialog .modal-content .modal-header .navigation-text .active-text, .modal-dashboard.modal-desktop.modal-invest .modal-dialog .modal-content .modal-header .navigation-text .inactive-text {
+      display: inline-block;
+      width: 32.5%; }
+    .modal-dashboard.modal-desktop.modal-invest .modal-dialog .modal-content .modal-header .navigation-text .first-text {
+      background: linear-gradient(45deg, #63c5c9 33%, #5ba1ea 55%, #5a9aef);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      color: #5a9aef; }
+    .modal-dashboard.modal-desktop.modal-invest .modal-dialog .modal-content .modal-header .navigation-text .active-text {
+      color: #4f4f4f; }
+    .modal-dashboard.modal-desktop.modal-invest .modal-dialog .modal-content .modal-header .navigation-text .inactive-text {
+      color: #b0b2b7; }
+  .modal-dashboard.modal-desktop.modal-invest .modal-dialog .modal-content .modal-header .about-title {
+    color: #5b5d61;
+    font-size: 20.8px;
+    font-weight: 400;
+    letter-spacing: .5px;
+    line-height: 20.8px;
+    text-align: left; }
+
+.modal-dashboard.modal-desktop.modal-invest .modal-dialog .modal-content .modal-body {
+  padding: 6.3vh 11%; }
+  .modal-dashboard.modal-desktop.modal-invest .modal-dialog .modal-content .modal-body .auto-prolong .prolong-title {
+    color: #b0b2b7;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    line-height: 14px;
+    text-align: center;
+    margin-bottom: 23px; }
+  .modal-dashboard.modal-desktop.modal-invest .modal-dialog .modal-content .modal-body .auto-prolong .prolong-switcher {
+    margin-bottom: 55px;
+    text-align: center; }
+    .modal-dashboard.modal-desktop.modal-invest .modal-dialog .modal-content .modal-body .auto-prolong .prolong-switcher .prolong-on, .modal-dashboard.modal-desktop.modal-invest .modal-dialog .modal-content .modal-body .auto-prolong .prolong-switcher .prolong-off {
+      border: 1px solid #f2f2f2;
+      color: #cdcdd1;
+      display: inline-block;
+      font-size: 12.5px;
+      font-weight: 400;
+      letter-spacing: 3px;
+      line-height: 12.5px;
+      outline: 0;
+      padding: 23px 45px;
+      text-decoration: none; }
+      @media (min-width: 768px) {
+        .modal-dashboard.modal-desktop.modal-invest .modal-dialog .modal-content .modal-body .auto-prolong .prolong-switcher .prolong-on, .modal-dashboard.modal-desktop.modal-invest .modal-dialog .modal-content .modal-body .auto-prolong .prolong-switcher .prolong-off {
+          padding: 23px 50px; } }
+      .modal-dashboard.modal-desktop.modal-invest .modal-dialog .modal-content .modal-body .auto-prolong .prolong-switcher .prolong-on.active, .modal-dashboard.modal-desktop.modal-invest .modal-dialog .modal-content .modal-body .auto-prolong .prolong-switcher .prolong-off.active {
+        background: url("../img/modal-transition-button.png") no-repeat;
+        background-position: center;
+        background-size: 105% 100%;
+        border: 0;
+        color: #fff; }
+    .modal-dashboard.modal-desktop.modal-invest .modal-dialog .modal-content .modal-body .auto-prolong .prolong-switcher .prolong-on {
+      border-top-left-radius: 24px;
+      border-bottom-left-radius: 24px;
+      margin-right: -2px; }
+    .modal-dashboard.modal-desktop.modal-invest .modal-dialog .modal-content .modal-body .auto-prolong .prolong-switcher .prolong-off {
+      border-top-right-radius: 24px;
+      border-bottom-right-radius: 24px;
+      margin-left: -2px; }
+  .modal-dashboard.modal-desktop.modal-invest .modal-dialog .modal-content .modal-body .currency-exchange-button, .modal-dashboard.modal-desktop.modal-invest .modal-dialog .modal-content .modal-body .next-step-button {
+    margin-top: 20px;
+    width: 48%; }
+  .modal-dashboard.modal-desktop.modal-invest .modal-dialog .modal-content .modal-body .next-step-button {
+    background: #e3e3e3; }
+    .modal-dashboard.modal-desktop.modal-invest .modal-dialog .modal-content .modal-body .next-step-button.active {
+      background: url("../img/modal-transition-button.png") no-repeat;
+      background-position: center;
+      background-size: 105% 100%; }
+  .modal-dashboard.modal-desktop.modal-invest .modal-dialog .modal-content .modal-body .invest-amount {
+    color: #48443f;
+    font-size: 50px;
+    font-weight: 300;
+    letter-spacing: .25px;
+    line-height: 50px;
+    margin-bottom: 25px;
+    text-align: center; }
+  .modal-dashboard.modal-desktop.modal-invest .modal-dialog .modal-content .modal-body .invest-info {
+    color: #8c8e8f;
+    font-size: 17px;
+    font-weight: 300;
+    letter-spacing: .25px;
+    line-height: 25px;
+    margin-bottom: 42px;
+    text-align: center; }
+    @media (min-width: 768px) {
+      .modal-dashboard.modal-desktop.modal-invest .modal-dialog .modal-content .modal-body .invest-info {
+        font-size: 18.3px;
+        line-height: 27px; } }
+  .modal-dashboard.modal-desktop.modal-invest .modal-dialog .modal-content .modal-body .about-info {
+    color: #afb1b4;
+    font-size: 12.5px;
+    font-weight: 400;
+    letter-spacing: .5px;
+    line-height: 19px; }
+  .modal-dashboard.modal-desktop.modal-invest .modal-dialog .modal-content .modal-body .invest-time {
+    margin-bottom: 40px;
+    text-align: center; }
+    .modal-dashboard.modal-desktop.modal-invest .modal-dialog .modal-content .modal-body .invest-time img {
+      margin-bottom: 16px; }
+    .modal-dashboard.modal-desktop.modal-invest .modal-dialog .modal-content .modal-body .invest-time .time {
+      color: #8c8e8f;
+      font-size: 17px;
+      font-weight: 300;
+      letter-spacing: .25px;
+      line-height: 25px; }
+      @media (min-width: 768px) {
+        .modal-dashboard.modal-desktop.modal-invest .modal-dialog .modal-content .modal-body .invest-time .time {
+          font-size: 18.3px;
+          line-height: 27px; } }
+  .modal-dashboard.modal-desktop.modal-invest .modal-dialog .modal-content .modal-body .two-inputs-wrapper .input-body .bootstrap-select {
+    width: 100%; }
+    .modal-dashboard.modal-desktop.modal-invest .modal-dialog .modal-content .modal-body .two-inputs-wrapper .input-body .bootstrap-select .dropdown-toggle {
+      background-color: #fff;
+      border: 2px solid #d8d9de;
+      border-radius: 10px;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+      color: #939495;
+      outline: 0 !important;
+      padding: 20px 20px 20px 15px; }
+      .modal-dashboard.modal-desktop.modal-invest .modal-dialog .modal-content .modal-body .two-inputs-wrapper .input-body .bootstrap-select .dropdown-toggle .bs-caret .caret {
+        background: url("../img/dropdown-arrow.png") no-repeat;
+        border: 0;
+        height: 5px;
+        width: 10px; }
+    .modal-dashboard.modal-desktop.modal-invest .modal-dialog .modal-content .modal-body .two-inputs-wrapper .input-body .bootstrap-select div.dropdown-menu {
+      border: 2px solid #75777a;
+      border-radius: 10px;
+      padding: 0;
+      top: -2px; }
+      .modal-dashboard.modal-desktop.modal-invest .modal-dialog .modal-content .modal-body .two-inputs-wrapper .input-body .bootstrap-select div.dropdown-menu ul.dropdown-menu li a {
+        background-color: #fff;
+        color: #939495;
+        outline: 0 !important;
+        padding: 20px 20px 20px 15px; }
+      .modal-dashboard.modal-desktop.modal-invest .modal-dialog .modal-content .modal-body .two-inputs-wrapper .input-body .bootstrap-select div.dropdown-menu ul.dropdown-menu li:not(:last-child) {
+        border-bottom: 2px solid #d8d9de; }
+  .modal-dashboard.modal-desktop.modal-invest .modal-dialog .modal-content .modal-body .two-inputs-wrapper .input-body.invest-left .bootstrap-select div.dropdown-menu.open {
+    height: 188px; }
+  .modal-dashboard.modal-desktop.modal-invest .modal-dialog .modal-content .modal-body .two-inputs-wrapper .input-body.invest-right .bootstrap-select div.dropdown-menu.open {
+    height: 312px; }
+
+.modal-dashboard.modal-desktop.modal-invest#investToCloudModal-2 .modal-dialog .modal-content .modal-body .next-step-button {
+  background: url("../img/modal-transition-button.png") no-repeat;
+  background-position: center;
+  background-size: 105% 100%; }
+
+@media (min-width: 768px) {
+  .modal-dashboard.modal-desktop.modal-invest#investToCloudModal-3 .modal-dialog {
+    width: 570px; } }
+
+.modal-dashboard.modal-desktop.modal-invest#investToCloudModal-3 .modal-dialog .modal-content .modal-header {
+  padding: 60px 60px 25px;
+  position: relative; }
+  .modal-dashboard.modal-desktop.modal-invest#investToCloudModal-3 .modal-dialog .modal-content .modal-header .close {
+    background: url("../img/close-news.png") no-repeat;
+    background-size: 100%;
+    height: 15px;
+    outline: 0;
+    position: absolute;
+    right: 30px;
+    text-decoration: none;
+    top: 30px;
+    width: 15px; }
+
+.modal-dashboard.modal-desktop.modal-invest#investToCloudModal-3 .modal-dialog .modal-content .modal-body {
+  padding: 0 11% 6.3vh; }
 
 .modal-bitcoins .modal-dialog {
   height: 100%;
@@ -2479,10 +2727,16 @@ body.modal-open.dashboard-body .modal-backdrop.in {
                 padding: 0.93vh 24%; } }
             @media (min-width: 1200px) {
               .main-block.main-cloud-block .tab-content .tab-pane .bitcoin-block .cloud-history-block .balance-block .balance-header .nav-tabs li a {
-                padding: 0.5vh 10%; } }
+                padding: 0.5vh 5px; } }
+            @media (min-width: 1400px) {
+              .main-block.main-cloud-block .tab-content .tab-pane .bitcoin-block .cloud-history-block .balance-block .balance-header .nav-tabs li a {
+                padding: 0.93vh 9px; } }
             @media (min-width: 1700px) {
               .main-block.main-cloud-block .tab-content .tab-pane .bitcoin-block .cloud-history-block .balance-block .balance-header .nav-tabs li a {
-                padding: 0.93vh 21%; } }
+                padding: 0.93vh 11px; } }
+            @media (min-width: 1800px) {
+              .main-block.main-cloud-block .tab-content .tab-pane .bitcoin-block .cloud-history-block .balance-block .balance-header .nav-tabs li a {
+                padding: 0.93vh 13px; } }
           .main-block.main-cloud-block .tab-content .tab-pane .bitcoin-block .cloud-history-block .balance-block .balance-header .nav-tabs li.active a {
             background-color: #fff !important;
             color: #6ec0d9; }
@@ -2632,8 +2886,8 @@ body.modal-open.dashboard-body .modal-backdrop.in {
     .main-block.main-cloud-block .tab-content .tab-pane .bitcoin-block .hashrate-block .sharerate-title, .main-block.main-cloud-block .tab-content .tab-pane .bitcoin-block .sharerate-block .sharerate-title {
       background-clip: text;
       -webkit-background-clip: text;
-      background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #7db9e8), color-stop(0.52, #4e39da), color-stop(1, #9b4abf));
-      background-image: gradient(linear, left top, right top, color-stop(0, #7db9e8), color-stop(0.52, #4e39da), color-stop(1, #9b4abf)); }
+      background-image: -webkit-gradient(linear, right top, left top, color-stop(0, #7db9e8), color-stop(0.52, #4e39da), color-stop(1, #9b4abf));
+      background-image: gradient(linear, right top, left top, color-stop(0, #7db9e8), color-stop(0.52, #4e39da), color-stop(1, #9b4abf)); }
     .main-block.main-cloud-block .tab-content .tab-pane .bitcoin-block .hashrate-block img, .main-block.main-cloud-block .tab-content .tab-pane .bitcoin-block .sharerate-block img {
       width: 90%; }
   .main-block.main-cloud-block .tab-content .tab-pane .bitcoin-block .sharerate-block.pool {
@@ -2687,20 +2941,20 @@ body.modal-open.dashboard-body .modal-backdrop.in {
     -webkit-box-shadow: 2.121px 2.121px 54px 0px rgba(0, 0, 0, 0.08);
     box-shadow: 2.121px 2.121px 54px 0px rgba(0, 0, 0, 0.08);
     margin-bottom: 30px;
-    padding: 5.5vh 0;
+    padding: 4vh 0;
     text-align: center; }
     .main-block.main-cloud-block .tab-content .tab-pane .bitcoin-block .round-graph .round-title {
       background-clip: text;
       -webkit-background-clip: text;
-      background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #58c2c6), color-stop(1, #4d95ef));
-      background-image: gradient(linear, left top, right top, color-stop(0, #58c2c6), color-stop(1, #4d95ef));
+      background-image: -webkit-gradient(linear, right top, left top, color-stop(0, #7db9e8), color-stop(0.52, #4e39da), color-stop(1, #9b4abf));
+      background-image: gradient(linear, right top, left top, color-stop(0, #7db9e8), color-stop(0.52, #4e39da), color-stop(1, #9b4abf));
       color: transparent;
       font-size: 19px;
       font-weight: 500;
       letter-spacing: 1.5px;
       line-height: 25px; }
     .main-block.main-cloud-block .tab-content .tab-pane .bitcoin-block .round-graph img {
-      margin: 5.6vh 0; }
+      margin: 3.9vh 0 0; }
     .main-block.main-cloud-block .tab-content .tab-pane .bitcoin-block .round-graph .round-amount {
       background-clip: text;
       -webkit-background-clip: text;
@@ -2710,6 +2964,27 @@ body.modal-open.dashboard-body .modal-backdrop.in {
       font-size: 37.6px;
       font-weight: 100;
       line-height: 37.6px; }
+  .main-block.main-cloud-block .tab-content .tab-pane .bitcoin-block .earnings-per {
+    background: url("../img/earnings-per.png") no-repeat;
+    background-size: 100% 100%;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    padding: 4vh 9%; }
+    .main-block.main-cloud-block .tab-content .tab-pane .bitcoin-block .earnings-per .earning-body {
+      color: #fff; }
+      .main-block.main-cloud-block .tab-content .tab-pane .bitcoin-block .earnings-per .earning-body .earning-amount {
+        font-size: 31px;
+        font-weight: 100;
+        line-height: 31px; }
+        .main-block.main-cloud-block .tab-content .tab-pane .bitcoin-block .earnings-per .earning-body .earning-amount span {
+          font-size: 18px; }
+      .main-block.main-cloud-block .tab-content .tab-pane .bitcoin-block .earnings-per .earning-body .earning-description {
+        font-size: 10px;
+        font-weight: 400;
+        letter-spacing: 1.5px;
+        line-height: 10px; }
+      .main-block.main-cloud-block .tab-content .tab-pane .bitcoin-block .earnings-per .earning-body:not(:last-child) {
+        margin-bottom: 3.5vh; }
   .main-block.main-cloud-block .tab-content .tab-pane .bitcoin-block .hashrate-table {
     border-radius: 20px;
     -webkit-box-shadow: 2.121px 2.121px 54px 0px rgba(0, 0, 0, 0.08);
@@ -5036,7 +5311,9 @@ body.modal-open.dashboard-body .modal-backdrop.in {
   color: #fff;
   text-transform: uppercase;
   margin-top: 20px;
-  width: 100%; }
+  width: 100%;
+  min-width: 65em;
+  overflow: auto; }
   .investments__table--cell {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;

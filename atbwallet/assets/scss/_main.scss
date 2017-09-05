@@ -1,4 +1,4 @@
-body.modal-open.dashboard-body {
+body.modal-open.dashboard-body, body.modal-open.investment-body {
     .main-block, .left-menu, .main-menu, .header {
         -webkit-filter: blur(4px);
         -moz-filter: blur(4px);
@@ -281,6 +281,11 @@ body.modal-open.dashboard-body {
                                         border-color: #75777a;
                                         color: #75777a;
                                     }
+                                    &+.bootstrap-select {
+                                        .dropdown-toggle {
+                                            border-color: #75777a;
+                                        }
+                                    }
                                 }
                             }
                         }
@@ -343,6 +348,62 @@ body.modal-open.dashboard-body {
                         &.bonus {
                             float: right;
                             width: 48%;
+                        }
+                        &.picker-index {
+                            .bootstrap-select {
+                                bottom: 0;
+                                color: #939495;
+                                display: none;
+                                font-size: 15px;
+                                font-weight: 400;
+                                height: 63px;
+                                line-height: 15px;
+                                padding: 0;
+                                position: absolute;
+                                right: 0;
+                                width: 82px;
+                                @media(min-width: $screen-sm-min) {
+                                    display: block;
+                                }
+                                .dropdown-toggle {
+                                    background-color: #fff;
+                                    border: 2px solid #d8d9de;
+                                    border-radius: 10px;
+                                    border-bottom-left-radius: 0;
+                                    border-top-left-radius: 0;
+                                    box-shadow: none;
+                                    color: #939495;
+                                    outline: 0 !important;
+                                    padding: 19px 20px 20px 15px;
+                                    .bs-caret {
+                                        .caret {
+                                            background: url('../img/dropdown-arrow.png') no-repeat;
+                                            border: 0;
+                                            height: 5px;
+                                            width: 10px;
+                                        }
+                                    }
+                                }
+                                div.dropdown-menu {
+                                    border: 2px solid #75777a;
+                                    border-radius: 10px;
+                                    padding: 0;
+                                    top: -2px;
+                                    ul.dropdown-menu {
+                                        li {
+                                            a {
+                                                background-color: #fff;
+                                                color: #939495;
+                                                outline: 0 !important;
+                                                padding: 19px 20px 20px 15px;
+                                            }
+                                            &:not(:last-child) {
+                                                border-bottom: 2px solid #d8d9de;
+                                            }
+                                        }
+                                    }
+                                    }
+                            }
                         }
                     }
                     .two-inputs-wrapper {
@@ -425,6 +486,266 @@ body.modal-open.dashboard-body {
                 letter-spacing: 2px;
                 line-height: 20.8px;
                 margin-top: 25px;
+            }
+        }
+        &.modal-invest {
+            .modal-dialog {
+                .modal-content {
+                    .modal-header {
+                        background: transparent;
+                        border: 0;
+                        padding: 60px 0 25px;
+                        .navigation-line {
+                            position: relative;
+                            .first-circle, .active-circle, .inactive-circle {
+                                display: inline-block;
+                                position: relative;
+                                width: 32.5%;
+                                z-index: 2;
+                                @media (min-width: $screen-sm-min) {
+                                    width: 33%;
+                                }
+                            }
+                            .horizontal-line {
+                                background: #f1f1f1;
+                                height: 1px;
+                                left: 16%;
+                                position: absolute;
+                                right: 16%;
+                                top: 10.5px;
+                            }
+                        }
+                        .navigation-text {
+                            font-size: 10px;
+                            font-weight: 500;
+                            letter-spacing: 1px;
+                            line-height: 10px;
+                            margin-top: 25px;
+                            @media (min-width: $screen-sm-min) {
+                                font-size: 14px;
+                                letter-spacing: 2px;
+                                line-height: 14px;
+                            }
+                            .first-text, .active-text, .inactive-text {
+                                display: inline-block;
+                                width: 32.5%;
+                            }
+                            .first-text {
+                                background: linear-gradient(45deg, #63c5c9 33%, #5ba1ea 55%, #5a9aef);
+                                background-clip: text;
+                                -webkit-background-clip: text;
+                                -webkit-text-fill-color: transparent;
+                                color: #5a9aef;
+                            }
+                            .active-text {
+                                color: #4f4f4f;
+                            }
+                            .inactive-text {
+                                color: #b0b2b7;
+                            }
+                        }
+                        .about-title {
+                            color: #5b5d61;
+                            font-size: 20.8px;
+                            font-weight: 400;
+                            letter-spacing: .5px;
+                            line-height: 20.8px;
+                            text-align: left;
+                        }
+                    }
+                    .modal-body {
+                        padding: 6.3vh 11%;
+                        .auto-prolong {
+                            .prolong-title {
+                                color: #b0b2b7;
+                                font-size: 14px;
+                                font-weight: 500;
+                                letter-spacing: 2px;
+                                line-height: 14px;
+                                text-align: center;
+                                margin-bottom: 23px;
+                            }
+                            .prolong-switcher {
+                                margin-bottom: 55px;
+                                text-align: center;
+                                .prolong-on, .prolong-off {
+                                    border: 1px solid #f2f2f2;
+                                    color: #cdcdd1;
+                                    display: inline-block;
+                                    font-size: 12.5px;
+                                    font-weight: 400;
+                                    letter-spacing: 3px;
+                                    line-height: 12.5px;
+                                    outline: 0;
+                                    padding: 23px 45px;
+                                    text-decoration: none;
+                                    @media (min-width: $screen-sm-min) {
+                                        padding: 23px 50px;
+                                    }
+                                    &.active {
+                                        background: url('../img/modal-transition-button.png') no-repeat;
+                                        background-position: center;
+                                        background-size: 105% 100%;
+                                        border: 0;
+                                        color: #fff;
+                                    }
+                                }
+                                .prolong-on {
+                                    border-top-left-radius: 24px;
+                                    border-bottom-left-radius: 24px;
+                                    margin-right: -2px;
+                                }
+                                .prolong-off {
+                                    border-top-right-radius: 24px;
+                                    border-bottom-right-radius: 24px;
+                                    margin-left: -2px;
+                                }
+                            }
+                        }
+                        .currency-exchange-button, .next-step-button {
+                            margin-top: 20px;
+                            width: 48%;
+                        }
+                        .next-step-button {
+                            background: #e3e3e3;
+                            &.active {
+                                background: url('../img/modal-transition-button.png') no-repeat;
+                                background-position: center;
+                                background-size: 105% 100%;
+                            }
+                        }
+                        .invest-amount {
+                            color: #48443f;
+                            font-size: 50px;
+                            font-weight: 300;
+                            letter-spacing: .25px;
+                            line-height: 50px;
+                            margin-bottom: 25px;
+                            text-align: center;
+                        }
+                        .invest-info {
+                            color: #8c8e8f;
+                            font-size: 17px;
+                            font-weight: 300;
+                            letter-spacing: .25px;
+                            line-height: 25px;
+                            margin-bottom: 42px;
+                            text-align: center;
+                            @media (min-width: $screen-sm-min) {
+                                font-size: 18.3px;
+                                line-height: 27px;
+                            }
+                        }                        
+                        .about-info {
+                            color: #afb1b4;
+                            font-size: 12.5px;
+                            font-weight: 400;
+                            letter-spacing: .5px;
+                            line-height: 19px;
+                        }
+                        .invest-time {
+                            margin-bottom: 40px;
+                            text-align: center;
+                            img {
+                                margin-bottom: 16px;
+                            }
+                            .time {
+                                color: #8c8e8f;
+                                font-size: 17px;
+                                font-weight: 300;
+                                letter-spacing: .25px;
+                                line-height: 25px;
+                                @media (min-width: $screen-sm-min) {
+                                    font-size: 18.3px;
+                                    line-height: 27px;
+                                }
+                            }
+                        }
+                        .two-inputs-wrapper {
+                            .input-body {
+                                .bootstrap-select {
+                                    width: 100%;
+                                    .dropdown-toggle {
+                                        background-color: #fff;
+                                        border: 2px solid #d8d9de;
+                                        border-radius: 10px;
+                                        box-shadow: none;
+                                        color: #939495;
+                                        outline: 0 !important;
+                                        padding: 20px 20px 20px 15px;
+                                        .bs-caret {
+                                            .caret {
+                                                background: url('../img/dropdown-arrow.png') no-repeat;
+                                                border: 0;
+                                                height: 5px;
+                                                width: 10px;
+                                            }
+                                        }
+                                    }
+                                    div.dropdown-menu {
+                                        border: 2px solid #75777a;
+                                        border-radius: 10px;
+                                        padding: 0;
+                                        top: -2px;
+                                        ul.dropdown-menu {
+                                            li {
+                                                a {
+                                                    background-color: #fff;
+                                                    color: #939495;
+                                                    outline: 0 !important;
+                                                    padding: 20px 20px 20px 15px;
+                                                }
+                                                &:not(:last-child) {
+                                                    border-bottom: 2px solid #d8d9de;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                &.invest-left .bootstrap-select div.dropdown-menu.open {
+                                    height: 188px;
+                                }
+                                &.invest-right .bootstrap-select div.dropdown-menu.open {
+                                    height: 312px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            &#investToCloudModal-2 .modal-dialog .modal-content .modal-body {
+                .next-step-button {
+                    background: url('../img/modal-transition-button.png') no-repeat;
+                    background-position: center;
+                    background-size: 105% 100%;
+                }
+            }
+            &#investToCloudModal-3 {
+                .modal-dialog {
+                    @media (min-width: $screen-sm-min) {
+                        width: 570px;
+                    }
+                    .modal-content {
+                        .modal-header {
+                            padding: 60px 60px 25px;
+                            position: relative;
+                            .close {
+                                background: url('../img/close-news.png') no-repeat;
+                                background-size: 100%;
+                                height: 15px;
+                                outline: 0;
+                                position: absolute;
+                                right: 30px;
+                                text-decoration: none;
+                                top: 30px;
+                                width: 15px;
+                            }
+                        }
+                        .modal-body {
+                            padding: 0 11% 6.3vh;
+                        }
+                    }
+                }
             }
         }
     }
@@ -2475,10 +2796,16 @@ body.modal-open.dashboard-body {
                                                 padding: 0.93vh 24%;
                                             }
                                             @media (min-width: $screen-lg-min) {
-                                                padding: 0.5vh 10%;
+                                                padding: 0.5vh 5px;
+                                            }
+                                            @media (min-width: 1400px) {
+                                                padding: 0.93vh 9px;
                                             }
                                             @media (min-width: 1700px) {
-                                                padding: 0.93vh 21%;
+                                                padding: 0.93vh 11px;
+                                            }
+                                            @media (min-width: 1800px) {
+                                                padding: 0.93vh 13px;
                                             }
                                         }
                                         &.active {
@@ -2668,8 +2995,8 @@ body.modal-open.dashboard-body {
                         .sharerate-title {
                             background-clip: text;
                             -webkit-background-clip: text;
-                            background-image: -webkit-gradient( linear, left top, right top, color-stop(0, #7db9e8), color-stop(0.52, #4e39da), color-stop(1, #9b4abf));
-                            background-image: gradient( linear, left top, right top, color-stop(0, #7db9e8), color-stop(0.52, #4e39da), color-stop(1, #9b4abf));
+                            background-image: -webkit-gradient(linear, right top, left top, color-stop(0, #7db9e8), color-stop(0.52, #4e39da), color-stop(1, #9b4abf));
+                            background-image: gradient(linear, right top, left top, color-stop(0, #7db9e8), color-stop(0.52, #4e39da), color-stop(1, #9b4abf));
                         }
                         img {
                             width: 90%;
@@ -2746,13 +3073,13 @@ body.modal-open.dashboard-body {
                         border-radius: 20px;
                         box-shadow: 2.121px 2.121px 54px 0px rgba(0, 0, 0, 0.08);
                         margin-bottom: 30px;
-                        padding: 5.5vh 0;
+                        padding: 4vh 0;
                         text-align: center;
                         .round-title {
                             background-clip: text;
                             -webkit-background-clip: text;
-                            background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #58c2c6), color-stop(1, #4d95ef));
-                            background-image: gradient(linear, left top, right top, color-stop(0, #58c2c6), color-stop(1, #4d95ef));
+                            background-image: -webkit-gradient(linear, right top, left top, color-stop(0, #7db9e8), color-stop(0.52, #4e39da), color-stop(1, #9b4abf));
+                            background-image: gradient(linear, right top, left top, color-stop(0, #7db9e8), color-stop(0.52, #4e39da), color-stop(1, #9b4abf));
                             color: transparent;
                             font-size: 19px;
                             font-weight: 500;
@@ -2760,7 +3087,7 @@ body.modal-open.dashboard-body {
                             line-height: 25px;
                         }
                         img {
-                            margin: 5.6vh 0;
+                            margin: 3.9vh 0 0;
                         }
                         .round-amount {
                             background-clip: text;
@@ -2771,6 +3098,33 @@ body.modal-open.dashboard-body {
                             font-size: 37.6px;
                             font-weight: 100;
                             line-height: 37.6px;
+                        }
+                    }
+                    .earnings-per {
+                        background: url('../img/earnings-per.png') no-repeat;
+                        background-size: 100% 100%;
+                        border-radius: 20px;
+                        margin-bottom: 30px;
+                        padding: 4vh 9%;
+                        .earning-body {
+                            color: #fff;
+                            .earning-amount {
+                                font-size: 31px;
+                                font-weight: 100;
+                                line-height: 31px;
+                                span {
+                                    font-size: 18px;
+                                }
+                            }
+                            .earning-description {
+                                font-size: 10px;
+                                font-weight: 400;
+                                letter-spacing: 1.5px;
+                                line-height: 10px;
+                            }
+                            &:not(:last-child) {
+                                margin-bottom: 3.5vh;
+                            }
                         }
                     }
                     .hashrate-table {
@@ -5553,6 +5907,8 @@ body.modal-open.dashboard-body {
         text-transform: uppercase;
         margin-top: 20px;
         width: 100%;
+        min-width: 65em;
+        overflow: auto;
 
         &--cell {
             box-sizing: border-box;
